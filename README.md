@@ -1,5 +1,11 @@
 # 3D-pharse5-review
 
+## Verified configuration — awaiting owner exposure approval
+
+A read-only inspection workflow has run successfully using this repository's own token. The report on branch `deployment-inspection` confirms: Pages build_type=workflow, HTTPS enforced, the publication workflow active, and github-pages environment restricted to main with one required reviewer. The actual HTTPS endpoint returned404; no playable game has been published. The two administration-only Actions-settings endpoints remain unreadable to this limited token (administration=read); this is not proof Actions is disabled, and no broader credential was requested.
+
+The owner has been given ONE private, self-contained visual rights-review page for all26NPCs, with special review notes for the6era-inspired figures, lossless native views,309source-reference hash checks and the exact1367-file candidate manifest. It is not uploaded here because it embeds artwork awaiting public exposure approval. The real candidate record stays PENDING; neither inspection job publishes game/art or changes the v0.5website. No legal clearance or commercial permission is implied by source hashes or fictional names.
+
 ## Deployment status: NOT DEPLOYED
 
 This repository contains deployment controls only. The compiled Phaser Review Portal and artwork have NOT been pushed here. Owner public-exposure approval remains PENDING. No Phase3B-B/C/D is authorized.
