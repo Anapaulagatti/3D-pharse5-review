@@ -31,20 +31,23 @@ try {
     }
   }));
   const catalog = await (await fetch(new URL('catalog.json', base))).json();
-  check(catalog.npcs.length === 26 && new Set(catalog.npcs.map(n => n.id)).size === 26, 'Not26unique NPC catalog identities');
+  const spec=config.releaseProfiles?.[manifest.profile];
+  check(spec && JSON.stringify([...spec.npcIds].sort())===JSON.stringify(catalog.npcs.map(n=>n.id).sort()), 'Exact approved release profile/roster mismatch');
+  const expected=spec.npcIds.length;
+  check(catalog.npcs.length === expected && new Set(catalog.npcs.map(n => n.id)).size === expected, 'Not exact-profile unique NPC catalog identities');
   browser = await chromium.launch();
   const context = await browser.newContext({ viewport: { width: 960, height: 640 }, deviceScaleFactor: 1 });
   const page = await context.newPage();
   page.on('pageerror', e => result.errors.push(e.message));
   page.on('response', r => { if (r.status() >= 400) result.missing.push({ url: r.url(), status: r.status() }); });
-  await page.goto(base); await page.locator('#roster article').nth(25).waitFor();
+  await page.goto(base); await page.locator('#roster article').nth(expected-1).waitFor();
   await page.screenshot({ path: 'evidence/portal-desktop.png' });
   for (const n of catalog.npcs) {
     await page.goto(new URL('play/?qa&renderer=canvas&npcReview=' + n.id, base).href);
     await page.waitForFunction(id => window.__GATE3__?.ready && window.__NPC_WORLD__?.actors.some(a => a.id === id), n.id);
     const before = await page.evaluate(() => ({ game: window.__GATE3__, npc: window.__NPC_WORLD__ }));
     if (n.archive) check(!before.npc.actors.some(a => a.id === config.archiveHosts[n.id]), 'Archive actor overlaps displaced host');
-    check(before.npc.catalogTotal === 26 && before.npc.active <= 4 && before.npc.assets.loaded <= 4 && before.npc.assets.pending <= 2, 'Runtime roster/cache regression');
+    check(before.npc.catalogTotal === expected && before.npc.active <= 4 && before.npc.assets.loaded <= 4 && before.npc.assets.pending <= 2, 'Runtime roster/cache regression');
     await page.evaluate(() => window.__NPC_LIFE_QA__.setTime(1140, 0));
     const a = before.npc.actors.find(a => a.id === n.id), dx = a.position[0] - before.game.x, dy = a.position[1] - before.game.y;
     const key = Math.abs(dx) > Math.abs(dy) ? dx > 0 ? 'd' : 'a' : dy > 0 ? 's' : 'w';
@@ -53,6 +56,7 @@ try {
     try { await page.waitForFunction(id => window.__NPC_WORLD__?.target === id, n.id, { timeout: 15000 }); } finally { await page.keyboard.up(key); }
     await page.keyboard.press('e'); await page.locator('#npc-dialogue').waitFor({ state: 'visible' });
     await page.locator('#npc-dialogue-return').click();
+    await page.waitForFunction(() => window.__GATE3__?.paused === false);
     const state = await page.evaluate(id => ({ clock: window.__NPC_WORLD__.clock, actor: window.__NPC_WORLD__.actors.find(a => a.id === id), paused: window.__GATE3__.paused }), n.id);
     check(state.actor.nativeScale.every(v => v === 1) && state.actor.sampling === 1 && !state.paused, 'Native rendering/control recovery failed');
     check(state.clock.minute === 1140 && state.clock.rate === 0, 'Daily-life inspector did not control actual clock');
@@ -60,7 +64,7 @@ try {
   }
   await page.screenshot({ path: 'evidence/game-native.png' });
   for (const viewport of [{ width: 390, height: 844 }, { width: 667, height: 375 }]) {
-    await page.setViewportSize(viewport); await page.goto(base); await page.locator('#roster article').nth(25).waitFor();
+    await page.setViewportSize(viewport); await page.goto(base); await page.locator('#roster article').nth(expected-1).waitFor();
     check(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Mobile portal overflows');
     await page.screenshot({ path: `evidence/mobile-${viewport.width}.png` });
   }

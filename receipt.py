@@ -10,11 +10,21 @@ if not re.fullmatch('[0-9a-f]{40}',q.get('artifactCommit','')):errors.append('Pi
 if not re.fullmatch('[0-9a-f]{64}',q.get('manifestSHA256','')):errors.append('Exact export manifest checksum required')
 if q.get('sourceCommit')!=json.loads(Path('review-source.json').read_text())['portalCommit']:errors.append('Source checkpoint does not match reviewed configuration')
 reviews=q.get('npcReviews',{})
-if len(reviews)!=26:errors.append('All26 NPC review records required')
+config=json.loads(Path('review-source.json').read_text())
+profile=q.get('profile');spec=config.get('releaseProfiles',{}).get(profile)
+if not spec or q.get('manifestSHA256')!=spec['manifestSHA256']:errors.append('Unreviewed exact release profile/manifest')
+if spec and set(q.get('npcReviews',{}))!=set(spec['npcIds']):errors.append('Exact selected roster review required')
+if spec and spec.get('artworkEligibility')!='DOCUMENTED_PUBLIC_DISPLAY_TERMS':errors.append('Trusted profile terms review still PENDING')
+t=q.get('creationTermsReview',{})
+if t.get('status')!='REVIEWED_APPLICABLE_PUBLIC_DISPLAY'or not t.get('reviewedBy')or not t.get('reviewedAt')or not t.get('evidence')or not t.get('outputRightsSection')or not t.get('applicableService'):errors.append('Account/creation terms still UNKNOWN; no public exposure')
+
 for id,r in reviews.items():
  if r.get('decision')!='ALLOW_PUBLIC_PREVIEW'or r.get('unresolvedSpecificConcern')is not False or not r.get('depictionReview')or not r.get('exposureJustification'):errors.append(id+': individual review still pending')
 for group in ['world','playable-characters','cosmetics','third-party-code-fonts-audio','checkpoint-media','portal-and-metadata']:
  g=q.get('groups',{}).get(group,{})
+ if group=='checkpoint-media'and profile=='contemporary20':
+  if g.get('decision')!='NOT_DISTRIBUTED':errors.append('Excluded media must not be falsely approved')
+  continue
  if g.get('decision')!='ALLOW_PUBLIC_PREVIEW'or not g.get('justification'):errors.append(group+': exposure decision pending')
 if not q.get('snapshotManifests'):errors.append('Snapshot retention record required')
 if errors:raise SystemExit('BLOCKED BEFORE ART FETCH\n'+'\n'.join(errors))

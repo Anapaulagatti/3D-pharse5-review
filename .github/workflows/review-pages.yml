@@ -9,7 +9,7 @@ on:
         required: true
       approval_path:
         description: Pending candidate for check, approved receipt for deployment
-        default: review-candidates/phase3b-a.json
+        default: review-candidates/contemporary20.json
         required: true
   push:
     branches: [main]
