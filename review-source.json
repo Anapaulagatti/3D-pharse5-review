@@ -40,8 +40,10 @@
         "npc-modern-haru",
         "npc-modern-yeori"
       ],
-      "artworkEligibility": "PENDING_READABLE_EFFECTIVE_CONSUMER_TERMS",
-      "accountFramework": "Owner-confirmed personal ChatGPT/Codex, no superseding separate agreement"
+      "artworkEligibility": "DOCUMENTED_PUBLIC_DISPLAY_TERMS",
+      "accountFramework": "Owner-confirmed personal ChatGPT/Codex, no superseding separate agreement",
+      "evidenceBasis": "Owner-supplied official OpenAI public information and personalPlus/no-separate-agreement confirmation; independently fetched text NOT verified",
+      "termsReviewSourceSHA256": "7f7ea43df8b4f1e60b6ae6b7fb026e87f9fb42944aafcb427487af5ad669f4bf"
     },
     "full26": {
       "manifestSHA256": "78f2e034565bb893adefb1055374495e7fe88ba72c8ca075ddb8b565c5925ecb",
@@ -73,7 +75,7 @@
         "npc-sungmin",
         "npc-yejin"
       ],
-      "artworkEligibility": "PENDING_READABLE_EFFECTIVE_CONSUMER_TERMS",
+      "artworkEligibility": "NOT_ELIGIBLE_FOR_CURRENT20_ONLY_PUBLIC_SCOPE",
       "accountFramework": "Owner-confirmed personal ChatGPT/Codex, no superseding separate agreement"
     }
   }

@@ -1,9 +1,7 @@
+# Owner supplied official terms evidence; automatic fetching stopped. Manual use only after a new instruction.
 name: Inspect official OpenAI terms (no assets or deployment)
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['terms-inspection/request.json']
 permissions:
   contents: write
 concurrency:
