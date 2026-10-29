@@ -1,3 +1,9 @@
+## Current release readiness — owner-supplied consumer rights information reviewed
+
+The personal ChatGPT/Codex Plus route and no separate agreement are owner-confirmed. Consumer Terms of Use effectiveJanuary1,2026 and Service Terms/commercial-use descriptions are expressly owner-supplied official public information, not independently retrieved page text. Exact Service Terms/help dates remain unspecified. The restricted20 scope is ready for ONE owner exposure decision; the real receipt remainsPENDING. Six era-inspired actors stay excluded. No compiled artifact/game/artwork has been pushed or deployed. No new source-fetch jobs run automatically.
+
+After actual approval only, the existing workflow validates exact artifact/rights/history and opens the liveHTTPSgame withChromium. Live manifest SHA must equal the approved SHA. Actual browser results are also retained on isolated live-verification branch so status is reviewable without claiming local network access. Missing/failed proof is neverPASS. Productionv0.5/source-main remain untouched; Phase3B-B/C/Dlocked.
+
 # 3D-pharse5-review
 
 ## Verified configuration — awaiting owner exposure approval

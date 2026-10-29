@@ -1,6 +1,7 @@
 // Hosted QA only: opens the actual deployed game. Never builds or edits game files.
 import { chromium } from '@playwright/test';
 import fs from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 const base = process.env.LIVE_URL;
 const url = new URL(base);
 if (url.protocol !== 'https:' || url.hostname !== 'anapaulagatti.github.io' || url.pathname !== '/3D-pharse5-review/') throw Error('Refuse wrong deployment destination');
@@ -10,10 +11,10 @@ const check = (value, message) => { if (!value) throw Error(message); };
 await fs.mkdir('evidence', { recursive: true });
 let browser;
 try {
-  let manifest;
+  let manifest,manifestHash;
   for (let attempt = 0; attempt < 12; attempt++) {
     const r = await fetch(new URL('export-manifest.json', base), { cache: 'no-store' });
-    if (r.ok) { manifest = await r.json(); break; }
+    if (r.ok) { const raw=await r.text();manifest=JSON.parse(raw);manifestHash=createHash('sha256').update(raw).digest('hex');break; }
     await new Promise(r => setTimeout(r, 5000));
   }
   check(manifest, 'Live export manifest unavailable after deployment');
@@ -33,6 +34,8 @@ try {
   const catalog = await (await fetch(new URL('catalog.json', base))).json();
   const spec=config.releaseProfiles?.[manifest.profile];
   check(spec && JSON.stringify([...spec.npcIds].sort())===JSON.stringify(catalog.npcs.map(n=>n.id).sort()), 'Exact approved release profile/roster mismatch');
+  check(manifestHash===spec.manifestSHA256,'Live CDN manifest differs from approved exact artifact');
+  result.liveManifestSHA256=manifestHash;
   const expected=spec.npcIds.length;
   check(catalog.npcs.length === expected && new Set(catalog.npcs.map(n => n.id)).size === expected, 'Not exact-profile unique NPC catalog identities');
   browser = await chromium.launch();

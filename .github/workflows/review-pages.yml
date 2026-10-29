@@ -93,3 +93,44 @@ jobs:
         with:
           name: live-https-verification
           path: qa-runner/evidence
+  record-verification:
+    needs: [approval, deploy]
+    if: always() && needs.deploy.result != 'skipped'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: live-https-verification
+          path: downloaded-evidence
+      - name: Summarize actual browser proof; missing evidence is never PASS
+        env:
+          RECEIPT: ${{ needs.approval.outputs.receipt }}
+        run: python record_live_qa.py downloaded-evidence/LIVE_QA.json "$RECEIPT"
+      - name: Retain selected verification evidence on isolated branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET: ${{ github.repository }}
+        run: |
+          mkdir verification-output
+          git -C verification-output init
+          git -C verification-output remote add origin "https://github.com/$TARGET.git"
+          git -C verification-output config credential.helper '!gh auth git-credential'
+          if git -C verification-output ls-remote --exit-code origin refs/heads/live-verification >/dev/null; then
+            git -C verification-output fetch origin live-verification
+            git -C verification-output checkout -b live-verification FETCH_HEAD
+          else
+            git -C verification-output checkout --orphan live-verification
+          fi
+          mkdir -p verification-output/runs
+          cp live-verification.json verification-output/latest.json
+          cp live-verification.json "verification-output/runs/$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT.json"
+          git -C verification-output config user.name 'github-actions[bot]'
+          git -C verification-output config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C verification-output add latest.json runs/
+          git -C verification-output commit -m 'Record actual hosted browser verification; no inferred PASS'
+          git -C verification-output push origin HEAD:live-verification
