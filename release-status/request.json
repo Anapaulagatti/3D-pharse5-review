@@ -1,5 +1,5 @@
 {
-  "requestedAt": "2026-10-29T22:56:23.851797+00:00",
-  "purpose": "Read status of the explicit owner-approved exact20 release; never approve or bypass environment protections",
+  "requestedAt": "2026-10-29T22:59:53.462029+00:00",
+  "purpose": "Refresh actual required-reviewer/deploy state after owner handoff; no approval or deployment action",
   "expectedControlCommit": "36f26bd598fd039ee645506eb4861b265287f4d1"
 }
