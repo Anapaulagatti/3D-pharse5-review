@@ -1,0 +1,39 @@
+name: Inspect official OpenAI terms (no assets or deployment)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['terms-inspection/request.json']
+permissions:
+  contents: write
+concurrency:
+  group: review-official-terms-inspection
+  cancel-in-progress: false
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read three official public agreement pages only
+        run: python inspect_terms.py
+      - name: Retain selected nonsecret source evidence on isolated branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET: ${{ github.repository }}
+        run: |
+          mkdir terms-output
+          git -C terms-output init
+          git -C terms-output remote add origin "https://github.com/$TARGET.git"
+          git -C terms-output config credential.helper '!gh auth git-credential'
+          if git -C terms-output ls-remote --exit-code origin refs/heads/terms-inspection >/dev/null; then
+            git -C terms-output fetch origin terms-inspection
+            git -C terms-output checkout -b terms-inspection FETCH_HEAD
+          else
+            git -C terms-output checkout --orphan terms-inspection
+          fi
+          cp terms-report.json terms-output/terms-report.json
+          git -C terms-output config user.name 'github-actions[bot]'
+          git -C terms-output config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C terms-output add terms-report.json
+          git -C terms-output commit -m 'Record official terms retrieval evidence; no asset publication'
+          git -C terms-output push origin HEAD:terms-inspection
