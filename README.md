@@ -21,3 +21,11 @@ Each compiled release must include the earlier immutable phases directories and 
 ### Safety boundary
 
 The project path is /3D-pharse5-review/. Normal and QA saves are isolated from the existing v0.5 project site, which shares the github.io origin. The original game's repository, Pages workflow and artwork are untouched. No tokens or private source/audit materials belong in this repository. A noindex tag is not access control.
+
+### Current access diagnosis and authorization
+
+Repository existence and actual Git/workflow write have been verified. REST requests fail at proxy CONNECT to api.github.com before GitHub can evaluate repository permissions; the Pages hostname is also blocked from this execution environment. Do not diagnose this as a missing App scope from the403 alone. For direct verification, allow HTTPS/CONNECT to api.github.com:443 and anapaulagatti.github.io:443 in the environment's network/proxy settings. github.com/Git transport already works.
+
+If Git/App permissions later fail: GitHub Settings → Applications → Installed GitHub Apps → the actual workspace App → Configure → add this review repository to selected repositories. An organization owner must approve organization installation/access. Refresh the workspace connection afterward. Contents/Workflows write already worked here; optional REST dispatch needs appropriate Actions access and Pages settings APIs need Pages/admin authority. The owner may configure Pages/environment in GitHub UI instead of granting broader App administration access. A third-party App's maintainer must request any new permission before an owner can accept it. Do not paste personal access tokens or private keys into chat.
+
+Public exposure is still PENDING. The compiled candidate is local-only and pinned by its exact manifest; no game/art branch was pushed. The6qualified depiction-review questions remain open, and unknown upstream generation terms are not cleared by fictional names. Resolve specific concerns or choose a separately reviewed sanitized subset; do not represent a reduced/blocked subset as26playableactors. Commercial release remains independently blocked. Phase3B-B/C/D remain locked.
