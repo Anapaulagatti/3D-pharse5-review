@@ -12,8 +12,8 @@
     "phases/3b-a/contemporary20-e0f9db0d/export-manifest.json": "9abfcea015e3da66df25a56ab9a872d62bfd7bcdc1984894a69cd829829f1215"
   },
   "creationTermsReview": {
-    "status": "UNKNOWN",
-    "applicableService": "UNKNOWN",
+    "status": "PENDING_READABLE_EFFECTIVE_CONSUMER_TERMS",
+    "applicableService": "Personal ChatGPT/Codex — owner confirmed; effective consumer agreement text not yet inspected",
     "reviewedBy": "",
     "reviewedAt": "",
     "coveredGroups": [],
@@ -274,7 +274,6 @@
     "oldAll26Snapshots": "not included; originals/checkpoints preserved privately"
   },
   "missingEvidence": [
-    "shared actual service/account authority",
-    "applicable creation-period agreement/version and clauses"
+    "Readable applicable consumer Terms of Use / Service Terms text and effective version; actual account context already confirmed"
   ]
 }

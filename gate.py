@@ -17,9 +17,9 @@ config=json.loads(Path('review-source.json').read_text())
 profile=q.get('profile');spec=config.get('releaseProfiles',{}).get(profile)
 if not spec or q.get('manifestSHA256')!=spec['manifestSHA256']:errors.append('Unreviewed exact release profile/manifest')
 if spec and set(q.get('npcReviews',{}))!=set(spec['npcIds']):errors.append('Exact selected roster review required')
-if spec and spec.get('artworkEligibility')!='DOCUMENTED_PUBLIC_DISPLAY_TERMS':errors.append('Trusted profile terms review still PENDING')
+if spec and spec.get('artworkEligibility')!='DOCUMENTED_PUBLIC_DISPLAY_TERMS':errors.append('Trusted profile effective-terms review still PENDING')
 t=q.get('creationTermsReview',{})
-if t.get('status')!='REVIEWED_APPLICABLE_PUBLIC_DISPLAY'or not t.get('reviewedBy')or not t.get('reviewedAt')or not t.get('evidence')or not t.get('outputRightsSection')or not t.get('applicableService'):errors.append('Account/creation terms still UNKNOWN; no public exposure')
+if t.get('status')!='REVIEWED_APPLICABLE_PUBLIC_DISPLAY'or not t.get('reviewedBy')or not t.get('reviewedAt')or not t.get('evidence')or not t.get('outputRightsSection')or not t.get('applicableService'):errors.append('Applicable consumer agreement text/effective version not yet inspected; no public exposure')
 
 if not spec or ids!=set(spec['npcIds'])or ids!=set(reviews):errors.append('Exact selected NPC review coverage required')
 for id in sorted(ids):

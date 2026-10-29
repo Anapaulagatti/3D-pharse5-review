@@ -40,7 +40,8 @@
         "npc-modern-haru",
         "npc-modern-yeori"
       ],
-      "artworkEligibility": "PENDING_SHARED_ACCOUNT_EVIDENCE"
+      "artworkEligibility": "PENDING_READABLE_EFFECTIVE_CONSUMER_TERMS",
+      "accountFramework": "Owner-confirmed personal ChatGPT/Codex, no superseding separate agreement"
     },
     "full26": {
       "manifestSHA256": "78f2e034565bb893adefb1055374495e7fe88ba72c8ca075ddb8b565c5925ecb",
@@ -72,7 +73,8 @@
         "npc-sungmin",
         "npc-yejin"
       ],
-      "artworkEligibility": "PENDING_SHARED_ACCOUNT_EVIDENCE"
+      "artworkEligibility": "PENDING_READABLE_EFFECTIVE_CONSUMER_TERMS",
+      "accountFramework": "Owner-confirmed personal ChatGPT/Codex, no superseding separate agreement"
     }
   }
 }

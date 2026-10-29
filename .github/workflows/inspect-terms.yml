@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Read three official public agreement pages only
+      - name: Read selected official public policy/support pages only
         run: python inspect_terms.py
       - name: Retain selected nonsecret source evidence on isolated branch
         env:
