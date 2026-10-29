@@ -1,0 +1,42 @@
+name: Read approved release status (no deployment or approval)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['release-status/request.json']
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: review-release-status
+  cancel-in-progress: false
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read release jobs and actual pending environment gate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python inspect_release.py
+      - name: Retain selected status on isolated branch (no artwork)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET: ${{ github.repository }}
+        run: |
+          mkdir status-output
+          git -C status-output init
+          git -C status-output remote add origin "https://github.com/$TARGET.git"
+          git -C status-output config credential.helper '!gh auth git-credential'
+          if git -C status-output ls-remote --exit-code origin refs/heads/release-status >/dev/null; then
+            git -C status-output fetch origin release-status
+            git -C status-output checkout -b release-status FETCH_HEAD
+          else
+            git -C status-output checkout --orphan release-status
+          fi
+          cp release-status.json status-output/latest.json
+          git -C status-output config user.name 'github-actions[bot]'
+          git -C status-output config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C status-output add latest.json
+          git -C status-output commit -m 'Record actual approved release status; no deployment action'
+          git -C status-output push origin HEAD:release-status

@@ -1,3 +1,9 @@
+## Owner-approved first public review — pending actual deployment verification
+
+The owner explicitly approved Contemporary20, exact1313-file manifest `bb2c88af58107885cdb12d4097621743274f610a6a9188dd5643aa03cb0ea2b8`, artifact `20674e77c1495474115f5cab16a78b7f6b52d8f8`. This is public-preview permission only, not legal/commercial certification. See approved-releases/current.approved.json and immutable history record. The existing protected environment still applies. No new artwork/video or excluded six historical-inspired NPC assets are part of this release.
+
+The release workflow reuses exact compiled files, publishes only declared payload/manifest, and retains structured hosted browser QA; screenshots remain ephemeral rather than adding imagery outside the approved website manifest. Read-only release-status inspection records the actual job/environment state. Do not claim a playable live URL before browser proofPASS. Productionv0.5/source-main and Phase3B-B/C/D remain unchanged/locked.
+
 ## Current release readiness — owner-supplied consumer rights information reviewed
 
 The personal ChatGPT/Codex Plus route and no separate agreement are owner-confirmed. Consumer Terms of Use effectiveJanuary1,2026 and Service Terms/commercial-use descriptions are expressly owner-supplied official public information, not independently retrieved page text. Exact Service Terms/help dates remain unspecified. The restricted20 scope is ready for ONE owner exposure decision; the real receipt remainsPENDING. Six era-inspired actors stay excluded. No compiled artifact/game/artwork has been pushed or deployed. No new source-fetch jobs run automatically.

@@ -92,7 +92,7 @@ jobs:
         if: always()
         with:
           name: live-https-verification
-          path: qa-runner/evidence
+          path: qa-runner/evidence/LIVE_QA.json
   record-verification:
     needs: [approval, deploy]
     if: always() && needs.deploy.result != 'skipped'
