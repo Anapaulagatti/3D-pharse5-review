@@ -1,0 +1,43 @@
+name: Inspect Pages and Actions settings (no publication)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['deployment-inspection/request.json']
+permissions:
+  contents: write
+  actions: read
+  pages: read
+concurrency:
+  group: review-settings-inspection
+  cancel-in-progress: false
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read selected settings (no assets, no Pages upload)
+        run: python inspect_settings.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Record nonsecret verification result on isolated status branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET: ${{ github.repository }}
+        run: |
+          mkdir status-output
+          git -C status-output init
+          git -C status-output remote add origin "https://github.com/$TARGET.git"
+          git -C status-output config credential.helper '!gh auth git-credential'
+          if git -C status-output ls-remote --exit-code origin refs/heads/deployment-inspection >/dev/null; then
+            git -C status-output fetch origin deployment-inspection
+            git -C status-output checkout -b deployment-inspection FETCH_HEAD
+          else
+            git -C status-output checkout --orphan deployment-inspection
+          fi
+          cp settings-report.json status-output/settings-report.json
+          git -C status-output config user.name 'github-actions[bot]'
+          git -C status-output config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C status-output add settings-report.json
+          git -C status-output commit -m 'Record Pages and Actions inspection; no publication'
+          git -C status-output push origin HEAD:deployment-inspection
