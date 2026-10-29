@@ -1,0 +1,20 @@
+{
+  "index.html": {
+    "file": "assets/game-BV59D4AA.js",
+    "name": "game",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/gate3/main.ts"
+    ]
+  },
+  "src/gate3/main.ts": {
+    "file": "assets/main-7rk8dnLs.js",
+    "name": "main",
+    "src": "src/gate3/main.ts",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/main-C_cd9rLg.css"
+    ]
+  }
+}

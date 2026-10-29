@@ -1,0 +1,22 @@
+{
+  "phase": "Phase 3B-A \u00b7 20-NPC private restricted candidate",
+  "slug": "3b-a",
+  "gameRef": "47107da9a859ffcc6670f99705cee7dc44d6b34a",
+  "artisticReview": "APPROVED_PHASE_3B_A",
+  "publicExposure": "NOT_APPROVED",
+  "base": "/3D-pharse5-review/",
+  "gameCommit": "47107da9a859ffcc6670f99705cee7dc44d6b34a",
+  "portalCommit": "6bdd46abdb3c731c30d0036ee055a862eb27e091",
+  "dirty": false,
+  "builtAt": "2026-10-29T14:21:12.429968+00:00",
+  "exposure": "UNAPPROVED_RESTRICTED_PREVIEW_CANDIDATE",
+  "commercialRelease": "BLOCKED_PENDING_REVIEW",
+  "physicalDevices": "NOT_TESTED",
+  "archived": false,
+  "currentPath": "./",
+  "restrictedProfile": "contemporary20",
+  "actualNPCCatalog": 20,
+  "excludedHistoricalInspired": 6,
+  "sourceGameUnchanged": true,
+  "adapterOnlyRuntime": true
+}
