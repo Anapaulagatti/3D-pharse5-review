@@ -1,5 +1,5 @@
 {
-  "requestedAt": "2026-10-30T14:41:39.347802+00:00",
-  "purpose": "Inspect actual attempt2 failure before making any transport correction",
-  "expectedControlCommit": "d831b4a139c915c76d78892592900f918a736fd6"
+  "requestedAt": "2026-10-30T14:45:12.585476+00:00",
+  "purpose": "Inspect exact approved26 release using official GNU container layout; no asset change",
+  "expectedControlCommit": "0c7cbd1d957ee1472ac60ef86ea1ef96bb4cfca8"
 }
