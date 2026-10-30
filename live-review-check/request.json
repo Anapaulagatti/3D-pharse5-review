@@ -1,0 +1,7 @@
+{
+  "url": "https://anapaulagatti.github.io/3D-pharse5-review/",
+  "deploymentRunId": 41074415941,
+  "artifactCommit": "74235a6e7075b77840d2e9fdf36dce678288cd05",
+  "manifestSHA256": "db9d4bb68f31c819d79ec95efaad1befce257086e64c41a5c93c2ba6fe7deb2f",
+  "reason": "Deployment succeeded; independently rerun read-only browser verification with bounded backoff for transient CDN503 and a smaller paced HEAD pool. Retain all failures/retries; no asset or deployment mutation."
+}

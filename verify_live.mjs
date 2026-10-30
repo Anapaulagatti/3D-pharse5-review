@@ -24,14 +24,21 @@ try {
   // Small bounded HEAD pool verifies every root and snapshot asset URL without
   // downloading hundreds of MB of duplicated snapshot artwork.
   let next = 0;
-  await Promise.all(Array.from({ length: 4 }, async () => {
+  await Promise.all(Array.from({ length: 2 }, async () => {
     while (next < manifest.files.length) {
       const row = manifest.files[next++];
       const target = new URL(row.filename, base);
       check(target.origin === url.origin && target.pathname.startsWith(url.pathname), 'Asset outside review site');
-      const r = await fetch(target, { method: 'HEAD' });
-      result.assetURLs.push({ path: row.filename, status: r.status });
-      check(r.ok, `Broken asset ${row.filename}: ${r.status}`);
+      let r;const attempts=[];
+      for(let attempt=0;attempt<5;attempt++) {
+        r=await fetch(target,{method:'HEAD',cache:'no-store'});attempts.push(r.status);
+        if(r.ok || ![408,429,500,502,503,504].includes(r.status)) break;
+        await new Promise(resolve=>setTimeout(resolve,500*2**attempt));
+      }
+      result.assetURLs.push({path:row.filename,status:r.status,attempts});
+      if(attempts.length>1)(result.transientAssetRetries??=[]).push({path:row.filename,attempts});
+      check(r.ok,`Broken asset ${row.filename}: ${r.status}`);
+      await new Promise(resolve=>setTimeout(resolve,100));
     }
   }));
   const catalog = await (await fetch(new URL('catalog.json', base))).json();

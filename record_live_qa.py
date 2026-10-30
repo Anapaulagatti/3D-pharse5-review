@@ -8,4 +8,7 @@ passed=(q.get('status')=='PASS ACTUAL DEPLOYED HTTPS GAME'and q.get('url')==expe
 if receipt['profile']=='phase3bb-fictional26':passed=passed and q.get('motionCosmetics',{}).get('status')=='PASS ACTUAL BROWSER POSE/INPUT CHECKS'
 report={'recordedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'runId':os.environ['GITHUB_RUN_ID'],'runAttempt':os.environ['GITHUB_RUN_ATTEMPT'],'runURL':'https://github.com/'+os.environ['GITHUB_REPOSITORY']+'/actions/runs/'+os.environ['GITHUB_RUN_ID'],'status':'PASS ACTUAL DEPLOYED HTTPS GAME'if passed else'NOT VERIFIED / '+q.get('status','NO REPORT'),'url':q.get('url'),'expectedAssetManifestSHA256':receipt['manifestSHA256'],'actualLiveManifestSHA256':q.get('liveManifestSHA256'),'artifactCommit':receipt['artifactCommit'],'profile':receipt['profile'],'actorChecks':q.get('actors',[]),'assetURLsChecked':len(q.get('assetURLs',[])),'errors':q.get('errors',[]),'missing':q.get('missing',[]),'mobileJoystickDistance':q.get('mobileJoystickDistance'),'failure':q.get('failure',q.get('reason')),'physicalDevices':'NOT TESTED','hardwareGPU':'NOT TESTED'}
 report['motionCosmetics']=q.get('motionCosmetics')
+report['transientAssetRetries']=q.get('transientAssetRetries',[])
+report['verificationMode']=os.environ.get('VERIFICATION_MODE','release-job')
+report['deploymentRunId']=os.environ.get('DEPLOYMENT_RUN_ID',os.environ['GITHUB_RUN_ID'])
 Path('live-verification.json').write_text(json.dumps(report,indent=2)+'\n')
