@@ -1,5 +1,5 @@
 {
-  "requestedAt": "2026-10-30T14:10:07.659175+00:00",
-  "purpose": "Diagnose reported owner UI approval versus actual GitHub pending reviewer; read review history and protection rules only",
+  "requestedAt": "2026-10-30T14:15:50.440318+00:00",
+  "purpose": "Owner confirms github-pages checkbox selected and approval submitted; read actual review/deploy/HTTPS status",
   "expectedControlCommit": "d831b4a139c915c76d78892592900f918a736fd6"
 }
