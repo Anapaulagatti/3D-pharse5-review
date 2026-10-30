@@ -2,6 +2,7 @@
 import { chromium } from '@playwright/test';
 import fs from 'node:fs/promises';
 import { createHash } from 'node:crypto';
+import { verifyMotion } from './verify_motion.mjs';
 const base = process.env.LIVE_URL;
 const url = new URL(base);
 if (url.protocol !== 'https:' || url.hostname !== 'anapaulagatti.github.io' || url.pathname !== '/3D-pharse5-review/') throw Error('Refuse wrong deployment destination');
@@ -93,6 +94,7 @@ try {
   await touch.locator('#portal-review-controls a').tap(); await touch.waitForURL(base);
   await mobile.close();
   check(!result.errors.length && !result.missing.length, 'Live console/resource errors');
+  if(manifest.profile==='phase3bb-fictional26') result.motionCosmetics=await verifyMotion(browser,base);
   result.status = 'PASS ACTUAL DEPLOYED HTTPS GAME';
 } catch (e) { result.status = 'FAIL'; result.failure = e.stack; throw e; }
 finally { await fs.writeFile('evidence/LIVE_QA.json', JSON.stringify(result, null, 2)); await browser?.close(); }
