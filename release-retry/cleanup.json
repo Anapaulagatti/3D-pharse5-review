@@ -1,0 +1,5 @@
+{
+  "runId": 41068300978,
+  "artifactId": 12984622473,
+  "reason": "Only the ephemeral failed attempt1 github-pages transport upload is replaced before retry; immutable compiled source74235a6e and all historical checkpoints/snapshots stay recoverable and unchanged. Avoid actions/upload-artifact v4 duplicate-name conflict. No environment review bypass."
+}

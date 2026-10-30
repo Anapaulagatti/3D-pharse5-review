@@ -2,7 +2,7 @@ name: Retry one failed approved release (no environment approval bypass)
 on:
   push:
     branches: [main]
-    paths: ['release-retry/request.json']
+    paths: ['release-retry/request.json', 'release-retry/cleanup.json']
 permissions:
   contents: read
   actions: write
