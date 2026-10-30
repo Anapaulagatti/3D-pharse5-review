@@ -1,5 +1,5 @@
 {
-  "requestedAt": "2026-10-30T14:45:12.585476+00:00",
-  "purpose": "Inspect exact approved26 release using official GNU container layout; no asset change",
+  "requestedAt": "2026-10-30T14:51:27.362831+00:00",
+  "purpose": "Owner approved official-layout release; inspect live deployment and actual browser evidence",
   "expectedControlCommit": "0c7cbd1d957ee1472ac60ef86ea1ef96bb4cfca8"
 }
