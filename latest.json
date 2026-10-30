@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-30T14:15:59.135871+00:00",
-  "inspectionRunId": "41070324598",
+  "checkedAt": "2026-10-30T14:18:02.352441+00:00",
+  "inspectionRunId": "41070635925",
   "expectedControlCommit": "d831b4a139c915c76d78892592900f918a736fd6",
   "publicationByThisJob": false,
   "checks": {},
@@ -8,12 +8,12 @@
     "id": 41068300978,
     "run_number": 2,
     "head_sha": "d831b4a139c915c76d78892592900f918a736fd6",
-    "status": "in_progress",
-    "conclusion": null,
+    "status": "completed",
+    "conclusion": "failure",
     "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41068300978",
     "event": "push",
     "created_at": "2026-10-30T14:02:18Z",
-    "updated_at": "2026-10-30T14:15:21Z"
+    "updated_at": "2026-10-30T14:16:28Z"
   },
   "jobs": {
     "status": 200,
@@ -25,16 +25,255 @@
         "conclusion": "success",
         "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41068300978/job/124105440946",
         "started_at": "2026-10-30T14:02:21Z",
-        "completed_at": "2026-10-30T14:02:24Z"
+        "completed_at": "2026-10-30T14:02:24Z",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-10-30T14:02:21Z",
+            "completed_at": "2026-10-30T14:02:22Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-10-30T14:02:22Z",
+            "completed_at": "2026-10-30T14:02:22Z"
+          },
+          {
+            "name": "Run python - <<'PYCODE'",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-10-30T14:02:22Z",
+            "completed_at": "2026-10-30T14:02:22Z"
+          },
+          {
+            "name": "Require documented owner exposure approval before fetching any art",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-10-30T14:02:22Z",
+            "completed_at": "2026-10-30T14:02:22Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-10-30T14:02:22Z",
+            "completed_at": "2026-10-30T14:02:23Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9,
+            "started_at": "2026-10-30T14:02:23Z",
+            "completed_at": "2026-10-30T14:02:23Z"
+          }
+        ]
       },
       {
         "id": 124105489390,
         "name": "deploy",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "failure",
         "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41068300978/job/124105489390",
         "started_at": "2026-10-30T14:15:20Z",
-        "completed_at": null
+        "completed_at": "2026-10-30T14:16:17Z",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-10-30T14:15:21Z",
+            "completed_at": "2026-10-30T14:15:23Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-10-30T14:15:23Z",
+            "completed_at": "2026-10-30T14:15:24Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-10-30T14:15:24Z",
+            "completed_at": "2026-10-30T14:15:27Z"
+          },
+          {
+            "name": "Export existing compiled files only (no npm, Vite build or source generation)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-10-30T14:15:27Z",
+            "completed_at": "2026-10-30T14:15:28Z"
+          },
+          {
+            "name": "Exact asset hashes, individual exposure review and snapshot history",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-10-30T14:15:28Z",
+            "completed_at": "2026-10-30T14:15:29Z"
+          },
+          {
+            "name": "Run actions/configure-pages@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-10-30T14:15:29Z",
+            "completed_at": "2026-10-30T14:15:29Z"
+          },
+          {
+            "name": "Pack exact allowlist including retained snapshot dot metadata",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-10-30T14:15:29Z",
+            "completed_at": "2026-10-30T14:15:30Z"
+          },
+          {
+            "name": "Run actions/upload-artifact@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-10-30T14:15:30Z",
+            "completed_at": "2026-10-30T14:15:40Z"
+          },
+          {
+            "name": "Run actions/deploy-pages@v4",
+            "status": "completed",
+            "conclusion": "failure",
+            "number": 9,
+            "started_at": "2026-10-30T14:15:40Z",
+            "completed_at": "2026-10-30T14:16:14Z"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 10,
+            "started_at": "2026-10-30T14:16:14Z",
+            "completed_at": "2026-10-30T14:16:14Z"
+          },
+          {
+            "name": "Verify actual deployed HTTPS game (test dependencies only, no game build)",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11,
+            "started_at": "2026-10-30T14:16:14Z",
+            "completed_at": "2026-10-30T14:16:14Z"
+          },
+          {
+            "name": "Run actions/upload-artifact@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 12,
+            "started_at": "2026-10-30T14:16:14Z",
+            "completed_at": "2026-10-30T14:16:14Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 23,
+            "started_at": "2026-10-30T14:16:14Z",
+            "completed_at": "2026-10-30T14:16:14Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 24,
+            "started_at": "2026-10-30T14:16:14Z",
+            "completed_at": "2026-10-30T14:16:14Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 25,
+            "started_at": "2026-10-30T14:16:14Z",
+            "completed_at": "2026-10-30T14:16:14Z"
+          }
+        ]
+      },
+      {
+        "id": 124112602657,
+        "name": "record-verification",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41068300978/job/124112602657",
+        "started_at": "2026-10-30T14:16:20Z",
+        "completed_at": "2026-10-30T14:16:28Z",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-10-30T14:16:20Z",
+            "completed_at": "2026-10-30T14:16:21Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-10-30T14:16:21Z",
+            "completed_at": "2026-10-30T14:16:22Z"
+          },
+          {
+            "name": "Run actions/download-artifact@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-10-30T14:16:22Z",
+            "completed_at": "2026-10-30T14:16:22Z"
+          },
+          {
+            "name": "Summarize actual browser proof; missing evidence is never PASS",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-10-30T14:16:22Z",
+            "completed_at": "2026-10-30T14:16:23Z"
+          },
+          {
+            "name": "Retain selected verification evidence on isolated branch",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-10-30T14:16:23Z",
+            "completed_at": "2026-10-30T14:16:25Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10,
+            "started_at": "2026-10-30T14:16:25Z",
+            "completed_at": "2026-10-30T14:16:25Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 11,
+            "started_at": "2026-10-30T14:16:25Z",
+            "completed_at": "2026-10-30T14:16:25Z"
+          }
+        ]
       }
     ]
   },
@@ -79,5 +318,8 @@
       }
     ],
     "message": null
+  },
+  "failedJobLogRead": {
+    "error": "HTTP Error 401: Server failed to authenticate the request. Please refer to the information in the www-authenticate header."
   }
 }
