@@ -1,0 +1,20 @@
+name: Retry one failed approved release (no environment approval bypass)
+on:
+  push:
+    branches: [main]
+    paths: ['release-retry/request.json']
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: one-approved-release-retry
+  cancel-in-progress: false
+jobs:
+  retry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate exact owner receipt and original review; rerun failed jobs once
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python retry_release.py
