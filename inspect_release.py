@@ -30,7 +30,12 @@ if run:
    try:
     import io,zipfile,re
     req=urllib.request.Request('https://api.github.com/repos/'+repo+'/actions/jobs/'+str(job['id'])+'/logs',headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'})
-    with urllib.request.urlopen(req,timeout=25)as response: raw=response.read().decode('utf8','replace')
+    class StripAuthRedirect(urllib.request.HTTPRedirectHandler):
+     def redirect_request(self,req,fp,code,msg,headers,newurl):
+      redirected=super().redirect_request(req,fp,code,msg,headers,newurl)
+      if redirected is not None:redirected.remove_header('Authorization')
+      return redirected
+    with urllib.request.build_opener(StripAuthRedirect()).open(req,timeout=25)as response: raw=response.read().decode('utf8','replace')
     lines=raw.splitlines();out['failedJobErrors']=[line[:1800]for line in lines if re.search(r'::error::|Error:|Traceback|AssertionError|error:|Exception|failed|Failure',line,re.I)][-35:]
    except Exception as e:out['failedJobLogRead']={'error':str(e)}
 Path('release-status.json').write_text(json.dumps(out,indent=2)+'\n')

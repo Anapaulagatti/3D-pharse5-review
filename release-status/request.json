@@ -1,5 +1,5 @@
 {
-  "requestedAt": "2026-10-30T14:17:54.635207+00:00",
+  "requestedAt": "2026-10-30T14:19:43.780586+00:00",
   "purpose": "Owner environment approval recorded; inspect actual failed deploy step and selected error lines without changing payload",
   "expectedControlCommit": "d831b4a139c915c76d78892592900f918a736fd6"
 }
