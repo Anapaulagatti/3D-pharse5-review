@@ -1,5 +1,5 @@
 {
-  "requestedAt": "2026-10-30T14:06:26.296101+00:00",
+  "requestedAt": "2026-10-30T14:08:58.519301+00:00",
   "purpose": "Owner reports GitHub environment approved; read actual deploy/hosted QA state",
   "expectedControlCommit": "d831b4a139c915c76d78892592900f918a736fd6"
 }
