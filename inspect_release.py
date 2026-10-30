@@ -36,6 +36,6 @@ if run:
       if redirected is not None:redirected.remove_header('Authorization')
       return redirected
     with urllib.request.build_opener(StripAuthRedirect()).open(req,timeout=25)as response: raw=response.read().decode('utf8','replace')
-    lines=raw.splitlines();out['failedJobErrors']=[line[:1800]for line in lines if re.search(r'::error::|Error:|Traceback|AssertionError|error:|Exception|failed|Failure',line,re.I)][-35:]
+    lines=raw.splitlines();deployStart=next((i for i,line in enumerate(lines)if 'Run actions/deploy-pages@'in line),0);segment=lines[deployStart:];segment=segment[:next((i for i,line in enumerate(segment[1:],1)if '##[group]Run 'in line),len(segment))];out['failedDeployStepLog']=[line[:2000]for line in segment if not re.search(r'token|signature|authorization|sig=|blob.core.windows|download_url',line,re.I)][-100:];out['failedJobErrors']=[line[:1800]for line in lines if re.search(r'::error::|Error:|Traceback|AssertionError|error:|Exception|failed|Failure',line,re.I)][-35:]
    except Exception as e:out['failedJobLogRead']={'error':str(e)}
 Path('release-status.json').write_text(json.dumps(out,indent=2)+'\n')
