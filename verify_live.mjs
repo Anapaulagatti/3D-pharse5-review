@@ -7,6 +7,8 @@ const base = process.env.LIVE_URL;
 const url = new URL(base);
 if (url.protocol !== 'https:' || url.hostname !== 'anapaulagatti.github.io' || url.pathname !== '/3D-pharse5-review/') throw Error('Refuse wrong deployment destination');
 const config = JSON.parse(await fs.readFile('review-source.json', 'utf8'));
+const approved = JSON.parse(await fs.readFile('approved-receipt.json','utf8'));
+if(approved.decision!=='APPROVED_PUBLIC_PREVIEW')throw Error('Unapproved verification target');
 const result = { status: 'RUNNING', url: base, checkedAt: new Date().toISOString(), actors: [], errors: [], missing: [], assetURLs: [], physicalDevices: 'NOT TESTED', hardwareGPU: 'NOT TESTED' };
 const check = (value, message) => { if (!value) throw Error(message); };
 await fs.mkdir('evidence', { recursive: true });
@@ -15,10 +17,10 @@ try {
   let manifest,manifestHash;
   for (let attempt = 0; attempt < 12; attempt++) {
     const r = await fetch(new URL('export-manifest.json', base), { cache: 'no-store' });
-    if (r.ok) { const raw=await r.text();manifest=JSON.parse(raw);manifestHash=createHash('sha256').update(raw).digest('hex');break; }
+    if (r.ok) { const raw=await r.text();manifest=JSON.parse(raw);manifestHash=createHash('sha256').update(raw).digest('hex');if(manifestHash===approved.manifestSHA256)break; }
     await new Promise(r => setTimeout(r, 5000));
   }
-  check(manifest, 'Live export manifest unavailable after deployment');
+  check(manifest && manifestHash===approved.manifestSHA256, 'Exact approved live manifest unavailable after bounded CDN wait');
   // Small bounded HEAD pool verifies every root and snapshot asset URL without
   // downloading hundreds of MB of duplicated snapshot artwork.
   let next = 0;

@@ -75,6 +75,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: github-pages
+          overwrite: true
           path: ${{ runner.temp }}/artifact.tar
           retention-days: 1
           if-no-files-found: error
@@ -86,9 +87,11 @@ jobs:
       - name: Verify actual deployed HTTPS game (test dependencies only, no game build)
         env:
           LIVE_URL: ${{ steps.deployment.outputs.page_url }}
+          RECEIPT: ${{ needs.approval.outputs.receipt }}
         run: |
           mkdir qa-runner
           cp verify_live.mjs verify_motion.mjs review-source.json qa-runner/
+          cp "$RECEIPT" qa-runner/approved-receipt.json
           npm install --prefix qa-runner --no-save --package-lock=false @playwright/test@1.64.1
           cd qa-runner
           npx playwright install --with-deps chromium
@@ -97,6 +100,7 @@ jobs:
         if: always()
         with:
           name: live-https-verification
+          overwrite: true
           path: qa-runner/evidence/LIVE_QA.json
   record-verification:
     needs: [approval, deploy]
@@ -111,6 +115,7 @@ jobs:
         continue-on-error: true
         with:
           name: live-https-verification
+          overwrite: true
           path: downloaded-evidence
       - name: Summarize actual browser proof; missing evidence is never PASS
         env:
