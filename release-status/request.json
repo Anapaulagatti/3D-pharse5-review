@@ -1,5 +1,5 @@
 {
-  "requestedAt": "2026-10-30T14:03:05.347530+00:00",
+  "requestedAt": "2026-10-30T14:05:45.306843+00:00",
   "purpose": "Read actual Phase3BB26 release jobs and required environment review; no approval bypass",
   "expectedControlCommit": "d831b4a139c915c76d78892592900f918a736fd6"
 }
