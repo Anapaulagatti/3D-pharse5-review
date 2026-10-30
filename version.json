@@ -1,0 +1,18 @@
+{
+  "phase": "Phase 3B-B \u00b7 movement / head cosmetics / fictional26",
+  "slug": "3b-b",
+  "base": "/3D-pharse5-review/",
+  "gameRef": "e48ea63bf35f0038b24609297dc2e4385c47adcb",
+  "gameCommit": "e48ea63bf35f0038b24609297dc2e4385c47adcb",
+  "portalCommit": "e48ea63bf35f0038b24609297dc2e4385c47adcb",
+  "dirty": false,
+  "builtAt": "2026-10-30T12:28:58.327Z",
+  "exposure": "PENDING_EXACT_OWNER_PUBLIC_APPROVAL",
+  "artisticReview": "PENDING",
+  "commercialRelease": "BLOCKED_PENDING_REVIEW",
+  "publicExposure": "NOT_APPROVED",
+  "physicalDevices": "NOT_TESTED",
+  "archived": false,
+  "currentPath": "./",
+  "sourceSnapshotNote": "Source commit pins implemented code. QA/review packaging is a separately hashed exact export."
+}
