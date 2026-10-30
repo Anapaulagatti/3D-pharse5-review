@@ -1,5 +1,5 @@
 {
-  "requestedAt": "2026-10-30T14:40:06.574541+00:00",
-  "purpose": "Owner confirms attempt2 approval; inspect actual retry deployment and hosted verification",
+  "requestedAt": "2026-10-30T14:41:39.347802+00:00",
+  "purpose": "Inspect actual attempt2 failure before making any transport correction",
   "expectedControlCommit": "d831b4a139c915c76d78892592900f918a736fd6"
 }
