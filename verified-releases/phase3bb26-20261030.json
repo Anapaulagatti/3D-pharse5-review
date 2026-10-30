@@ -1,0 +1,21 @@
+{
+  "status": "PASS ACTUAL DEPLOYED HTTPS GAME",
+  "url": "https://anapaulagatti.github.io/3D-pharse5-review/",
+  "deploymentRunId": "41074415941",
+  "runId": "41075771744",
+  "artifactCommit": "74235a6e7075b77840d2e9fdf36dce678288cd05",
+  "actualLiveManifestSHA256": "db9d4bb68f31c819d79ec95efaad1befce257086e64c41a5c93c2ba6fe7deb2f",
+  "assetURLsChecked": 2318,
+  "physicalDevices": "NOT TESTED",
+  "hardwareGPU": "NOT TESTED",
+  "actualNPCInteractions": 26,
+  "nativeCosmeticPoses": 36,
+  "movementScenarios": 12,
+  "consoleErrors": 0,
+  "resourceFailures": 0,
+  "recoveredAssetRetries": 2,
+  "evidenceSHA256": "d5ee04e798394a9bc9b5bd6c6f1a951032759b90b35753449511fbe30c6863f3",
+  "rollbackArtifact": "20674e77c1495474115f5cab16a78b7f6b52d8f8",
+  "rollbackSnapshot": "phases/3b-a/contemporary20-e0f9db0d/",
+  "nextPhase": "LOCKED_OWNER_GAMEPLAY_REVIEW_REQUIRED"
+}
