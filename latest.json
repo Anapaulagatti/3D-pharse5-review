@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-30T14:18:02.352441+00:00",
-  "inspectionRunId": "41070635925",
+  "checkedAt": "2026-10-30T14:19:52.134258+00:00",
+  "inspectionRunId": "41070907230",
   "expectedControlCommit": "d831b4a139c915c76d78892592900f918a736fd6",
   "publicationByThisJob": false,
   "checks": {},
@@ -319,7 +319,7 @@
     ],
     "message": null
   },
-  "failedJobLogRead": {
-    "error": "HTTP Error 401: Server failed to authenticate the request. Please refer to the information in the www-authenticate header."
-  }
+  "failedJobErrors": [
+    "2026-10-30T14:16:14.1776854Z ##[error]Deployment failed, try again later."
+  ]
 }
