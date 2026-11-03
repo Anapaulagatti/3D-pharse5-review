@@ -1,0 +1,20 @@
+{
+  "phase": "Phase 3B-D \u00b7 farming / shops / source cleanup",
+  "slug": "3b-d",
+  "base": "/3D-pharse5-review/",
+  "gameRef": "dcf5709c11b6b1d7e2ae94b5a7590948a2b15c9b",
+  "gameCommit": "dcf5709c11b6b1d7e2ae94b5a7590948a2b15c9b",
+  "portalCommit": "dcf5709c11b6b1d7e2ae94b5a7590948a2b15c9b",
+  "dirty": false,
+  "builtAt": "2026-11-03T04:38:55.793Z",
+  "exposure": "PENDING_EXACT_OWNER_PUBLIC_APPROVAL",
+  "artisticReview": "PENDING",
+  "commercialRelease": "BLOCKED_PENDING_REVIEW",
+  "publicExposure": "NOT_APPROVED",
+  "physicalDevices": "NOT_TESTED",
+  "archived": true,
+  "currentPath": "../../../",
+  "activeCosmetics": 24,
+  "retiredHeadEquipment": 4,
+  "learningMode": "LOCAL_DEMO_HUMAN_CONTENT_REVIEW_PENDING"
+}

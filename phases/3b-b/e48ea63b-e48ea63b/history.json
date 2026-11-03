@@ -1,0 +1,14 @@
+{
+  "snapshots": [
+    {
+      "phase": "Phase3B-B hotfix full26 candidate",
+      "sha": "e48ea63bf35f0038b24609297dc2e4385c47adcb",
+      "path": "./"
+    },
+    {
+      "phase": "Approved Phase3B-A Contemporary20",
+      "sha": "20674e77c1495474115f5cab16a78b7f6b52d8f8",
+      "path": "../../3b-a/contemporary20-e0f9db0d/"
+    }
+  ]
+}
