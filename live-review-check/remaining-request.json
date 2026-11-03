@@ -2,5 +2,8 @@
   "artifactCommit": "fff156b6e15584855f1585de5a03d21b3022cdbc",
   "manifestSHA256": "543ccd32deb9f37efaf3dd5c8ce48886db95f329657a63ba9c29c4f47b3d49b0",
   "primaryRunId": 41608981105,
-  "purpose": "Independent remaining gameplay checks only. Primary Mobile portal overflows FAIL retained; no bypass, no redeployment, no new exposure."
+  "purpose": "Independent remaining gameplay checks only. Primary Mobile portal overflows FAIL retained; no bypass, no redeployment, no new exposure.",
+  "attempt": 2,
+  "reason": "Correct verified QA harness assumption: fresh ordinary entry requires actual CharacterStudio choice before ready. No game/deployment change. Reuse unchanged successful36pose evidence transparently.",
+  "requestedAt": "2026-11-03T09:46:36.670633+00:00"
 }

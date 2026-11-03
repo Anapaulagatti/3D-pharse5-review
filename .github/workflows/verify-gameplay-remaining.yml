@@ -26,6 +26,11 @@ jobs:
           ref: live-verification
           path: primary-proof
           persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: phase3bd-gameplay-proof
+          path: prior-gameplay-proof
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -35,6 +40,7 @@ jobs:
           cp verify_remaining.mjs verify_motion.mjs verify_phase3bd.mjs verify_farm.mjs verify_legacy.mjs walk_live.mjs qa-nav.json qa-runner/
           cp approved-releases/current.approved.json qa-runner/approved-receipt.json
           cp primary-proof/latest.json qa-runner/primary-live.json
+          cp prior-gameplay-proof/latest.json qa-runner/prior-remaining.json
           npm install --prefix qa-runner --no-save --package-lock=false @playwright/test@1.64.1
           cd qa-runner
           npx playwright install --with-deps chromium
