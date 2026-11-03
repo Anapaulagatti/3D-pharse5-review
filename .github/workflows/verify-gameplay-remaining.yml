@@ -1,0 +1,76 @@
+name: Verify remaining approved Phase3BD gameplay (no deployment)
+on:
+  push:
+    branches: [main]
+    paths: ['live-review-check/remaining-request.json']
+permissions:
+  contents: write
+concurrency:
+  group: phase3bd-gameplay-readonly
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bind exact already-approved release; preserve primary failure
+        run: |
+          python - <<'PY'
+          import json
+          r=json.load(open('live-review-check/remaining-request.json'));q=json.load(open('approved-releases/current.approved.json'))
+          assert r['artifactCommit']==q['artifactCommit']and r['manifestSHA256']==q['manifestSHA256']and q['decision']=='APPROVED_PUBLIC_PREVIEW'
+          assert r['primaryRunId']==41608981105
+          PY
+      - uses: actions/checkout@v4
+        with:
+          ref: live-verification
+          path: primary-proof
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Test dependencies only; no game build or deployment
+        run: |
+          mkdir qa-runner
+          cp verify_remaining.mjs verify_motion.mjs verify_phase3bd.mjs verify_farm.mjs verify_legacy.mjs walk_live.mjs qa-nav.json qa-runner/
+          cp approved-releases/current.approved.json qa-runner/approved-receipt.json
+          cp primary-proof/latest.json qa-runner/primary-live.json
+          npm install --prefix qa-runner --no-save --package-lock=false @playwright/test@1.64.1
+          cd qa-runner
+          npx playwright install --with-deps chromium
+      - name: Actual hosted gameplay, cache, twelve players, quests and mobile; portal failure remains FAIL
+        working-directory: qa-runner
+        run: node verify_remaining.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phase3bd-remaining-gameplay
+          path: qa-runner/evidence/GAMEPLAY_REMAINING.json
+      - name: Retain actual selected evidence on isolated branch
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET: ${{ github.repository }}
+        run: |
+          mkdir proof-output
+          git -C proof-output init
+          git -C proof-output remote add origin "https://github.com/$TARGET.git"
+          git -C proof-output config credential.helper '!gh auth git-credential'
+          if git -C proof-output ls-remote --exit-code origin refs/heads/phase3bd-gameplay-proof >/dev/null; then
+            git -C proof-output fetch origin phase3bd-gameplay-proof
+            git -C proof-output checkout -b phase3bd-gameplay-proof FETCH_HEAD
+          else
+            git -C proof-output checkout --orphan phase3bd-gameplay-proof
+          fi
+          mkdir -p proof-output/runs
+          if test -f qa-runner/evidence/GAMEPLAY_REMAINING.json; then
+            cp qa-runner/evidence/GAMEPLAY_REMAINING.json proof-output/latest.json
+            cp qa-runner/evidence/GAMEPLAY_REMAINING.json "proof-output/runs/$GITHUB_RUN_ID.json"
+          else
+            python -c 'import json;json.dump({"status":"NOT TESTED","reason":"No actual browser report produced"},open("proof-output/latest.json","w"))'
+          fi
+          git -C proof-output config user.name 'github-actions[bot]'
+          git -C proof-output config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C proof-output add latest.json runs/
+          git -C proof-output commit -m 'Record actual remaining gameplay; primary portal failure retained'
+          git -C proof-output push origin HEAD:phase3bd-gameplay-proof
