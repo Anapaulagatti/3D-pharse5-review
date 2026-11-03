@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-03T09:13:27.793069+00:00",
-  "inspectionRunId": "41609254230",
+  "checkedAt": "2026-11-03T09:24:13.652983+00:00",
+  "inspectionRunId": "41610718508",
   "expectedControlCommit": "1b8d6d8883097b3586f2ba2b363e0b524d13b61f",
   "publicationByThisJob": false,
   "checks": {},
@@ -8,12 +8,12 @@
     "id": 41608981105,
     "run_number": 4,
     "head_sha": "1b8d6d8883097b3586f2ba2b363e0b524d13b61f",
-    "status": "waiting",
+    "status": "in_progress",
     "conclusion": null,
     "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41608981105",
     "event": "push",
     "created_at": "2026-11-03T09:11:21Z",
-    "updated_at": "2026-11-03T09:11:31Z",
+    "updated_at": "2026-11-03T09:23:32Z",
     "run_attempt": 1
   },
   "jobs": {
@@ -81,37 +81,145 @@
       {
         "id": 125825867071,
         "name": "deploy",
-        "status": "waiting",
+        "status": "in_progress",
         "conclusion": null,
         "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41608981105/job/125825867071",
-        "started_at": "2026-11-03T09:11:30Z",
+        "started_at": "2026-11-03T09:23:32Z",
         "completed_at": null,
-        "steps": []
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-11-03T09:23:33Z",
+            "completed_at": "2026-11-03T09:23:35Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-11-03T09:23:35Z",
+            "completed_at": "2026-11-03T09:23:35Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-11-03T09:23:35Z",
+            "completed_at": "2026-11-03T09:23:45Z"
+          },
+          {
+            "name": "Export existing compiled files only (no npm, Vite build or source generation)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-11-03T09:23:45Z",
+            "completed_at": "2026-11-03T09:23:47Z"
+          },
+          {
+            "name": "Exact asset hashes, individual exposure review and snapshot history",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-11-03T09:23:47Z",
+            "completed_at": "2026-11-03T09:23:48Z"
+          },
+          {
+            "name": "Run actions/configure-pages@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-11-03T09:23:48Z",
+            "completed_at": "2026-11-03T09:23:48Z"
+          },
+          {
+            "name": "Pack exact allowlist including retained snapshot dot metadata",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-11-03T09:23:48Z",
+            "completed_at": "2026-11-03T09:23:51Z"
+          },
+          {
+            "name": "Run actions/upload-artifact@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-11-03T09:23:51Z",
+            "completed_at": "2026-11-03T09:24:10Z"
+          },
+          {
+            "name": "Run actions/deploy-pages@v4",
+            "status": "in_progress",
+            "conclusion": null,
+            "number": 9,
+            "started_at": "2026-11-03T09:24:10Z",
+            "completed_at": null
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "pending",
+            "conclusion": null,
+            "number": 10,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Verify actual deployed HTTPS game (test dependencies only, no game build)",
+            "status": "pending",
+            "conclusion": null,
+            "number": 11,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Run actions/upload-artifact@v4",
+            "status": "pending",
+            "conclusion": null,
+            "number": 12,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "pending",
+            "conclusion": null,
+            "number": 23,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "pending",
+            "conclusion": null,
+            "number": 24,
+            "started_at": null,
+            "completed_at": null
+          }
+        ]
       }
     ]
   },
   "pendingDeployments": {
     "status": 200,
-    "items": [
-      {
-        "environment": "github-pages",
-        "environmentId": 25668785832,
-        "currentUserCanApprove": false,
-        "reviewers": [
-          {
-            "type": "User",
-            "login": "Anapaulagatti",
-            "name": null
-          }
-        ]
-      }
-    ],
+    "items": [],
     "message": null,
     "acceptedPermissions": null
   },
   "reviewHistory": {
     "status": 200,
-    "items": [],
+    "items": [
+      {
+        "state": "approved",
+        "reviewer": "Anapaulagatti",
+        "environments": [
+          "github-pages"
+        ]
+      }
+    ],
     "message": null
   },
   "environmentProtection": {
