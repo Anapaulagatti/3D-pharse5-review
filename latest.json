@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-03T09:24:13.652983+00:00",
-  "inspectionRunId": "41610718508",
+  "checkedAt": "2026-11-03T09:25:53.925794+00:00",
+  "inspectionRunId": "41610951776",
   "expectedControlCommit": "1b8d6d8883097b3586f2ba2b363e0b524d13b61f",
   "publicationByThisJob": false,
   "checks": {},
@@ -153,26 +153,26 @@
           },
           {
             "name": "Run actions/deploy-pages@v4",
-            "status": "in_progress",
-            "conclusion": null,
+            "status": "completed",
+            "conclusion": "success",
             "number": 9,
             "started_at": "2026-11-03T09:24:10Z",
-            "completed_at": null
+            "completed_at": "2026-11-03T09:24:28Z"
           },
           {
             "name": "Run actions/setup-node@v4",
-            "status": "pending",
-            "conclusion": null,
+            "status": "completed",
+            "conclusion": "success",
             "number": 10,
-            "started_at": null,
-            "completed_at": null
+            "started_at": "2026-11-03T09:24:28Z",
+            "completed_at": "2026-11-03T09:24:29Z"
           },
           {
             "name": "Verify actual deployed HTTPS game (test dependencies only, no game build)",
-            "status": "pending",
+            "status": "in_progress",
             "conclusion": null,
             "number": 11,
-            "started_at": null,
+            "started_at": "2026-11-03T09:24:29Z",
             "completed_at": null
           },
           {
@@ -180,6 +180,14 @@
             "status": "pending",
             "conclusion": null,
             "number": 12,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "status": "pending",
+            "conclusion": null,
+            "number": 22,
             "started_at": null,
             "completed_at": null
           },
@@ -244,5 +252,14 @@
       }
     ],
     "message": null
+  },
+  "hostedEvidence": {
+    "status": "NOT YET AVAILABLE",
+    "artifactListStatus": 200
+  },
+  "actualHTTPSProbe": {
+    "status": 200,
+    "manifestSHA256": "543ccd32deb9f37efaf3dd5c8ce48886db95f329657a63ba9c29c4f47b3d49b0",
+    "files": 2875
   }
 }
