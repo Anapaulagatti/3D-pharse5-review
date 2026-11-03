@@ -1,6 +1,7 @@
 {
   "purpose": "Read exactPhase3BD release and protected environment status; no approve/bypass",
-  "expectedControlCommit": null,
+  "expectedControlCommit": "1b8d6d8883097b3586f2ba2b363e0b524d13b61f",
   "manifestSHA256": "543ccd32deb9f37efaf3dd5c8ce48886db95f329657a63ba9c29c4f47b3d49b0",
-  "requestedAt": "2026-11-03T16:04:17.976107+07:00"
+  "requestedAt": "2026-11-03T09:13:19.637985+00:00",
+  "refreshReason": "Read actual environment gate after successful owner receipt job"
 }
