@@ -761,7 +761,29 @@
     },
     "errors": [],
     "physicalDevices": "NOT TESTED",
-    "scope": "Observed browser scenarios; original96x112 frame/anchor assets remain bound by exact manifest. Not hardware frame-pacing certification."
+    "scope": "36actualnativeposes/12inputscenarios from first hosted attempt on identical approved543ccd32; not relabeled as a fresh run",
+    "reusedActualRun": "41612567977"
   },
-  "failure": "page.waitForFunction: Timeout 60000ms exceeded.\n    at verifyPhase3BD (/home/runner/work/3D-pharse5-review/3D-pharse5-review/qa-runner/verify_phase3bd.mjs:9:367)\n    at async file:///home/runner/work/3D-pharse5-review/3D-pharse5-review/qa-runner/verify_remaining.mjs:8:95"
+  "failure": "page.waitForFunction: Timeout 60000ms exceeded.\n    at verifyPhase3BD (/home/runner/work/3D-pharse5-review/3D-pharse5-review/qa-runner/verify_phase3bd.mjs:10:367)\n    at async file:///home/runner/work/3D-pharse5-review/3D-pharse5-review/qa-runner/verify_remaining.mjs:8:579",
+  "partialPhase3BD": {
+    "status": "FAIL",
+    "players": [
+      {
+        "id": "juni",
+        "status": "PASS",
+        "walk": true,
+        "run": true,
+        "stop": true,
+        "oneNativeSprite": true,
+        "retiredAccessoriesAbsent": true
+      }
+    ],
+    "cache": [],
+    "errors": [],
+    "physicalDevices": "NOT TESTED",
+    "hardwareGPU": "NOT TESTED",
+    "koreanCurriculum": "PENDING_HUMAN_REVIEW",
+    "unexplainedPriorArchiveTimeout": "WARN root cause not conclusively identified; current hosted interactions are not a retroactive fix claim",
+    "failure": "page.waitForFunction: Timeout 60000ms exceeded.\n    at verifyPhase3BD (/home/runner/work/3D-pharse5-review/3D-pharse5-review/qa-runner/verify_phase3bd.mjs:10:367)\n    at async file:///home/runner/work/3D-pharse5-review/3D-pharse5-review/qa-runner/verify_remaining.mjs:8:579"
+  }
 }
