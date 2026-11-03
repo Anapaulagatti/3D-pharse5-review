@@ -1,0 +1,189 @@
+{
+  "recordedAt": "2026-11-03T09:30:52.741098+00:00",
+  "runId": "41608981105",
+  "runAttempt": "1",
+  "runURL": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41608981105",
+  "status": "NOT VERIFIED / FAIL",
+  "url": "https://anapaulagatti.github.io/3D-pharse5-review/",
+  "expectedAssetManifestSHA256": "543ccd32deb9f37efaf3dd5c8ce48886db95f329657a63ba9c29c4f47b3d49b0",
+  "actualLiveManifestSHA256": "543ccd32deb9f37efaf3dd5c8ce48886db95f329657a63ba9c29c4f47b3d49b0",
+  "artifactCommit": "fff156b6e15584855f1585de5a03d21b3022cdbc",
+  "profile": "phase3bd-farm26",
+  "actorChecks": [
+    {
+      "id": "npc-seoyeon",
+      "status": "PASS",
+      "frame": "idle-front-0",
+      "zone": "palace"
+    },
+    {
+      "id": "npc-daehyun",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "palace"
+    },
+    {
+      "id": "npc-minseo",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "modern"
+    },
+    {
+      "id": "npc-jiho",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "modern"
+    },
+    {
+      "id": "npc-eunji",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "station"
+    },
+    {
+      "id": "npc-junho",
+      "status": "PASS",
+      "frame": "idle-front-0",
+      "zone": "station"
+    },
+    {
+      "id": "npc-harin",
+      "status": "PASS",
+      "frame": "idle-right-0",
+      "zone": "jeju"
+    },
+    {
+      "id": "npc-seojun",
+      "status": "PASS",
+      "frame": "idle-left-0",
+      "zone": "jeju"
+    },
+    {
+      "id": "npc-nayeon",
+      "status": "PASS",
+      "frame": "idle-front-0",
+      "zone": "farm"
+    },
+    {
+      "id": "npc-cheolsu",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "farm"
+    },
+    {
+      "id": "npc-yejin",
+      "status": "PASS",
+      "frame": "idle-front-0",
+      "zone": "nature-leisure"
+    },
+    {
+      "id": "npc-sungmin",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "nature-leisure"
+    },
+    {
+      "id": "npc-donghae",
+      "status": "PASS",
+      "frame": "activity-right-0",
+      "zone": "coast"
+    },
+    {
+      "id": "npc-soobin",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "coast"
+    },
+    {
+      "id": "npc-modern-daon",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "modern"
+    },
+    {
+      "id": "npc-modern-miram",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "nature-leisure"
+    },
+    {
+      "id": "npc-modern-geonu",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "station"
+    },
+    {
+      "id": "npc-modern-seorin",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "modern"
+    },
+    {
+      "id": "npc-modern-haru",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "nature-leisure"
+    },
+    {
+      "id": "npc-modern-yeori",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "coast"
+    },
+    {
+      "id": "npc-history-seondeok",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "palace"
+    },
+    {
+      "id": "npc-history-sejong",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "palace"
+    },
+    {
+      "id": "npc-history-jang",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "modern"
+    },
+    {
+      "id": "npc-history-saimdang",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "modern"
+    },
+    {
+      "id": "npc-history-yi",
+      "status": "PASS",
+      "frame": "activity-right-0",
+      "zone": "coast"
+    },
+    {
+      "id": "npc-history-yu",
+      "status": "PASS",
+      "frame": "activity-front-0",
+      "zone": "modern"
+    }
+  ],
+  "assetURLsChecked": 2875,
+  "errors": [],
+  "missing": [],
+  "mobileJoystickDistance": null,
+  "failure": "Error: Mobile portal overflows\n    at check (file:///home/runner/work/3D-pharse5-review/3D-pharse5-review/qa-runner/verify_live.mjs:14:55)\n    at file:///home/runner/work/3D-pharse5-review/3D-pharse5-review/qa-runner/verify_live.mjs:82:5",
+  "physicalDevices": "NOT TESTED",
+  "hardwareGPU": "NOT TESTED",
+  "motionCosmetics": null,
+  "transientAssetRetries": [
+    {
+      "path": "phases/3b-b/e48ea63b-e48ea63b/hotfix/after-hotfix-reduced-moving.png",
+      "attempts": [
+        503,
+        200
+      ]
+    }
+  ],
+  "verificationMode": "release-job",
+  "deploymentRunId": "41608981105"
+}
