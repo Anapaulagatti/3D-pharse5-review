@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-03T09:11:30.538219+00:00",
-  "inspectionRunId": "41608981097",
+  "checkedAt": "2026-11-03T09:13:27.793069+00:00",
+  "inspectionRunId": "41609254230",
   "expectedControlCommit": "1b8d6d8883097b3586f2ba2b363e0b524d13b61f",
   "publicationByThisJob": false,
   "checks": {},
@@ -8,12 +8,12 @@
     "id": 41608981105,
     "run_number": 4,
     "head_sha": "1b8d6d8883097b3586f2ba2b363e0b524d13b61f",
-    "status": "queued",
+    "status": "waiting",
     "conclusion": null,
     "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41608981105",
     "event": "push",
     "created_at": "2026-11-03T09:11:21Z",
-    "updated_at": "2026-11-03T09:11:30Z",
+    "updated_at": "2026-11-03T09:11:31Z",
     "run_attempt": 1
   },
   "jobs": {
@@ -81,7 +81,7 @@
       {
         "id": 125825867071,
         "name": "deploy",
-        "status": "queued",
+        "status": "waiting",
         "conclusion": null,
         "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41608981105/job/125825867071",
         "started_at": "2026-11-03T09:11:30Z",
@@ -92,7 +92,20 @@
   },
   "pendingDeployments": {
     "status": 200,
-    "items": [],
+    "items": [
+      {
+        "environment": "github-pages",
+        "environmentId": 25668785832,
+        "currentUserCanApprove": false,
+        "reviewers": [
+          {
+            "type": "User",
+            "login": "Anapaulagatti",
+            "name": null
+          }
+        ]
+      }
+    ],
     "message": null,
     "acceptedPermissions": null
   },
