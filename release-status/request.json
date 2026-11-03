@@ -1,5 +1,6 @@
 {
-  "requestedAt": "2026-10-30T14:51:27.362831+00:00",
-  "purpose": "Owner approved official-layout release; inspect live deployment and actual browser evidence",
-  "expectedControlCommit": "0c7cbd1d957ee1472ac60ef86ea1ef96bb4cfca8"
+  "purpose": "Read exactPhase3BD release and protected environment status; no approve/bypass",
+  "expectedControlCommit": null,
+  "manifestSHA256": "543ccd32deb9f37efaf3dd5c8ce48886db95f329657a63ba9c29c4f47b3d49b0",
+  "requestedAt": "2026-11-03T16:04:17.976107+07:00"
 }

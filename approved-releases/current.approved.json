@@ -1,16 +1,17 @@
 {
   "schemaVersion": 2,
-  "profile": "phase3bb-fictional26",
-  "purpose": "PREVIEW_PUBLIC_EXPOSURE ONLY; new targeted hotfix,26fictional actors and explicitly listed review evidence; not commercial certification",
-  "manifestSHA256": "db9d4bb68f31c819d79ec95efaad1befce257086e64c41a5c93c2ba6fe7deb2f",
+  "profile": "phase3bd-farm26",
+  "purpose": "Public gameplay preview only; NOT commercial/curriculum approval",
+  "manifestSHA256": "543ccd32deb9f37efaf3dd5c8ce48886db95f329657a63ba9c29c4f47b3d49b0",
   "sourceCommit": "f4576307f9f7b1147c45e06eb207825de412012d",
-  "artifactCommit": "74235a6e7075b77840d2e9fdf36dce678288cd05",
+  "artifactCommit": "fff156b6e15584855f1585de5a03d21b3022cdbc",
   "decision": "APPROVED_PUBLIC_PREVIEW",
-  "approvedBy": "Korean Pixel Town project owner — explicit Phase3B-B/26NPC approval in this conversation",
-  "approvedAt": "2026-10-30T14:00:28.201779+00:00",
+  "approvedBy": "Anapaulagatti — project owner, explicit chat instruction",
+  "approvedAt": "2026-11-03T16:04:17.976107+07:00",
   "snapshotManifests": {
-    "phases/3b-b/e48ea63b-e48ea63b/export-manifest.json": "130ecc62c3beabcd6797018a1b20ddc4a1502a1a5a58c60b50791fce3f3e5fee",
-    "phases/3b-a/contemporary20-e0f9db0d/export-manifest.json": "9abfcea015e3da66df25a56ab9a872d62bfd7bcdc1984894a69cd829829f1215"
+    "phases/3b-d/dcf5709c-dcf5709c/export-manifest.json": "135086e9bdd81ca127b6d53931ec9625f8e643a712619c26cb06ff3496e80252",
+    "phases/3b-a/contemporary20-e0f9db0d/export-manifest.json": "9abfcea015e3da66df25a56ab9a872d62bfd7bcdc1984894a69cd829829f1215",
+    "phases/3b-b/e48ea63b-e48ea63b/export-manifest.json": "130ecc62c3beabcd6797018a1b20ddc4a1502a1a5a58c60b50791fce3f3e5fee"
   },
   "creationTermsReview": {
     "status": "REVIEWED_APPLICABLE_PUBLIC_DISPLAY",
@@ -45,7 +46,7 @@
     ],
     "specificChecks": {
       "thirdPartyCode": "Retained installed MIT/ISC/BSD dependency/vendor notices; no source-specific unresolved license omission found after repair.",
-      "identifiablePeople": "20 existing fictional depictions unchanged; six original era-inspired fictional actors assessed in consolidated RIGHTS_AND_SIX.md. No specific copied artwork or identifiable commercial performer established by limited source review; royal/costume/student associations remain disclosed, not certified absent. Exact owner public exposure decision PENDING.",
+      "identifiablePeople": "20 existing fictional depictions unchanged; six original era-inspired fictional actors assessed in consolidated RIGHTS_AND_SIX.md. No specific copied artwork or identifiable commercial performer established by limited source review; royal/costume/student associations remain disclosed, not certified absent. Exact owner public exposure decision PENDING. Existing26depictions remain byte-identical; latest owner authorizes same depictions in exactPhase3BD preview; no new likeness or legal certification.",
       "voiceOutput": "New gameplay review movies contain video only; ffprobe must confirm no audio/ChatGPT Voice output. No real voices, celebrity images, logos or song lyrics added.",
       "inputReferences": "Recorded project-native original style/master references, not supplied celebrity/museum/movie portrait inputs; no specific copied work established by limited source review."
     },
@@ -373,27 +374,27 @@
   "groups": {
     "world": {
       "decision": "ALLOW_PUBLIC_PREVIEW",
-      "justification": "Owner explicitly authorizes the exact2318-entry artifact, including26fictional actors/world/12players/28cosmetics/head and movement fixes/6silentgameplay videos/portalQA, after verified prepublication conditions. Public review only."
+      "justification": "Owner explicitly authorizes the exact2318-entry artifact, including26fictional actors/world/12players/28cosmetics/head and movement fixes/6silentgameplay videos/portalQA, after verified prepublication conditions. Public review only.; owner2026-11-03 explicitly authorizes exact543ccd32 gameplay preview, not commercial or curriculum certification."
     },
     "playable-characters": {
       "decision": "ALLOW_PUBLIC_PREVIEW",
-      "justification": "Owner explicitly authorizes the exact2318-entry artifact, including26fictional actors/world/12players/28cosmetics/head and movement fixes/6silentgameplay videos/portalQA, after verified prepublication conditions. Public review only."
+      "justification": "Owner explicitly authorizes the exact2318-entry artifact, including26fictional actors/world/12players/28cosmetics/head and movement fixes/6silentgameplay videos/portalQA, after verified prepublication conditions. Public review only.; owner2026-11-03 explicitly authorizes exact543ccd32 gameplay preview, not commercial or curriculum certification."
     },
     "cosmetics": {
       "decision": "ALLOW_PUBLIC_PREVIEW",
-      "justification": "Owner explicitly authorizes the exact2318-entry artifact, including26fictional actors/world/12players/28cosmetics/head and movement fixes/6silentgameplay videos/portalQA, after verified prepublication conditions. Public review only."
+      "justification": "Owner explicitly authorizes the exact2318-entry artifact, including26fictional actors/world/12players/28cosmetics/head and movement fixes/6silentgameplay videos/portalQA, after verified prepublication conditions. Public review only.; owner2026-11-03 explicitly authorizes exact543ccd32 gameplay preview, not commercial or curriculum certification."
     },
     "third-party-code-fonts-audio": {
       "decision": "ALLOW_PUBLIC_PREVIEW",
-      "justification": "Owner explicitly authorizes the exact2318-entry artifact, including26fictional actors/world/12players/28cosmetics/head and movement fixes/6silentgameplay videos/portalQA, after verified prepublication conditions. Public review only."
+      "justification": "Owner explicitly authorizes the exact2318-entry artifact, including26fictional actors/world/12players/28cosmetics/head and movement fixes/6silentgameplay videos/portalQA, after verified prepublication conditions. Public review only.; owner2026-11-03 explicitly authorizes exact543ccd32 gameplay preview, not commercial or curriculum certification."
     },
     "checkpoint-media": {
       "decision": "ALLOW_PUBLIC_PREVIEW",
-      "justification": "Owner explicitly authorizes the exact2318-entry artifact, including26fictional actors/world/12players/28cosmetics/head and movement fixes/6silentgameplay videos/portalQA, after verified prepublication conditions. Public review only."
+      "justification": "Owner explicitly authorizes the exact2318-entry artifact, including26fictional actors/world/12players/28cosmetics/head and movement fixes/6silentgameplay videos/portalQA, after verified prepublication conditions. Public review only.; owner2026-11-03 explicitly authorizes exact543ccd32 gameplay preview, not commercial or curriculum certification."
     },
     "portal-and-metadata": {
       "decision": "ALLOW_PUBLIC_PREVIEW",
-      "justification": "Owner explicitly authorizes the exact2318-entry artifact, including26fictional actors/world/12players/28cosmetics/head and movement fixes/6silentgameplay videos/portalQA, after verified prepublication conditions. Public review only."
+      "justification": "Owner explicitly authorizes the exact2318-entry artifact, including26fictional actors/world/12players/28cosmetics/head and movement fixes/6silentgameplay videos/portalQA, after verified prepublication conditions. Public review only.; owner2026-11-03 explicitly authorizes exact543ccd32 gameplay preview, not commercial or curriculum certification."
     }
   },
   "excluded": {
@@ -434,5 +435,26 @@
     "newOwnerAssetApprovalRequired": false,
     "environmentReviewer": "Preserved; legitimate GitHub review still required",
     "verification": "Pin live CDN manifest to approved receipt before browser PASS"
-  }
+  },
+  "changeScope": {
+    "activeCosmetics": 24,
+    "retiredHeadEquipment": 4,
+    "newQuests": 2,
+    "totalQuests": 5,
+    "farmPlots": 6,
+    "cropTypes": 2,
+    "shops": 1,
+    "worldGeometryChanges": 0,
+    "canonicalArtChanges": 0,
+    "newCropFrames": 6,
+    "nativeApprovedSourcePostcardCrop": 1,
+    "newOriginalSilentGameplayVideos": 4,
+    "manifestFiles": 2875,
+    "historicalSnapshots": "Original20/26bytes and media retained, not counted as newly authored videos",
+    "learningMode": "LOCAL_DEMO_HUMAN_EDUCATIONAL_REVIEW_PENDING"
+  },
+  "verifiedManifestFiles": 2875,
+  "ownerMessageExpectedFiles": 3029,
+  "countDiscrepancy": "3029 is prior Phase3BC7deae834 candidate; exact owner-approved Phase3BD543ccd32 hash unchanged,2875entries. No files added/rebuilt/rehashed.",
+  "ownerDecisionEvidence": "Source branch docs/phase3bd-release-20261103/OWNER_APPROVAL.json; explicit2026-11-03 chat instruction binds exact unchanged543ccd32 candidate"
 }
