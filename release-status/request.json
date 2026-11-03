@@ -2,6 +2,6 @@
   "purpose": "Read exactPhase3BD release and protected environment status; no approve/bypass",
   "expectedControlCommit": "1b8d6d8883097b3586f2ba2b363e0b524d13b61f",
   "manifestSHA256": "543ccd32deb9f37efaf3dd5c8ce48886db95f329657a63ba9c29c4f47b3d49b0",
-  "requestedAt": "2026-11-03T09:24:05.542382+00:00",
-  "refreshReason": "Owner confirms required github-pages review approved; inspect actual deploy/hosted QA progress, no new deployment"
+  "requestedAt": "2026-11-03T09:25:46.388476+00:00",
+  "refreshReason": "Read actual deployment progress and hosted artifact proof after confirmed approval; no deployment or review bypass"
 }

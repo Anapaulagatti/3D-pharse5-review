@@ -38,4 +38,27 @@ if run:
     with urllib.request.build_opener(StripAuthRedirect()).open(req,timeout=25)as response: raw=response.read().decode('utf8','replace')
     lines=raw.splitlines();deployStart=next((i for i,line in enumerate(lines)if 'Run actions/deploy-pages@'in line),0);segment=lines[deployStart:];segment=segment[:next((i for i,line in enumerate(segment[1:],1)if '##[group]Run 'in line),len(segment))];out['failedDeployStepLog']=[line[:2000]for line in segment if not re.search(r'token|signature|authorization|sig=|blob.core.windows|download_url',line,re.I)][-100:];out['failedJobErrors']=[line[:1800]for line in lines if re.search(r'::error::|Error:|Traceback|AssertionError|error:|Exception|failed|Failure',line,re.I)][-35:]
    except Exception as e:out['failedJobLogRead']={'error':str(e)}
+# Read selected actual hosted evidence, never infer PASS from deployment metadata.
+if run:
+ q=get('/actions/runs/'+str(run['id'])+'/artifacts');artifacts=(q.get('data')or{}).get('artifacts',[]);artifact=next((x for x in artifacts if x.get('name')=='live-https-verification'and not x.get('expired')),None)
+ out['hostedEvidence']={'status':'NOT YET AVAILABLE','artifactListStatus':q.get('status')}
+ if artifact:
+  try:
+   import io,zipfile
+   class EvidenceRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self,req,fp,code,msg,headers,newurl):
+     redirected=super().redirect_request(req,fp,code,msg,headers,newurl)
+     if redirected is not None:redirected.remove_header('Authorization')
+     return redirected
+   req=urllib.request.Request('https://api.github.com/repos/'+repo+'/actions/artifacts/'+str(artifact['id'])+'/zip',headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json'})
+   with urllib.request.build_opener(EvidenceRedirect()).open(req,timeout=30)as response:raw=response.read(10*1024*1024)
+   with zipfile.ZipFile(io.BytesIO(raw))as z:
+    name=next(n for n in z.namelist()if n=='LIVE_QA.json' or n.endswith('/LIVE_QA.json'));qa=json.loads(z.read(name))
+   out['hostedEvidence']={'status':'READ_ACTUAL_RUN_ARTIFACT','artifactId':artifact['id'],'runId':run['id'],'qa':{k:qa.get(k)for k in ['status','url','checkedAt','liveManifestSHA256','actors','errors','missing','mobileJoystickDistance','phase3BD','retiredHeadPreferencesAndMotion','failure','physicalDevices','hardwareGPU','transientAssetRetries']},'assetURLsChecked':len(qa.get('assetURLs',[]))}
+  except Exception as e:out['hostedEvidence']={'status':'READ_FAILED','error':str(e)}
+try:
+ import hashlib
+ live='https://anapaulagatti.github.io/3D-pharse5-review/'
+ with urllib.request.urlopen(live+'export-manifest.json?review='+str(run['id']if run else'current'),timeout=25)as response:raw=response.read();out['actualHTTPSProbe']={'status':response.status,'manifestSHA256':hashlib.sha256(raw).hexdigest(),'files':len(json.loads(raw).get('files',[]))}
+except Exception as e:out['actualHTTPSProbe']={'status':'NOT VERIFIED','error':str(e)}
 Path('release-status.json').write_text(json.dumps(out,indent=2)+'\n')
