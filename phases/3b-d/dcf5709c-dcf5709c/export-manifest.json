@@ -7266,8 +7266,8 @@
     {
       "npcId": null,
       "filename": "review/CANONICAL_WORLD_AUDIT.json",
-      "sha256": "9cc9c4d6d962583597d29ba44470cc1f5e60cab0414cc779b128ed15fee2bcdb",
-      "bytes": 637,
+      "sha256": "261f2df8377b748330e05e801c2dc9233ec16a634597b0bc649af3f05971bd0f",
+      "bytes": 657,
       "publicPreviewDecision": "PENDING_EXACT_OWNER_APPROVAL",
       "commercialRelease": "NOT_CERTIFIED",
       "evidence": "Original project code, native hand-authored crop pixels, exact approved Jeju crop for postcard, beginner questions, gameplay evidence and review metadata; no new third-party images, fonts or voice",
@@ -7343,8 +7343,19 @@
     {
       "npcId": null,
       "filename": "review/HISTORICAL_FAILURES.md",
-      "sha256": "853c97f9a808948103391d96576eb541a2135f38187e3441213d76b9d96ca13c",
-      "bytes": 3004,
+      "sha256": "0b3a4c73248cb86c8c3339c75c3e27f30f741cddf7e9c9b54ca821f1c1a7c845",
+      "bytes": 3504,
+      "publicPreviewDecision": "PENDING_EXACT_OWNER_APPROVAL",
+      "commercialRelease": "NOT_CERTIFIED",
+      "evidence": "Original project code, native hand-authored crop pixels, exact approved Jeju crop for postcard, beginner questions, gameplay evidence and review metadata; no new third-party images, fonts or voice",
+      "risk": "Korean educational review pending; exact new public exposure NOT approved",
+      "category": "original-project-code-content-or-review-evidence"
+    },
+    {
+      "npcId": null,
+      "filename": "review/INITIAL_OFFLINE_REVIEW_FAILURE.json",
+      "sha256": "2b9feb84eef47cea6f0bce0a54592d2f1097409582d77f25fd42d158103c98e5",
+      "bytes": 1369,
       "publicPreviewDecision": "PENDING_EXACT_OWNER_APPROVAL",
       "commercialRelease": "NOT_CERTIFIED",
       "evidence": "Original project code, native hand-authored crop pixels, exact approved Jeju crop for postcard, beginner questions, gameplay evidence and review metadata; no new third-party images, fonts or voice",
@@ -7541,8 +7552,8 @@
     {
       "npcId": null,
       "filename": "review/index.html",
-      "sha256": "d3fa34a972a0518aeaa3a22c2ac3e492d43e5906c045e45bac17a035f3b5d614",
-      "bytes": 14029,
+      "sha256": "302a451f10386cfcaa5d20e61604ed27e2911488d5781ad6d4c25f9be905a56f",
+      "bytes": 14057,
       "publicPreviewDecision": "PENDING_EXACT_OWNER_APPROVAL",
       "commercialRelease": "NOT_CERTIFIED",
       "evidence": "Original project code, native hand-authored crop pixels, exact approved Jeju crop for postcard, beginner questions, gameplay evidence and review metadata; no new third-party images, fonts or voice",
