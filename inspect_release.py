@@ -61,4 +61,8 @@ try:
  live='https://anapaulagatti.github.io/3D-pharse5-review/'
  with urllib.request.urlopen(live+'export-manifest.json?review='+str(run['id']if run else'current'),timeout=25)as response:raw=response.read();out['actualHTTPSProbe']={'status':response.status,'manifestSHA256':hashlib.sha256(raw).hexdigest(),'files':len(json.loads(raw).get('files',[]))}
 except Exception as e:out['actualHTTPSProbe']={'status':'NOT VERIFIED','error':str(e)}
+q=get('/actions/workflows/verify-gameplay-remaining.yml/runs?per_page=5')
+runs=(q.get('data')or{}).get('workflow_runs',[])
+if runs:
+ x=runs[0];out['remainingGameplayRun']={k:x.get(k)for k in ['id','html_url','head_sha','status','conclusion','created_at','updated_at']}
 Path('release-status.json').write_text(json.dumps(out,indent=2)+'\n')
