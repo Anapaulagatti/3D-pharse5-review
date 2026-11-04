@@ -7,6 +7,7 @@ on:
 permissions:
   contents: write
   actions: read
+  pages: read
 concurrency:
   group: review-release-status
   cancel-in-progress: false

@@ -65,4 +65,6 @@ q=get('/actions/workflows/verify-gameplay-remaining.yml/runs?per_page=5')
 runs=(q.get('data')or{}).get('workflow_runs',[])
 if runs:
  x=runs[0];out['remainingGameplayRun']={k:x.get(k)for k in ['id','html_url','head_sha','status','conclusion','created_at','updated_at']}
+for key,path,fields in [('pages','/pages',['status','html_url','build_type','https_enforced']),('actions','/actions/permissions',['enabled','allowed_actions'])]:
+ q=get(path);data=q.get('data')or{};out['checks'][key]={'status':q.get('status'),'data':{k:data.get(k)for k in fields},'message':q.get('message')}
 Path('release-status.json').write_text(json.dumps(out,indent=2)+'\n')

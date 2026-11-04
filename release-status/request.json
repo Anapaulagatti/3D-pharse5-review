@@ -2,6 +2,6 @@
   "purpose": "Read exactPhase3BD release and protected environment status; no approve/bypass",
   "expectedControlCommit": "1b8d6d8883097b3586f2ba2b363e0b524d13b61f",
   "manifestSHA256": "543ccd32deb9f37efaf3dd5c8ce48886db95f329657a63ba9c29c4f47b3d49b0",
-  "requestedAt": "2026-11-03T09:43:11.173785+00:00",
-  "refreshReason": "Locate independent remaining gameplay verification and preserve primary portal failure"
+  "requestedAt": "2026-11-04T02:06:05.504825+00:00",
+  "refreshReason": "Preflight: read actual currentHTTPS backup manifest and existing Pages/environment configuration before owner-approved physical Phase3BD release17306fc4; no publication"
 }
