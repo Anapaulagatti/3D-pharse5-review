@@ -1,7 +1,7 @@
 {
   "purpose": "Read exactPhase3BD release and protected environment status; no approve/bypass",
-  "expectedControlCommit": "cbe3489858f128a01be5f21f6d230211eac97dc3",
-  "manifestSHA256": "17306fc4c2a3f958e29a2256eb1ddbb722658917863269907554ecd005f69183",
-  "requestedAt": "2026-11-04T08:14:11.792165+00:00",
-  "refreshReason": "Owner approves exact hotfixd170ee18; inspect current HTTPS and obsolete9fce pending job before promotion; no environment bypass"
+  "expectedControlCommit": "11038eeab4830d008294bf6d3adc9332d633613a",
+  "manifestSHA256": "d170ee180c4743ab8bee4b4a952c7bf1b7f69c2c8083e1b2eb84cf6846beea58",
+  "requestedAt": "2026-11-04T08:16:26.542507+00:00",
+  "refreshReason": "Read approved farm-path hotfix run and required environment review; exact5b5ce278artifact; no approval bypass"
 }
