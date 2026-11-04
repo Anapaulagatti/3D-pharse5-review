@@ -1,0 +1,67 @@
+{
+  "evidenceSourceCommit": "3081575e1adcf4116477d6f9ef47190c85f243eb",
+  "fullNativeOriginals": [
+    {
+      "path": "docs/phase3bd-final-quality/frozen/farm-08-watered-and-dry-native.png",
+      "sha256": "148baaa3ef9da3b3d3fa40b5e563dd630170a35acaf173fb7d0481f1c00c4419",
+      "url": "https://raw.githubusercontent.com/Anapaulagatti/3D-pharse5-/3081575e1adcf4116477d6f9ef47190c85f243eb/docs/phase3bd-final-quality/frozen/farm-08-watered-and-dry-native.png"
+    },
+    {
+      "path": "docs/phase3bd-final-quality/frozen/farm-02-seeded-native.png",
+      "sha256": "c741c2337954a17615df07a54315b197bae00afb147e7a0da5c0b0bb8a8744cd",
+      "url": "https://raw.githubusercontent.com/Anapaulagatti/3D-pharse5-/3081575e1adcf4116477d6f9ef47190c85f243eb/docs/phase3bd-final-quality/frozen/farm-02-seeded-native.png"
+    },
+    {
+      "path": "docs/phase3bd-final-quality/frozen/farm-04-young-native.png",
+      "sha256": "463eaa35b96cbc8d39138c24ff590ab7ac212e3d45591f3e45b71d6af441b6c4",
+      "url": "https://raw.githubusercontent.com/Anapaulagatti/3D-pharse5-/3081575e1adcf4116477d6f9ef47190c85f243eb/docs/phase3bd-final-quality/frozen/farm-04-young-native.png"
+    },
+    {
+      "path": "docs/phase3bd-final-quality/frozen/farm-06-mature-native.png",
+      "sha256": "aba573dddf79f81c9ed217fbb4765960cd1639053504a40a179d02f6b1f0bdd8",
+      "url": "https://raw.githubusercontent.com/Anapaulagatti/3D-pharse5-/3081575e1adcf4116477d6f9ef47190c85f243eb/docs/phase3bd-final-quality/frozen/farm-06-mature-native.png"
+    },
+    {
+      "path": "docs/phase3bd-final-quality/frozen/farm-10-reloaded-native.png",
+      "sha256": "0ad8ff71e69de95fca0732eb347fad05381623177adeb1530d19465117e7d471",
+      "url": "https://raw.githubusercontent.com/Anapaulagatti/3D-pharse5-/3081575e1adcf4116477d6f9ef47190c85f243eb/docs/phase3bd-final-quality/frozen/farm-10-reloaded-native.png"
+    },
+    {
+      "path": "docs/phase3bd-final-quality/frozen/farm-09-mature-next-to-young-native.png",
+      "sha256": "5c7ed896d4a0cfd57a561e417a36dea367c32875e059ac476241365aea96ddb0",
+      "url": "https://raw.githubusercontent.com/Anapaulagatti/3D-pharse5-/3081575e1adcf4116477d6f9ef47190c85f243eb/docs/phase3bd-final-quality/frozen/farm-09-mature-next-to-young-native.png"
+    },
+    {
+      "path": "docs/phase3bd-final-quality/frozen/farm-03-sprout-native.png",
+      "sha256": "6930850f95cf62f944bd3eeb422c195c3ac0d90cbbaed0bd1bba4757223b885a",
+      "url": "https://raw.githubusercontent.com/Anapaulagatti/3D-pharse5-/3081575e1adcf4116477d6f9ef47190c85f243eb/docs/phase3bd-final-quality/frozen/farm-03-sprout-native.png"
+    },
+    {
+      "path": "docs/phase3bd-final-quality/frozen/farm-01-prepared-native.png",
+      "sha256": "b67121c975703f1edd10b72198543f5ba9aec36cc7393b5e29685d41f94549dc",
+      "url": "https://raw.githubusercontent.com/Anapaulagatti/3D-pharse5-/3081575e1adcf4116477d6f9ef47190c85f243eb/docs/phase3bd-final-quality/frozen/farm-01-prepared-native.png"
+    },
+    {
+      "path": "docs/phase3bd-final-quality/frozen/farm-05-growing-native.png",
+      "sha256": "da754ba9d2130a5a844be75c81be94b1a79049cebfae8bc8b088fb2aeea71f72",
+      "url": "https://raw.githubusercontent.com/Anapaulagatti/3D-pharse5-/3081575e1adcf4116477d6f9ef47190c85f243eb/docs/phase3bd-final-quality/frozen/farm-05-growing-native.png"
+    },
+    {
+      "path": "docs/phase3bd-final-quality/frozen/farm-07-harvested-native.png",
+      "sha256": "bbda57e921f7f45d109028f3541355a1bfe85a90493e1aae51c2bc78b8a81662",
+      "url": "https://raw.githubusercontent.com/Anapaulagatti/3D-pharse5-/3081575e1adcf4116477d6f9ef47190c85f243eb/docs/phase3bd-final-quality/frozen/farm-07-harvested-native.png"
+    },
+    {
+      "path": "docs/phase3bd-final-quality/frozen/farm-00-empty-native.png",
+      "sha256": "dbeca1e91a3131e607ee3b9b7181842b80d2b5ac65aa9ae410725f33abb9c72a",
+      "url": "https://raw.githubusercontent.com/Anapaulagatti/3D-pharse5-/3081575e1adcf4116477d6f9ef47190c85f243eb/docs/phase3bd-final-quality/frozen/farm-00-empty-native.png"
+    }
+  ],
+  "fullQA": [
+    {
+      "path": "docs/phase3bd-final-quality/frozen/FARM_QA.json",
+      "url": "https://raw.githubusercontent.com/Anapaulagatti/3D-pharse5-/3081575e1adcf4116477d6f9ef47190c85f243eb/docs/phase3bd-final-quality/frozen/FARM_QA.json"
+    }
+  ],
+  "note": "Original native PNGs preserved unchanged in source checkpoint; published selected nativePNG re-encoded losslessly, matching exactRGBApixels; all crop evidence is original1:1pixel scale"
+}

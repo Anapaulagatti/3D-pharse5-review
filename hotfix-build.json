@@ -1,6 +1,6 @@
 {
-  "sourceCommit": "79f290581434306371ee892cf411c3d9766aebea",
-  "scope": "Physical farming lifecycle and safe narrow path hotfix",
-  "rollbackArtifact": "9fce709ab87698ed078fd2a545a8a696a5a104f6",
+  "sourceCommit": "b865b6591e7255ec08d5bcaa4c81db26f050e5a4",
+  "scope": "Original native per-cell farming art and western-hanok passage quality pass",
+  "rollbackArtifact": "5b5ce278596520efd520f6af63266e57c49c3fd8",
   "publicExposure": "PENDING_EXACT_MANIFEST_APPROVAL"
 }

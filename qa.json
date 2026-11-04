@@ -1,31 +1,17 @@
 {
-  "status": "READY FOR HUMAN GAMEPLAY REVIEW; NOT DEPLOYED",
-  "sourceCommit": "79f290581434306371ee892cf411c3d9766aebea",
-  "checks": {
-    "unit": "PASS209/209",
-    "fullRegression": "PASS71/71; suite began before final gentle-analog clamp and build refresh; not represented as a single immutable-final-revision run",
-    "finalRelevantE2E": "PASS14/14 after final clamp/build",
-    "nativeFarming": "PASS actual closed compiled Phaser;8captures;6pixel-exact plant frame readbacks;real starter seed,quest,reward/reload",
-    "scallion": "PASS real90second growth5stages+harvest;1seed fixture only",
-    "navigation": "PASS11actual keyboard route legs, western corridor before/after, rapid diagonal/Shift input",
-    "mobile": "PASS actual closed compiled667x375touch farming/control recovery;explicit1seed fixture",
-    "protectedArt": "PASS10479original art/source hashes unchanged",
-    "typecheck": "PASS",
-    "assets": "PASS590runtimeclosure",
-    "lint": "PASS",
-    "format": "PASS",
-    "build": "PASS;1981kBJS chunk size WARN"
-  },
-  "physicalDevices": "NOT TESTED",
+  "status": "READY_FOR_OWNER_REVIEW; NOT_DEPLOYED",
+  "unit": "PASS213",
+  "e2e": "PASS73",
+  "integration": "PASS actual compiled normal-start farming, per-cell mixed phases/reward/reload/shop",
+  "hanok": "PASS compiled Juni and Haneul,9real crossing/join legs each, nativefoot bounds/safe walls/camera",
+  "nativePixels": "PASS exact opaque source-frame readback8captures; outside farm+dynamicactorROI0changedpixels",
+  "mobileEmulation": "PASS667x375actualtouchprepare/plant/water/controlrecovery",
+  "physicalAndroid": "NOT TESTED",
+  "physicalIPhone": "NOT TESTED",
   "hardwareGPU": "NOT TESTED",
-  "humanKoreanContent": "PENDING",
   "artisticAcceptance": "PENDING HUMAN REVIEW",
-  "warnings": [
-    "Earlier baseline69/71snapshot-observer failures remain historical warnings; current71/71does not prove an unrelated deterministic fix",
-    "First custom navigation planner used old mask and failed at newly opened paving; source masks now represented accurately in QA driver; actual movement verified",
-    "First isolated compiled packaging omitted runtime assets after removing assembler; exact590assetclosure added and rechecked; failing report retained",
-    "Simple original native soil/crop pixels require owner aesthetic review; no fullworld artistic acceptance implied"
-  ],
+  "forgeNative": "FAIL empty_cells for2intentionally tiny scallionseed/sprout below64pxcomponent cutoff; WARNsafe_frame10cells. No thresholds lowered or warnings suppressed. Cross-cell/edge-cut/faintspecks0.",
+  "previousRuns": "Initial full suite16PASS/1deliberately interrupted/56notrun before final foot-envelope tightening; initial adjacency driver omitted seedtoolselection; initial frozen Haneul test wrote unscoped preference instead of isolatedQAstore. All original reports preserved; none relabeled cleanPASS.",
   "phase3BE": "LOCKED",
-  "commercialRelease": "NOT CERTIFIED"
+  "publicExposure": "PENDING_EXACT_OWNER_MANIFEST_APPROVAL"
 }

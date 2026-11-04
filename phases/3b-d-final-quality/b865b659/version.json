@@ -1,0 +1,22 @@
+{
+  "phase": "Phase3B-D final farming art / western hanok quality",
+  "slug": "3b-d-in-world",
+  "base": "/3D-pharse5-review/",
+  "gameRef": "806d357389f86080e191a0c3bf530d7773241d6b",
+  "gameCommit": "b865b6591e7255ec08d5bcaa4c81db26f050e5a4",
+  "portalCommit": "806d357389f86080e191a0c3bf530d7773241d6b",
+  "dirty": false,
+  "builtAt": "2026-11-04T01:31:48.063Z",
+  "exposure": "PENDING_EXACT_OWNER_PUBLIC_APPROVAL",
+  "artisticReview": "PENDING_HUMAN_REVIEW",
+  "commercialRelease": "BLOCKED_PENDING_REVIEW",
+  "publicExposure": "PENDING_EXACT_OWNER_APPROVAL",
+  "physicalDevices": "NOT TESTED",
+  "archived": true,
+  "currentPath": "./",
+  "activeCosmetics": 24,
+  "learningMode": "LOCAL_DEMO_HUMAN_CONTENT_REVIEW_PENDING",
+  "evidenceSourceCommit": "3081575e1adcf4116477d6f9ef47190c85f243eb",
+  "farmBeds": 6,
+  "farmCells": 36
+}
