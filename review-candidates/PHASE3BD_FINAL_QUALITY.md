@@ -1,3 +1,7 @@
+# Exact owner authorization recorded ·2026-11-04
+
+Owner replied “deploy lên page để tôi trải nghiệm thử” to exact candidate approval request. See approved-releases/phase3bd-final-quality-20261104.approved.json. Exact receipt/hash/history gates PASS. Protected environment approval and actual newHTTPS verification still required; no deployed claim yet. The preparation notes below are historical.
+
 # Pending final farm / western-hanok quality release
 
 This branch prepares exact manifest331cd300478f879bab11e9541803dd7c47ba1caaab339263f37150ae6c0d0ce4 / artifact1a6e5a58a8fb515730e553a30980d2ffb7274da6 /4975files. No new public exposure decision has been received. Receipt intentionally PENDING and gates must continue to block deployment.

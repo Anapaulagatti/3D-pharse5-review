@@ -1,13 +1,13 @@
 {
   "schemaVersion": 2,
   "profile": "phase3bd-final-quality26",
-  "purpose": "Owner-approved exact4301file public farm/path hotfix review only; NOT commercial/legal/human artistic final acceptance",
+  "purpose": "Owner-authorized exact4975file final farm-art and western-hanok public gameplay preview ONLY; no commercial/legal certification or Phase3BE",
   "manifestSHA256": "331cd300478f879bab11e9541803dd7c47ba1caaab339263f37150ae6c0d0ce4",
   "sourceCommit": "f4576307f9f7b1147c45e06eb207825de412012d",
   "artifactCommit": "1a6e5a58a8fb515730e553a30980d2ffb7274da6",
-  "decision": "PENDING_EXACT_OWNER_APPROVAL",
-  "approvedBy": null,
-  "approvedAt": null,
+  "decision": "APPROVED_PUBLIC_PREVIEW",
+  "approvedBy": "Anapaulagatti — explicit owner reply “deploy lên page để tôi trải nghiệm thử” following exact artifact1a6e5a58 /331cd300 /4975file approval question",
+  "approvedAt": "2026-11-04T21:53:49.416008+07:00",
   "snapshotManifests": {
     "phases/3b-a/contemporary20-e0f9db0d/export-manifest.json": "9abfcea015e3da66df25a56ab9a872d62bfd7bcdc1984894a69cd829829f1215",
     "phases/3b-b/e48ea63b-e48ea63b/export-manifest.json": "130ecc62c3beabcd6797018a1b20ddc4a1502a1a5a58c60b50791fce3f3e5fee",

@@ -1,19 +1,20 @@
 {
   "schemaVersion": 2,
-  "profile": "phase3bd-farm-path26",
-  "purpose": "Owner-approved exact4301file public farm/path hotfix review only; NOT commercial/legal/human artistic final acceptance",
-  "manifestSHA256": "d170ee180c4743ab8bee4b4a952c7bf1b7f69c2c8083e1b2eb84cf6846beea58",
+  "profile": "phase3bd-final-quality26",
+  "purpose": "Owner-authorized exact4975file final farm-art and western-hanok public gameplay preview ONLY; no commercial/legal certification or Phase3BE",
+  "manifestSHA256": "331cd300478f879bab11e9541803dd7c47ba1caaab339263f37150ae6c0d0ce4",
   "sourceCommit": "f4576307f9f7b1147c45e06eb207825de412012d",
-  "artifactCommit": "5b5ce278596520efd520f6af63266e57c49c3fd8",
+  "artifactCommit": "1a6e5a58a8fb515730e553a30980d2ffb7274da6",
   "decision": "APPROVED_PUBLIC_PREVIEW",
-  "approvedBy": "Anapaulagatti — explicit owner reply “cập nhật pages” after exact candidate/manifest approval request",
-  "approvedAt": "2026-11-04T15:14:43.838715+07:00",
+  "approvedBy": "Anapaulagatti — explicit owner reply “deploy lên page để tôi trải nghiệm thử” following exact artifact1a6e5a58 /331cd300 /4975file approval question",
+  "approvedAt": "2026-11-04T21:53:49.416008+07:00",
   "snapshotManifests": {
     "phases/3b-a/contemporary20-e0f9db0d/export-manifest.json": "9abfcea015e3da66df25a56ab9a872d62bfd7bcdc1984894a69cd829829f1215",
     "phases/3b-b/e48ea63b-e48ea63b/export-manifest.json": "130ecc62c3beabcd6797018a1b20ddc4a1502a1a5a58c60b50791fce3f3e5fee",
     "phases/3b-d/dcf5709c-dcf5709c/export-manifest.json": "135086e9bdd81ca127b6d53931ec9625f8e643a712619c26cb06ff3496e80252",
     "phases/3b-d-in-world/806d3573-806d3573/export-manifest.json": "aebf42f3018b68617cb24857e904a3238ccc7bd1d350b9f81cfd7b2f06c91611",
-    "phases/3b-d-farm-path/79f29058/export-manifest.json": "445f62972eaa102f83e8523d3738905df0ee3b5695bd7acd01597c2d1d6bfe04"
+    "phases/3b-d-farm-path/79f29058/export-manifest.json": "445f62972eaa102f83e8523d3738905df0ee3b5695bd7acd01597c2d1d6bfe04",
+    "phases/3b-d-final-quality/b865b659/export-manifest.json": "4e079c0bf3f6fa9da18fea3921de1c0a6d80bf95898bb181a1034eee36154537"
   },
   "creationTermsReview": {
     "status": "REVIEWED_APPLICABLE_PUBLIC_DISPLAY",
@@ -715,13 +716,13 @@
     "historicalSnapshots": "Original20/26bytes and media retained, not counted as newly authored videos",
     "learningMode": "LOCAL_DEMO_HUMAN_EDUCATIONAL_REVIEW_PENDING"
   },
-  "verifiedManifestFiles": 4301,
+  "verifiedManifestFiles": 4975,
   "ownerMessageExpectedFiles": 3570,
   "countDiscrepancy": "NONE: explicit2026-11-04owner approval binds exactly3570files and17306fc4 manifest.",
-  "ownerDecisionEvidence": "docs/phase3bd-farm-path-release/OWNER_APPROVAL.json; exact manifest/artifact shown in immediately preceding delivery",
-  "manifestFiles": 4301,
-  "gameBuildSourceCommit": "79f290581434306371ee892cf411c3d9766aebea",
-  "approvedSourceReview": "ae82ad2cc185d43fec3da56a63e925b99a3f1692",
+  "ownerDecisionEvidence": "Owner final quality directive authorizes bounded implementation; this exact new candidate awaits consolidated review/exposure approval",
+  "manifestFiles": 4975,
+  "gameBuildSourceCommit": "b865b6591e7255ec08d5bcaa4c81db26f050e5a4",
+  "approvedSourceReview": null,
   "portalDesignReference": "f4576307f9f7b1147c45e06eb207825de412012d",
   "legacySourceCommitFieldMeaning": "Original approved Portal design reference; actual compiled source is gameBuildSourceCommit and the manifest portalCommit",
   "artifactBranch": "review/phase3bd-in-world-20261104",
@@ -757,27 +758,34 @@
     "learningMode": "LOCAL_DEMO_HUMAN_EDUCATIONAL_REVIEW_PENDING",
     "physicalDevices": "NOT TESTED"
   },
-  "ownerExpectedFiles": 4301,
+  "ownerExpectedFiles": 4975,
   "publicScope": {
     "fictionalNPCs": 26,
     "playableCharacters": 12,
-    "activeCosmetics": 24,
-    "originalArtworkModified": 0,
-    "nativeCropFrames": 10,
-    "newIntermediateCropFrames": 4,
-    "nativeSoilFrames": 2,
-    "localizedPassabilityRect": [
-      455,
-      2350,
-      30,
-      130
+    "cosmetics": 24,
+    "farmBeds": 6,
+    "farmCells": 36,
+    "cropAtlasNativeCell": [
+      40,
+      44
     ],
-    "newSilentGameplayVideos": 2,
-    "manifestFiles": 4301
+    "materialFrameNative": [
+      16,
+      16
+    ],
+    "localHanokAnchorRect": [
+      520,
+      1094,
+      34,
+      284
+    ],
+    "originalArtChanged": 0,
+    "manifestFiles": 4975
   },
   "rollback": {
-    "artifactCommit": "9fce709ab87698ed078fd2a545a8a696a5a104f6",
-    "earlierPublicRollback": "fff156b6e15584855f1585de5a03d21b3022cdbc"
+    "artifactCommit": "5b5ce278596520efd520f6af63266e57c49c3fd8",
+    "manifestSHA256": "d170ee180c4743ab8bee4b4a952c7bf1b7f69c2c8083e1b2eb84cf6846beea58"
   },
-  "newArtProvenance": "assets-src/farming/phase3bd-farm-path/PROVENANCE.json: exact Python/Pillow original pixel patterns/soil, no image API/third-party references"
+  "newArtProvenance": "assets-src/farming/phase3bd-final-quality/PROVENANCE.json:2actualbuiltinimagegen calls, original crop/material props, registered palette/native finishing; no third-party art references/paidexternalAPI",
+  "scopeQualification": "Public gameplay review preparation only; no commercial/legal/artistic acceptance implied"
 }
