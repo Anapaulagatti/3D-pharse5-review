@@ -1,8 +1,6 @@
 {
-  "phase": "Phase3BD physical world gameplay",
-  "slug": "3b-d-in-world",
-  "gameRef": "806d357389f86080e191a0c3bf530d7773241d6b",
-  "publicExposure": "PENDING_EXACT_OWNER_APPROVAL",
-  "artisticReview": "PENDING",
+  "phase": "Phase3BD farming lifecycle + narrow-path hotfix",
+  "gameRef": "79f290581434306371ee892cf411c3d9766aebea",
+  "publicExposure": "PENDING_EXACT_MANIFEST_APPROVAL",
   "physicalDevices": "NOT TESTED"
 }

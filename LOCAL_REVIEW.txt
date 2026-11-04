@@ -1,4 +1,1 @@
-PRIVATE Phase3BD physical gameplay. Unzip then python3 start-review.py
-Open http://127.0.0.1:4483/review/ . No npm/internet. Python3 required.
-Exact new public approval PENDING; oldfff156b6/543ccd32 retained as rollback.
-Physical devices NOT TESTED. Human Korean content review PENDING.
+Unzip; python3 start-review.py; open http://127.0.0.1:4483/farm-path-review/ . No npm or internet. Public exposure of this NEW manifest PENDING. Rollback9fce709a; earlierfff156b6 retained.

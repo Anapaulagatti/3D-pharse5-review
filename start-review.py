@@ -18,5 +18,5 @@ class Handler(SimpleHTTPRequestHandler):
   super().do_GET()
  def list_directory(self,path):self.send_error(404)
  def log_message(self,*args):pass
-print(f'PRIVATE LOCAL REVIEW: http://127.0.0.1:{a.port}/review/ — stop with Ctrl+C. Public Pages remains unchanged.',flush=True)
+print(f'PRIVATE LOCAL REVIEW: http://127.0.0.1:{a.port}/farm-path-review/ — stop with Ctrl+C. Public Pages remains unchanged.',flush=True)
 ThreadingHTTPServer(('127.0.0.1',a.port),Handler).serve_forever()

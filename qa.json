@@ -1,40 +1,31 @@
 {
-  "status": "PRIVATE REVIEW; HUMAN ACCEPTANCE PENDING",
-  "summary": "26preservedNPC /12players /24cosmetics /5quests. Physical3corequests+shop,compactHUD; approved world/art unchanged.",
+  "status": "READY FOR HUMAN GAMEPLAY REVIEW; NOT DEPLOYED",
+  "sourceCommit": "79f290581434306371ee892cf411c3d9766aebea",
   "checks": {
+    "unit": "PASS209/209",
+    "fullRegression": "PASS71/71; suite began before final gentle-analog clamp and build refresh; not represented as a single immutable-final-revision run",
+    "finalRelevantE2E": "PASS14/14 after final clamp/build",
+    "nativeFarming": "PASS actual closed compiled Phaser;8captures;6pixel-exact plant frame readbacks;real starter seed,quest,reward/reload",
+    "scallion": "PASS real90second growth5stages+harvest;1seed fixture only",
+    "navigation": "PASS11actual keyboard route legs, western corridor before/after, rapid diagonal/Shift input",
+    "mobile": "PASS actual closed compiled667x375touch farming/control recovery;explicit1seed fixture",
+    "protectedArt": "PASS10479original art/source hashes unchanged",
     "typecheck": "PASS",
+    "assets": "PASS590runtimeclosure",
     "lint": "PASS",
     "format": "PASS",
-    "unit": "PASS 203/203",
-    "e2e": {
-      "startTime": "2026-11-04T01:20:28.802Z",
-      "duration": 721871.5009999999,
-      "expected": 69,
-      "skipped": 0,
-      "unexpected": 2,
-      "flaky": 0
-    },
-    "e2eRepeatedFollowup": {
-      "startTime": "2026-11-04T01:35:07.787Z",
-      "duration": 37767.407,
-      "expected": 8,
-      "skipped": 0,
-      "unexpected": 0,
-      "flaky": 0
-    },
-    "currentE2ECoverage": "PASS all71current cases across runs:69full-suite passes+2corrected snapshot-observation cases repeated4times each(8/8). Initial full69/71 and first follow-up4/8 remain disclosed, NOT one clean71-test run.",
-    "actualWorldGameplay": "PASS ACTUAL PHASER THREE PHYSICAL QUESTS + SHOP",
-    "mobileLandscape": "PASS MOBILE LANDSCAPE TOUCH",
-    "protectedAssets": "PASS",
-    "physicalAndroid": "NOT TESTED",
-    "physicaliPhone": "NOT TESTED",
-    "hardwareGPU": "NOT TESTED",
-    "humanKoreanReview": "PENDING_HUMAN_REVIEW",
-    "humanGameplayArt": "PENDING",
-    "publicExposure": "PENDING_EXACT_NEW_MANIFEST_APPROVAL"
+    "build": "PASS;1981kBJS chunk size WARN"
   },
-  "evidenceDate": "2026-11-04",
-  "lostPreviousResults": "Historical only; not reused as fresh results. See RECOVERY.md.",
-  "publicRollback": "fff156b6 /543ccd32",
-  "phase3BE": "LOCKED"
+  "physicalDevices": "NOT TESTED",
+  "hardwareGPU": "NOT TESTED",
+  "humanKoreanContent": "PENDING",
+  "artisticAcceptance": "PENDING HUMAN REVIEW",
+  "warnings": [
+    "Earlier baseline69/71snapshot-observer failures remain historical warnings; current71/71does not prove an unrelated deterministic fix",
+    "First custom navigation planner used old mask and failed at newly opened paving; source masks now represented accurately in QA driver; actual movement verified",
+    "First isolated compiled packaging omitted runtime assets after removing assembler; exact590assetclosure added and rechecked; failing report retained",
+    "Simple original native soil/crop pixels require owner aesthetic review; no fullworld artistic acceptance implied"
+  ],
+  "phase3BE": "LOCKED",
+  "commercialRelease": "NOT CERTIFIED"
 }
