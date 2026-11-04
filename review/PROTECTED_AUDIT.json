@@ -1,25 +1,13 @@
 {
   "status": "PASS",
-  "base": "d54117c0958724276b98a131dbcb90a9af24e0fc",
-  "unchangedRetainedSourceAndRuntimeFiles": 10462,
-  "unchangedProtectedCodeFiles": 58,
-  "explicitAdditiveIntegrationCode": [
-    "src/gate3/main.ts",
-    "src/npcs/manager.ts"
-  ],
-  "changedApprovedArt": [],
-  "explicitRejectedDeletions": 416,
-  "byteIdenticalSourceArchiveMoves": 183,
+  "base": "b5e627bb58bbbc782beca4591dbec0f34c833ce3",
+  "unchangedExistingArtAndSourceFiles": 10473,
+  "protectedCodeFilesChecked": 62,
+  "changedProtectedAssets": [],
+  "scopedIntegration": "main.ts input/action hooks and NPCManager interaction/activation only; exact pins. Existing player motion,camera,collision and NPC route/data files byte-identical.",
   "newArt": [
-    "assets-src/farming/phase3bd/crops.png:6original16x20pixel frames",
-    "assets-src/farming/phase3bd/postcard.png:exact native crop of already approved Jeju bridge ground"
+    "assets-src/farming/phase3bd-in-world/PROVENANCE.json"
   ],
-  "newArtProvenance": [
-    "assets-src/farming/phase3bd/PROVENANCE.json",
-    "assets-src/farming/phase3bd/POSTCARD_PROVENANCE.json"
-  ],
-  "worldGeometryCameraNPCAndAvatarPixels": "UNCHANGED;3QAonlyapproachaliases versioned in source, no original manifest/target overwrite",
-  "sourceRollback": "d54117c0958724276b98a131dbcb90a9af24e0fc",
-  "compiledRollback": "b0164331134d5ea9ebce306fc3b16a19b9565744",
-  "livePagesUnchanged": "74235a6e7075b77840d2e9fdf36dce678288cd05"
+  "runtimeAdditions": "Six reversible116x12pxmanaged soil rows8352pixels,8tiny native tool/quest props and temporary effects; approved source PNGs unchanged.",
+  "physicalDevices": "NOT TESTED"
 }

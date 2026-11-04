@@ -1,0 +1,24 @@
+{
+  "snapshots": [
+    {
+      "phase": "Phase3BD physical gameplay candidate",
+      "path": "./",
+      "sha": "806d357389f86080e191a0c3bf530d7773241d6b"
+    },
+    {
+      "phase": "Phase3B-D candidate",
+      "path": "../../3b-d/dcf5709c-dcf5709c/",
+      "sha": "dcf5709c11b6b1d7e2ae94b5a7590948a2b15c9b"
+    },
+    {
+      "phase": "Approved Phase3B-B26 rollback",
+      "path": "../../3b-b/e48ea63b-e48ea63b/",
+      "sha": "74235a6e7075b77840d2e9fdf36dce678288cd05"
+    },
+    {
+      "phase": "Approved Contemporary20",
+      "path": "../../3b-a/contemporary20-e0f9db0d/",
+      "sha": "20674e77c1495474115f5cab16a78b7f6b52d8f8"
+    }
+  ]
+}

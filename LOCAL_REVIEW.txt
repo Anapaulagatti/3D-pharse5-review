@@ -1,4 +1,4 @@
-Private Phase3BD farm/shop/cleanup candidate. Unzip then run: python3 start-review.py
-Open http://127.0.0.1:4483/review/ . No npm or internet required.
-No new public exposure approval; current production/review Pages is unchanged.
-Physical Android/iPhone NOT TESTED.
+PRIVATE Phase3BD physical gameplay. Unzip then python3 start-review.py
+Open http://127.0.0.1:4483/review/ . No npm/internet. Python3 required.
+Exact new public approval PENDING; oldfff156b6/543ccd32 retained as rollback.
+Physical devices NOT TESTED. Human Korean content review PENDING.

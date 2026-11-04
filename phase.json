@@ -1,7 +1,7 @@
 {
-  "phase": "Phase3B-D farming/shops/cleanup",
-  "slug": "3b-d",
-  "gameRef": "dcf5709c11b6b1d7e2ae94b5a7590948a2b15c9b",
+  "phase": "Phase3BD physical world gameplay",
+  "slug": "3b-d-in-world",
+  "gameRef": "806d357389f86080e191a0c3bf530d7773241d6b",
   "publicExposure": "PENDING_EXACT_OWNER_APPROVAL",
   "artisticReview": "PENDING",
   "physicalDevices": "NOT TESTED"

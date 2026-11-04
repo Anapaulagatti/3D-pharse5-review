@@ -1,0 +1,40 @@
+{
+  "status": "PRIVATE REVIEW; HUMAN ACCEPTANCE PENDING",
+  "summary": "26preservedNPC /12players /24cosmetics /5quests. Physical3corequests+shop,compactHUD; approved world/art unchanged.",
+  "checks": {
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "format": "PASS",
+    "unit": "PASS 203/203",
+    "e2e": {
+      "startTime": "2026-11-04T01:20:28.802Z",
+      "duration": 721871.5009999999,
+      "expected": 69,
+      "skipped": 0,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "e2eRepeatedFollowup": {
+      "startTime": "2026-11-04T01:35:07.787Z",
+      "duration": 37767.407,
+      "expected": 8,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "currentE2ECoverage": "PASS all71current cases across runs:69full-suite passes+2corrected snapshot-observation cases repeated4times each(8/8). Initial full69/71 and first follow-up4/8 remain disclosed, NOT one clean71-test run.",
+    "actualWorldGameplay": "PASS ACTUAL PHASER THREE PHYSICAL QUESTS + SHOP",
+    "mobileLandscape": "PASS MOBILE LANDSCAPE TOUCH",
+    "protectedAssets": "PASS",
+    "physicalAndroid": "NOT TESTED",
+    "physicaliPhone": "NOT TESTED",
+    "hardwareGPU": "NOT TESTED",
+    "humanKoreanReview": "PENDING_HUMAN_REVIEW",
+    "humanGameplayArt": "PENDING",
+    "publicExposure": "PENDING_EXACT_NEW_MANIFEST_APPROVAL"
+  },
+  "evidenceDate": "2026-11-04",
+  "lostPreviousResults": "Historical only; not reused as fresh results. See RECOVERY.md.",
+  "publicRollback": "fff156b6 /543ccd32",
+  "phase3BE": "LOCKED"
+}

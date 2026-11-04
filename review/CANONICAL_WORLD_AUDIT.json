@@ -14,9 +14,9 @@
     "chunk/foreground residency before movement",
     "lazy selected player/NPC textures"
   ],
-  "activeAssets": 585,
+  "activeAssets": 587,
   "unchangedApprovedAssets": 582,
-  "artifactChecked": ".cache/phase3bd-candidate-dcf5709c",
-  "zipChecked": "docs/phase3bd/PHASE3BD_REVIEW.zip",
+  "artifactChecked": "dist",
+  "zipChecked": null,
   "sourceOrHistoryErased": false
 }
