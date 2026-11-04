@@ -1,9 +1,28 @@
 {
-  "checkedAt": "2026-11-03T09:43:55.122982+00:00",
-  "inspectionRunId": "41613376541",
+  "checkedAt": "2026-11-04T02:06:14.142061+00:00",
+  "inspectionRunId": "41758505555",
   "expectedControlCommit": "1b8d6d8883097b3586f2ba2b363e0b524d13b61f",
   "publicationByThisJob": false,
-  "checks": {},
+  "checks": {
+    "pages": {
+      "status": 200,
+      "data": {
+        "status": null,
+        "html_url": "https://anapaulagatti.github.io/3D-pharse5-review/",
+        "build_type": "workflow",
+        "https_enforced": true
+      },
+      "message": null
+    },
+    "actions": {
+      "status": 403,
+      "data": {
+        "enabled": null,
+        "allowed_actions": null
+      },
+      "message": "Resource not accessible by integration"
+    }
+  },
   "release": {
     "id": 41608981105,
     "run_number": 4,
@@ -553,12 +572,12 @@
     "files": 2875
   },
   "remainingGameplayRun": {
-    "id": 41612567977,
-    "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41612567977",
-    "head_sha": "d8b47575b533f95db7b6e78aaf4c3c72102f4b16",
+    "id": 41616970802,
+    "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41616970802",
+    "head_sha": "ba216bd85c402c53cd90482d3619dfabb9abf220",
     "status": "completed",
     "conclusion": "failure",
-    "created_at": "2026-11-03T09:37:48Z",
-    "updated_at": "2026-11-03T09:39:43Z"
+    "created_at": "2026-11-03T10:10:02Z",
+    "updated_at": "2026-11-03T10:11:35Z"
   }
 }
