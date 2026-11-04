@@ -4,6 +4,7 @@ import fs from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { verifyMotion } from './verify_motion.mjs';
 import{verifyPhase3BD}from'./verify_phase3bd.mjs';
+import{verifyFinalQuality}from'./verify_final_quality.mjs';
 import{verifyFarmPathHotfix}from'./verify_farm_path.mjs';
 import{verifyPhysicalWorld}from'./verify_physical_world.mjs';
 const base = process.env.LIVE_URL;
@@ -109,8 +110,9 @@ try {
   if(manifest.profile==='phase3bb-fictional26') result.motionCosmetics=await verifyMotion(browser,base);
   if(manifest.profile==='phase3bd-farm26') result.retiredHeadPreferencesAndMotion=await verifyMotion(browser,base,true);
   if(manifest.profile==='phase3bd-farm26')result.phase3BD=await verifyPhase3BD(browser,base,manifest,approved);
-  if(['phase3bd-in-world26','phase3bd-farm-path26'].includes(manifest.profile)){result.retiredHeadPreferencesAndMotion=await verifyMotion(browser,base,true);result.physicalWorld=await verifyPhysicalWorld(browser,base,manifest,approved);}
+  if(['phase3bd-in-world26','phase3bd-farm-path26','phase3bd-final-quality26'].includes(manifest.profile)){result.retiredHeadPreferencesAndMotion=await verifyMotion(browser,base,true);result.physicalWorld=await verifyPhysicalWorld(browser,base,manifest,approved);}
   if(manifest.profile==='phase3bd-farm-path26')result.farmPathHotfix=await verifyFarmPathHotfix(browser,base);
+  if(manifest.profile==='phase3bd-final-quality26')result.finalQuality=await verifyFinalQuality(browser,base);
   result.status = 'PASS ACTUAL DEPLOYED HTTPS GAME';
 } catch (e) { result.status = 'FAIL'; result.failure = e.stack; throw e; }
 finally { await fs.writeFile('evidence/LIVE_QA.json', JSON.stringify(result, null, 2)); await browser?.close(); }
