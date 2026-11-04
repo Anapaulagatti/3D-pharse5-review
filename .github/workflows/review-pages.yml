@@ -90,7 +90,7 @@ jobs:
           RECEIPT: ${{ needs.approval.outputs.receipt }}
         run: |
           mkdir qa-runner
-          cp verify_live.mjs verify_motion.mjs verify_phase3bd.mjs verify_farm.mjs verify_legacy.mjs verify_physical_world.mjs verify_physical_loops.mjs verify_physical_mobile.mjs walk_live.mjs qa-nav.json review-source.json qa-runner/
+          cp verify_live.mjs verify_motion.mjs verify_phase3bd.mjs verify_farm.mjs verify_legacy.mjs verify_farm_path.mjs walk_hotfix.mjs qa-nav-hotfix.json verify_physical_world.mjs verify_physical_loops.mjs verify_physical_mobile.mjs walk_live.mjs qa-nav.json review-source.json qa-runner/
           cp "$RECEIPT" qa-runner/approved-receipt.json
           npm install --prefix qa-runner --no-save --package-lock=false @playwright/test@1.64.1
           cd qa-runner

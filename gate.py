@@ -15,7 +15,8 @@ for row in m['files']:
 ids={r.get('npcId')for r in m['files']if r.get('npcId')};reviews=approval.get('npcReviews',{});q=approval
 config=json.loads(Path('review-source.json').read_text())
 profile=q.get('profile');spec=config.get('releaseProfiles',{}).get(profile)
-if profile=='phase3bd-in-world26' and spec:
+if profile in ['phase3bd-in-world26','phase3bd-farm-path26'] and spec:
+ if profile=='phase3bd-farm-path26' and not (m.get('gameCommit')==spec.get('gameBuildSourceCommit')==q.get('gameBuildSourceCommit')):errors.append('Exact hotfix source lineage mismatch')
  if ids and ids!=set(spec['npcIds']):errors.append('Unexpected declared NPC IDs in new manifest')
  pinned=spec.get('npcAssets',{});byname={r['filename']:r for r in m['files']};catalog=json.loads((root/'catalog.json').read_text())
  if len(catalog.get('npcs',[]))!=26 or {n['id']for n in catalog.get('npcs',[])}!=set(spec['npcIds']):errors.append('Exact26catalog mismatch')
@@ -26,7 +27,7 @@ if profile=='phase3bd-in-world26' and spec:
    n=asset['filename'];row=byname.get(n)
    if not n.startswith('play/assets/npcs/') or ('/'+npc+'/')not in n or not row or row['sha256']!=asset['sha256']:errors.append('Unverified actual NPC atlas: '+npc)
  ids=set(pinned)
- if len(m['files'])!=spec.get('manifestFiles') or q.get('manifestFiles')!=spec.get('manifestFiles'):errors.append('Exact3570file approval count required')
+ if len(m['files'])!=spec.get('manifestFiles') or q.get('manifestFiles')!=spec.get('manifestFiles'):errors.append('Exact configured file approval count required')
 
 if not spec or q.get('manifestSHA256')!=spec['manifestSHA256']:errors.append('Unreviewed exact release profile/manifest')
 if spec and set(q.get('npcReviews',{}))!=set(spec['npcIds']):errors.append('Exact selected roster review required')
