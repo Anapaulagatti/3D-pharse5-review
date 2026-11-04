@@ -54,7 +54,7 @@ if run:
    with urllib.request.build_opener(EvidenceRedirect()).open(req,timeout=30)as response:raw=response.read(10*1024*1024)
    with zipfile.ZipFile(io.BytesIO(raw))as z:
     name=next(n for n in z.namelist()if n=='LIVE_QA.json' or n.endswith('/LIVE_QA.json'));qa=json.loads(z.read(name))
-   out['hostedEvidence']={'status':'READ_ACTUAL_RUN_ARTIFACT','artifactId':artifact['id'],'runId':run['id'],'qa':{k:qa.get(k)for k in ['status','url','checkedAt','liveManifestSHA256','actors','errors','missing','mobileJoystickDistance','phase3BD','retiredHeadPreferencesAndMotion','failure','physicalDevices','hardwareGPU','transientAssetRetries']},'assetURLsChecked':len(qa.get('assetURLs',[]))}
+   out['hostedEvidence']={'status':'READ_ACTUAL_RUN_ARTIFACT','artifactId':artifact['id'],'runId':run['id'],'qa':{k:qa.get(k)for k in ['status','url','checkedAt','liveManifestSHA256','actors','errors','missing','mobileJoystickDistance','phase3BD','physicalWorld','retiredHeadPreferencesAndMotion','failure','physicalDevices','hardwareGPU','transientAssetRetries']},'assetURLsChecked':len(qa.get('assetURLs',[]))}
   except Exception as e:out['hostedEvidence']={'status':'READ_FAILED','error':str(e)}
 try:
  import hashlib

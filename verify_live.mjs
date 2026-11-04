@@ -4,6 +4,7 @@ import fs from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { verifyMotion } from './verify_motion.mjs';
 import{verifyPhase3BD}from'./verify_phase3bd.mjs';
+import{verifyPhysicalWorld}from'./verify_physical_world.mjs';
 const base = process.env.LIVE_URL;
 const url = new URL(base);
 if (url.protocol !== 'https:' || url.hostname !== 'anapaulagatti.github.io' || url.pathname !== '/3D-pharse5-review/') throw Error('Refuse wrong deployment destination');
@@ -107,6 +108,7 @@ try {
   if(manifest.profile==='phase3bb-fictional26') result.motionCosmetics=await verifyMotion(browser,base);
   if(manifest.profile==='phase3bd-farm26') result.retiredHeadPreferencesAndMotion=await verifyMotion(browser,base,true);
   if(manifest.profile==='phase3bd-farm26')result.phase3BD=await verifyPhase3BD(browser,base,manifest,approved);
+  if(manifest.profile==='phase3bd-in-world26'){result.retiredHeadPreferencesAndMotion=await verifyMotion(browser,base,true);result.physicalWorld=await verifyPhysicalWorld(browser,base,manifest,approved);}
   result.status = 'PASS ACTUAL DEPLOYED HTTPS GAME';
 } catch (e) { result.status = 'FAIL'; result.failure = e.stack; throw e; }
 finally { await fs.writeFile('evidence/LIVE_QA.json', JSON.stringify(result, null, 2)); await browser?.close(); }
