@@ -2,6 +2,6 @@
   "purpose": "Read exactPhase3BD release and protected environment status; no approve/bypass",
   "expectedControlCommit": "11038eeab4830d008294bf6d3adc9332d633613a",
   "manifestSHA256": "d170ee180c4743ab8bee4b4a952c7bf1b7f69c2c8083e1b2eb84cf6846beea58",
-  "requestedAt": "2026-11-04T08:16:26.542507+00:00",
-  "refreshReason": "Read approved farm-path hotfix run and required environment review; exact5b5ce278artifact; no approval bypass"
+  "requestedAt": "2026-11-04T08:54:29.184687+00:00",
+  "refreshReason": "Read actual current candidate/live baseline before owner-requested final farming-art and western-hanok correction; no deployment"
 }
