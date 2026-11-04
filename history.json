@@ -1,0 +1,34 @@
+{
+  "snapshots": [
+    {
+      "phase": "Phase3B-D final farming art / western hanok quality · Git archive (online)",
+      "sha": "b865b6591e7255ec08d5bcaa4c81db26f050e5a4",
+      "path": "https://github.com/Anapaulagatti/3D-pharse5-review/tree/1a6e5a58a8fb515730e553a30980d2ffb7274da6/phases/3b-d-final-quality/b865b659/"
+    },
+    {
+      "phase": "Phase3BD farming lifecycle + narrow-path hotfix · Git archive (online)",
+      "sha": "79f290581434306371ee892cf411c3d9766aebea",
+      "path": "https://github.com/Anapaulagatti/3D-pharse5-review/tree/1a6e5a58a8fb515730e553a30980d2ffb7274da6/phases/3b-d-farm-path/79f29058/"
+    },
+    {
+      "phase": "Phase3BD physical gameplay candidate · Git archive (online)",
+      "path": "https://github.com/Anapaulagatti/3D-pharse5-review/tree/1a6e5a58a8fb515730e553a30980d2ffb7274da6/phases/3b-d-in-world/806d3573-806d3573/",
+      "sha": "806d357389f86080e191a0c3bf530d7773241d6b"
+    },
+    {
+      "phase": "Phase3B-D candidate · Git archive (online)",
+      "path": "https://github.com/Anapaulagatti/3D-pharse5-review/tree/1a6e5a58a8fb515730e553a30980d2ffb7274da6/phases/3b-d/dcf5709c-dcf5709c/",
+      "sha": "dcf5709c11b6b1d7e2ae94b5a7590948a2b15c9b"
+    },
+    {
+      "phase": "Approved Phase3B-B26 rollback · Git archive (online)",
+      "path": "https://github.com/Anapaulagatti/3D-pharse5-review/tree/1a6e5a58a8fb515730e553a30980d2ffb7274da6/phases/3b-b/e48ea63b-e48ea63b/",
+      "sha": "74235a6e7075b77840d2e9fdf36dce678288cd05"
+    },
+    {
+      "phase": "Approved Contemporary20 · Git archive (online)",
+      "path": "https://github.com/Anapaulagatti/3D-pharse5-review/tree/1a6e5a58a8fb515730e553a30980d2ffb7274da6/phases/3b-a/contemporary20-e0f9db0d/",
+      "sha": "20674e77c1495474115f5cab16a78b7f6b52d8f8"
+    }
+  ]
+}

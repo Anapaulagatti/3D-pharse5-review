@@ -1,0 +1,9 @@
+ROADMAP V2 PRIVATE REVIEW
+Unzip, run: python3 start-review.py
+Open http://127.0.0.1:4483/review/ then Play. Python3 required; no npm/internet/account.
+WASD/arrows move, Shift run, E interact; mobile landscape joystick/action.
+Start normally for farm/seed quests. Interiors: Minseo cafe door, Jiho bookshop, Eunji workshop.
+12species unlock through actual farm/market quests; 36independentcells.
+Original public Pages1a6e5a58 stays unchanged. NEW public exposure pending exact owner approval.
+New art and Korean content: PENDING HUMAN REVIEW. Physical Android/iPhone/GPU: NOT TESTED.
+Previous snapshots stay in immutable Git1a6e5a58; online links only, not bundled in ZIP.
