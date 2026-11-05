@@ -1,7 +1,7 @@
 {
   "url": "https://anapaulagatti.github.io/3D-pharse5-review/",
-  "deploymentRunId": 41074415941,
-  "artifactCommit": "74235a6e7075b77840d2e9fdf36dce678288cd05",
-  "manifestSHA256": "db9d4bb68f31c819d79ec95efaad1befce257086e64c41a5c93c2ba6fe7deb2f",
-  "reason": "Deployment succeeded; independently rerun read-only browser verification with bounded backoff for transient CDN503 and a smaller paced HEAD pool. Retain all failures/retries; no asset or deployment mutation."
+  "deploymentRunId": 41953272432,
+  "artifactCommit": "671d267e5c3c49eceb2578dbdc847d1bb92eb136",
+  "manifestSHA256": "cdf3f6d5b117a4912fda9d88c2dc12d1cdfeded4ba39ca343bab217918b578db",
+  "reason": "Read-only actual HTTPS V2 proof after exact frozen deployment. Local rehearsal identified two supplemental QA adapters opened portal root instead of play/. Fix driver only; candidate unchanged. Retain original release QA failure, do not redeploy or request another environment approval."
 }
