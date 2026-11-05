@@ -3,5 +3,6 @@
   "expectedControlCommit": "d398a0b769526b11b268a2c37b1ab788c50e13d0",
   "artifactCommit": "671d267e5c3c49eceb2578dbdc847d1bb92eb136",
   "manifestSHA256": "cdf3f6d5b117a4912fda9d88c2dc12d1cdfeded4ba39ca343bab217918b578db",
-  "requestedAt": "2026-11-05T02:09:22.790057+00:00"
+  "requestedAt": "2026-11-05T02:13:18.217701+00:00",
+  "refreshReason": "Read legitimate environment review for exact unchanged V2; retain all first-driver failures and fresh fullE2E progress separately"
 }
