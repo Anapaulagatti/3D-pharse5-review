@@ -1,3 +1,7 @@
+import{verifyV2Progression}from'./verify_v2_progression.mjs';
+import{verifyV2Story}from'./verify_v2_story.mjs';
+import{verifyTwelveCrops}from'./verify_v2_crops.mjs';
+import{verifyV2}from'./verify_v2.mjs';
 // Hosted QA only: opens the actual deployed game. Never builds or edits game files.
 import { chromium } from '@playwright/test';
 import fs from 'node:fs/promises';
@@ -113,6 +117,7 @@ try {
   if(['phase3bd-in-world26','phase3bd-farm-path26','phase3bd-final-quality26'].includes(manifest.profile)){result.retiredHeadPreferencesAndMotion=await verifyMotion(browser,base,true);result.physicalWorld=await verifyPhysicalWorld(browser,base,manifest,approved);}
   if(manifest.profile==='phase3bd-farm-path26')result.farmPathHotfix=await verifyFarmPathHotfix(browser,base);
   if(manifest.profile==='phase3bd-final-quality26')result.finalQuality=await verifyFinalQuality(browser,base);
+  if(manifest.profile==='roadmap-v2-local26'){result.roadmapV2=await verifyV2(browser,base);[result.v2Progression,result.v2Story,result.v2TwelveCrops]=await Promise.all([verifyV2Progression(browser,base),verifyV2Story(browser,base),verifyTwelveCrops(browser,base)]);}
   result.status = 'PASS ACTUAL DEPLOYED HTTPS GAME';
 } catch (e) { result.status = 'FAIL'; result.failure = e.stack; throw e; }
 finally { await fs.writeFile('evidence/LIVE_QA.json', JSON.stringify(result, null, 2)); await browser?.close(); }

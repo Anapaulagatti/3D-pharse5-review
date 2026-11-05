@@ -27,7 +27,12 @@ for group in ['world','playable-characters','cosmetics','third-party-code-fonts-
   continue
  if g.get('decision')!='ALLOW_PUBLIC_PREVIEW'or not g.get('justification'):errors.append(group+': exposure decision pending')
 if not q.get('snapshotManifests'):errors.append('Snapshot retention record required')
+am=q.get('historyRetentionAmendment')
+if profile=='roadmap-v2-local26':
+ if not am or am.get('decision')!='APPROVED_BY_OWNER' or am.get('policy')!='IMMUTABLE_GIT_ARCHIVE_INSTEAD_OF_DUPLICATED_SITE' or am.get('artifactCommit')!='1a6e5a58a8fb515730e553a30980d2ffb7274da6' or am.get('manifestSHA256')!='331cd300478f879bab11e9541803dd7c47ba1caaab339263f37150ae6c0d0ce4' or am.get('snapshotManifests')!=q.get('snapshotManifests'):errors.append('Explicit exact immutable-history retention amendment approval required')
 if errors:raise SystemExit('BLOCKED BEFORE ART FETCH\n'+'\n'.join(errors))
 if os.environ.get('GITHUB_OUTPUT'):
  with open(os.environ['GITHUB_OUTPUT'],'a')as f:f.write('artifact='+q['artifactCommit']+'\n')
+if profile=='roadmap-v2-local26' and os.environ.get('GITHUB_OUTPUT'):
+ with open(os.environ['GITHUB_OUTPUT'],'a')as f:f.write('history_artifact='+am['artifactCommit']+'\n')
 print('Owner receipt structurally complete; not a legal clearance. Exact site gate and protected environment review still required.')

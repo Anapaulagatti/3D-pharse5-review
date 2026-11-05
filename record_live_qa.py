@@ -9,7 +9,12 @@ if receipt['profile']=='phase3bb-fictional26':passed=passed and q.get('motionCos
 if receipt['profile'] in ['phase3bd-in-world26','phase3bd-farm-path26','phase3bd-final-quality26']:passed=passed and q.get('physicalWorld',{}).get('status')=='PASS ACTUAL HOSTED PHYSICAL PHASE3BD' and q.get('retiredHeadPreferencesAndMotion',{}).get('status')=='PASS ACTUAL BROWSER POSE/INPUT CHECKS'
 if receipt['profile']=='phase3bd-farm-path26':passed=passed and q.get('farmPathHotfix',{}).get('status')=='PASS ACTUAL FARM LIFECYCLE / QUEST / PATHS'
 if receipt['profile']=='phase3bd-final-quality26':passed=passed and q.get('finalQuality',{}).get('status')=='PASS ACTUAL FINAL QUALITY'
+if receipt['profile']=='roadmap-v2-local26':passed=passed and q.get('roadmapV2',{}).get('status')=='PASS EXACT V2 GAME / ALL HTTP HASHES / FARM / THREE ROOMS / VIDEO' and q.get('v2Progression',{}).get('status','').startswith('PASS NORMAL START') and q.get('v2Story',{}).get('status','').startswith('PASS ACTUAL EIGHT-STEP') and q.get('v2TwelveCrops',{}).get('status')=='PASS ALL12 ACTUAL NATIVE CROP CYCLES'
 report={'recordedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'runId':os.environ['GITHUB_RUN_ID'],'runAttempt':os.environ['GITHUB_RUN_ATTEMPT'],'runURL':'https://github.com/'+os.environ['GITHUB_REPOSITORY']+'/actions/runs/'+os.environ['GITHUB_RUN_ID'],'status':'PASS ACTUAL DEPLOYED HTTPS GAME'if passed else'NOT VERIFIED / '+q.get('status','NO REPORT'),'url':q.get('url'),'expectedAssetManifestSHA256':receipt['manifestSHA256'],'actualLiveManifestSHA256':q.get('liveManifestSHA256'),'artifactCommit':receipt['artifactCommit'],'profile':receipt['profile'],'actorChecks':q.get('actors',[]),'assetURLsChecked':len(q.get('assetURLs',[])),'errors':q.get('errors',[]),'missing':q.get('missing',[]),'mobileJoystickDistance':q.get('mobileJoystickDistance'),'failure':q.get('failure',q.get('reason')),'physicalDevices':'NOT TESTED','hardwareGPU':'NOT TESTED'}
+report['roadmapV2']=q.get('roadmapV2')
+report['v2Progression']=q.get('v2Progression')
+report['v2Story']=q.get('v2Story')
+report['v2TwelveCrops']=q.get('v2TwelveCrops')
 report['motionCosmetics']=q.get('motionCosmetics')
 report['physicalWorld']=q.get('physicalWorld')
 report['farmPathHotfix']=q.get('farmPathHotfix')

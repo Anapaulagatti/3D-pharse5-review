@@ -25,6 +25,7 @@ jobs:
     outputs:
       artifact: ${{ steps.receipt.outputs.artifact }}
       receipt: ${{ steps.path.outputs.receipt }}
+      history_artifact: ${{ steps.receipt.outputs.history_artifact }}
     steps:
       - uses: actions/checkout@v4
       - id: path
@@ -61,6 +62,12 @@ jobs:
           ref: ${{ needs.approval.outputs.artifact }}
           path: compiled-source
           persist-credentials: false
+      - uses: actions/checkout@v4
+        if: needs.approval.outputs.history_artifact != ''
+        with:
+          ref: ${{ needs.approval.outputs.history_artifact }}
+          path: immutable-history
+          persist-credentials: false
       - name: Export existing compiled files only (no npm, Vite build or source generation)
         run: python export_site.py compiled-source site
       - name: Exact asset hashes, individual exposure review and snapshot history
@@ -68,7 +75,11 @@ jobs:
           RECEIPT: ${{ needs.approval.outputs.receipt }}
         run: |
           python gate.py site "$RECEIPT"
-          python history_gate.py site "$RECEIPT"
+          if [ -d immutable-history ]; then
+            python history_gate.py site "$RECEIPT" immutable-history
+          else
+            python history_gate.py site "$RECEIPT"
+          fi
       - uses: actions/configure-pages@v5
       - name: Pack exact allowlist including retained snapshot dot metadata
         run: python package_pages.py site "$RUNNER_TEMP/artifact.tar"
@@ -90,7 +101,7 @@ jobs:
           RECEIPT: ${{ needs.approval.outputs.receipt }}
         run: |
           mkdir qa-runner
-          cp verify_live.mjs verify_motion.mjs verify_phase3bd.mjs verify_farm.mjs verify_legacy.mjs verify_final_quality.mjs verify_quality_hanok.mjs walk_quality.mjs qa-nav-quality.json verify_farm_path.mjs walk_hotfix.mjs qa-nav-hotfix.json verify_physical_world.mjs verify_physical_loops.mjs verify_physical_mobile.mjs walk_live.mjs qa-nav.json review-source.json qa-runner/
+          cp verify_live.mjs verify_motion.mjs verify_phase3bd.mjs verify_farm.mjs verify_legacy.mjs verify_final_quality.mjs verify_quality_hanok.mjs walk_quality.mjs qa-nav-quality.json verify_farm_path.mjs walk_hotfix.mjs qa-nav-hotfix.json verify_physical_world.mjs verify_physical_loops.mjs verify_physical_mobile.mjs walk_live.mjs qa-nav.json review-source.json verify_v2.mjs walk_v2.mjs qa-nav-v2.json.gz verify_v2_progression.mjs verify_v2_story.mjs verify_v2_crops.mjs room_v2.mjs v2-crop-cases.json qa-runner/
           cp "$RECEIPT" qa-runner/approved-receipt.json
           npm install --prefix qa-runner --no-save --package-lock=false @playwright/test@1.64.1
           cd qa-runner
@@ -101,7 +112,9 @@ jobs:
         with:
           name: live-https-verification
           overwrite: true
-          path: qa-runner/evidence/LIVE_QA.json
+          path: |
+            qa-runner/evidence/LIVE_QA.json
+            qa-runner/evidence/v2*/**/*
   record-verification:
     needs: [approval, deploy]
     if: always() && needs.deploy.result != 'skipped'
