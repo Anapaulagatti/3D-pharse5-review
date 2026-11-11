@@ -1,7 +1,8 @@
 {
   "purpose": "Read exact owner-approved V4 deployment; no approval bypass",
-  "expectedControlCommit": null,
+  "expectedControlCommit": "5445f3ef105148b699c4e9303b6e997d7cca2848",
   "artifactCommit": "e5f2e4ddfe5ce6d611172302cada81b56c51dcbc",
   "manifestSHA256": "5a00ce7bae1aedb00a1904006f4bdfab79c58d96c4fded41aa85ae840759c4ee",
-  "requestedAt": "2026-11-11T15:04:51.084445+00:00"
+  "requestedAt": "2026-11-11T15:12:48.675184+00:00",
+  "refreshReason": "Read required github-pages environment gate after initial inspection raced approval job; no deployment rerun or approval bypass"
 }
