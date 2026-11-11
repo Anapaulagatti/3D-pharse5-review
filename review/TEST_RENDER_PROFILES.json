@@ -1,0 +1,62 @@
+{
+  "sourceCommit": "9b93721625042d31d1b9b5f20e69df497afde1ed",
+  "AUTO_WEBGL": {
+    "status": "FAIL",
+    "launch": "Canonical Playwright flags: ANGLE/SwiftShader software GPU,4CPU quota; no physical GPU certification",
+    "report": "auto-webgl-9b/e2e-results.json",
+    "stats": {
+      "startTime": "2026-11-11T09:25:40.611Z",
+      "duration": 1299158.118,
+      "expected": 81,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "warning": "This default-profile result is not overwritten or converted into PASS by Canvas tests."
+  },
+  "CANVAS_FALLBACK": {
+    "status": "PASS",
+    "config": "docs/roadmap-v4/qa-scripts/canvas.playwright.config.ts",
+    "configSHA256": "65d67749b9e2c466b4e7e2c208dbb7b3157fe254b169170a33eaeea139f95596",
+    "policy": "Same full82tests, assertions and deadlines, no retries/skips. Browser WebGL disabled to exercise genuine existing Phaser Canvas fallback; not a source-art or canonical renderer change, not WebGLPASS.",
+    "startedAt": "2026-11-11T09:49:01.509776+00:00",
+    "exitCode": 1,
+    "stats": {
+      "startTime": "2026-11-11T10:33:22.195Z",
+      "duration": 809199.384,
+      "expected": 82,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "finishedAt": "2026-11-11T10:06:38.630851+00:00",
+    "sourceCommit": "21cc539259853952c91e548fb782cbd6df2e8785",
+    "previous": "canvas-9b-full/CANVAS_PROFILE_E2E.json:80PASS2FAIL retained",
+    "targeted": "LIFECYCLE_DEBUG_FOCUSED.json:8PASS repeated two times",
+    "artifactSourceCommit": "21cc539259853952c91e548fb782cbd6df2e8785",
+    "fullSuiteCommit": "35e0b40593835cf69a556f171210e623fa47f3aa",
+    "scope": "Entire82cases zero skipped/retries/flaky, after fresh236unit; same canonical runtime with real Canvas fallback. NOT default-WebGL certification."
+  },
+  "CURRENT_DEFAULT": {
+    "status": "PASS",
+    "sourceCommit": "35e0b405",
+    "stats": {
+      "startTime": "2026-11-11T14:01:36.055Z",
+      "duration": 1070131.429,
+      "expected": 82,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "flags": [
+      "--no-sandbox",
+      "--disable-gpu-compositing",
+      "--use-gl=angle",
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader"
+    ],
+    "report": "CURRENT_DEFAULT_PROFILE_E2E.json",
+    "oldFailureNotErased": true,
+    "physicalHardware": "NOT TESTED"
+  }
+}

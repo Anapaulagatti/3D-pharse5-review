@@ -1,0 +1,60 @@
+{
+  "status": "PASS ACTUAL_RECEIVED_CROP_AND_SEED_CONSUMPTION",
+  "sourceCommit": "21cc539259853952c91e548fb782cbd6df2e8785",
+  "proof": "Read-only deltas between real initial post-shop capture and final actual harvest save from the uncut successful V01; no inventory/progress writes after start.",
+  "rows": [
+    {
+      "crop": "radish",
+      "before": 5,
+      "after": 7,
+      "received": 2,
+      "seedBefore": 1,
+      "seedAfter": 0
+    },
+    {
+      "crop": "scallion",
+      "before": 2,
+      "after": 5,
+      "received": 3,
+      "seedBefore": 1,
+      "seedAfter": 0
+    },
+    {
+      "crop": "carrot",
+      "before": 3,
+      "after": 6,
+      "received": 3,
+      "seedBefore": 1,
+      "seedAfter": 0
+    }
+  ],
+  "nineNativeCaptures": [
+    "00-empty-rims",
+    "01-tilled",
+    "02-sown-dry",
+    "03-watered",
+    "04-sprout",
+    "05-young",
+    "06-growing",
+    "07-mature",
+    "08-harvested"
+  ],
+  "harvestedPlots": {
+    "NW-FARM-01": {
+      "stage": "empty",
+      "cycle": 2,
+      "lastHarvestedAt": 1794394769119
+    },
+    "NW-FARM-05": {
+      "stage": "empty",
+      "cycle": 1,
+      "lastHarvestedAt": 1794394774948
+    },
+    "NW-FARM-06": {
+      "stage": "empty",
+      "cycle": 1,
+      "lastHarvestedAt": 1794394778720
+    }
+  },
+  "recordedAt": "2026-11-11T11:00:03.441127+00:00"
+}

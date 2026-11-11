@@ -1,0 +1,66 @@
+{
+  "status": "PASS EXACT NATIVE CROP BODY READBACK",
+  "captures": [
+    {
+      "stage": "04-sprout",
+      "frame": "carrot-sprout",
+      "worldRoot": [
+        909,
+        604
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "sampling": 1,
+      "opaqueBodyPixelsCompared": 95,
+      "mismatches": 0
+    },
+    {
+      "stage": "05-young",
+      "frame": "carrot-young",
+      "worldRoot": [
+        909,
+        604
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "sampling": 1,
+      "opaqueBodyPixelsCompared": 133,
+      "mismatches": 0
+    },
+    {
+      "stage": "06-growing",
+      "frame": "carrot-growing",
+      "worldRoot": [
+        909,
+        604
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "sampling": 1,
+      "opaqueBodyPixelsCompared": 186,
+      "mismatches": 0
+    },
+    {
+      "stage": "07-mature",
+      "frame": "carrot-ready",
+      "worldRoot": [
+        909,
+        604
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "sampling": 1,
+      "opaqueBodyPixelsCompared": 225,
+      "mismatches": 0
+    }
+  ],
+  "scope": "Exact original atlas body rows0..39, all opaque pixels; contact shadow/selected ground marker below anchor are not part of body test. Original PNGs unchanged. This does not prove human artistic success."
+}

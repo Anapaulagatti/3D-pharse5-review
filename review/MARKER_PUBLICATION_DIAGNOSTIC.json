@@ -1,0 +1,213 @@
+{
+  "sourceCommit": "21cc539259853952c91e548fb782cbd6df2e8785",
+  "scope": "Read-only snapshots around actual E interaction; no state/time/position writes",
+  "rows": [
+    {
+      "i": 0,
+      "before": {
+        "x": 2598.5,
+        "y": 2719.0624000000025,
+        "visited": [],
+        "npc": null,
+        "dialogue": null
+      },
+      "immediate": {
+        "visited": [],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      },
+      "later": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      }
+    },
+    {
+      "i": 1,
+      "before": {
+        "x": 2598.5,
+        "y": 2719.0572000000043,
+        "visited": [],
+        "npc": null,
+        "dialogue": null
+      },
+      "immediate": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      },
+      "later": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      }
+    },
+    {
+      "i": 2,
+      "before": {
+        "x": 2598.5,
+        "y": 2719.0544000000036,
+        "visited": [],
+        "npc": null,
+        "dialogue": null
+      },
+      "immediate": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      },
+      "later": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      }
+    },
+    {
+      "i": 3,
+      "before": {
+        "x": 2598.5,
+        "y": 2719.0656000000017,
+        "visited": [],
+        "npc": null,
+        "dialogue": null
+      },
+      "immediate": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      },
+      "later": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      }
+    },
+    {
+      "i": 4,
+      "before": {
+        "x": 2598.5,
+        "y": 2719.0676000000017,
+        "visited": [],
+        "npc": null,
+        "dialogue": null
+      },
+      "immediate": {
+        "visited": [],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      },
+      "later": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      }
+    },
+    {
+      "i": 5,
+      "before": {
+        "x": 2598.5,
+        "y": 2719.061800000003,
+        "visited": [],
+        "npc": null,
+        "dialogue": null
+      },
+      "immediate": {
+        "visited": [],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      },
+      "later": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      }
+    },
+    {
+      "i": 6,
+      "before": {
+        "x": 2598.5,
+        "y": 2719.0556000000042,
+        "visited": [],
+        "npc": null,
+        "dialogue": null
+      },
+      "immediate": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      },
+      "later": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      }
+    },
+    {
+      "i": 7,
+      "before": {
+        "x": 2598.5,
+        "y": 2719.0568000000044,
+        "visited": [],
+        "npc": null,
+        "dialogue": null
+      },
+      "immediate": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      },
+      "later": {
+        "visited": [
+          "station"
+        ],
+        "paused": false,
+        "npc": null,
+        "dialogue": null
+      }
+    }
+  ],
+  "observedDelayedPublications": 3,
+  "command": "node /tmp/v4-marker-diagnostic.mjs",
+  "savedExactScript": "docs/roadmap-v4/qa-scripts/marker-publication-diagnostic.mjs",
+  "scriptSHA256": "5aef4ab0bfe67e9a59192be1679ea9044578f612d0875c9aa32123c185c98acb",
+  "interpretation": "3/8 actual E interactions had an empty immediate exported snapshot and station in the snapshot100ms later, with no NPC target/dialogue. Validation must await the observed publication before preserving it."
+}

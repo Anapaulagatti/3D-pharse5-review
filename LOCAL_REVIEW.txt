@@ -1,0 +1,9 @@
+KOREAN PIXEL TOWN V4 PRIVATE REVIEW
+Unzip; run python3 start-review.py --port 4492
+Open http://127.0.0.1:4492/review/ then Canvas Play. Direct http://127.0.0.1:4492/play/?renderer=canvas . Python3 only; no npm/network/account.
+WASD/arrows move; Shift run; E physical interaction; mobile landscape joystick/action.
+Native96x112 player scale unchanged. Begin normally for seed quests. Enter cafe/seedshop717,2605, bookshop1128,2605, workshop1418,2605.
+12crops/36independentcells/12interwovenquests/36Hangulpracticeitems.
+Canvas functional review only. Historical9b AUTO/SwiftShader full suite81PASS1FAIL(Taeyang120s) remains unexplained; current full AUTO results are in CURRENT_DEFAULT_PROFILE_E2E.json and QA_RESULT.json. No hardware/WebGL certification. Korean/art/humanplayability review pending; physical Android/iPhone/GPU NOT TESTED.
+No live backend/multiplayer/ads/learning-site writes. Changed public exposure pending exact owner approval.
+Rollback existing V2 artifact671d267e/manifestcdf3f6d5 remains intact in immutableGit.

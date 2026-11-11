@@ -1,0 +1,37 @@
+/** Explicit fallback capability profile. Same82tests/timeout/assertions; not WebGL certification. */
+import { defineConfig } from "@playwright/test";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import base from "../../../playwright.config";
+const root = fileURLToPath(new URL("../../../", import.meta.url));
+const use = base.use!;
+export default defineConfig({
+  ...base,
+  testDir: path.join(root, "tests/e2e"),
+  outputDir: path.join(root, "test-results"),
+  metadata: {
+    rendererProfile: "CANVAS_FALLBACK_FUNCTIONAL",
+    webGLCapability: "DISABLED_BY_BROWSER_FLAGS",
+    canonicalRendererCode: "UNCHANGED",
+    automaticWebGLStatus: "SEPARATE_FAIL_REPORT_RETAINED_NOT_ACCEPTED",
+  },
+  use: {
+    ...use,
+    launchOptions: {
+      ...use.launchOptions,
+      args: [
+        ...(use.launchOptions?.args ?? []),
+        "--disable-webgl",
+        "--disable-webgl2",
+      ],
+    },
+  },
+  reporter: [
+    ["list"],
+    ["json", { outputFile: path.join(root, "docs/roadmap-v4/final-clean-e2e/e2e-results.json") }],
+  ],
+  webServer: {
+    ...(base.webServer as object),
+    cwd: root,
+  },
+});

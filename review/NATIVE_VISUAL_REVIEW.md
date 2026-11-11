@@ -1,0 +1,5 @@
+# Native visual inspection · implementing agent, not owner approval
+
+Inspected actual final compiled PNGs: farm growing/mature, all three rooms, Jeju junction with foot/zone debug. Farm timber/paths remain continuous, plants retain crisp source clusters and roots inside native soil. No obvious old green crop fragments remain inside repaired soil. Three rooms differ in size, floor, furniture and circulation: market L-counter/crates, library shelves/rug/desks, workshop tool bench/rack. Original player/NPC pixels are preserved. Interior props are visibly simpler in material/shadow treatment than protected outdoor Muneum-quality architecture; this remains a human artistic decision, not an automatic PASS.
+
+Native readback independently compares original opaque prop/floor and crop body pixels; source masks verify0outside-ROI edits. These checks do not grant art approval. Review JPEGs are explicitly compressed copies; original native PNGs are byte-copied. Additional all-six-bed stage images are explicitly ART FIXTURES initialized before boot, not earned gameplay or timer/reward evidence. V01 and FARM_REWARD_READBACK.json supply genuine action/reward evidence instead.

@@ -1,0 +1,125 @@
+{
+  "scope": "Technical observations, never human artistic/language or physical-device acceptance.",
+  "items": [
+    {
+      "id": "A01",
+      "status": "PARTIAL",
+      "judgment": "Sáu mask native riêng đã bỏ crop cũ, giữ border nguồn; human art acceptance còn chờ.",
+      "evidence": "NATIVE_OWNERSHIP_AUDIT.json"
+    },
+    {
+      "id": "A02",
+      "status": "PASS",
+      "judgment": "Ba crop, xới/gieo/khô/tưới/mầm/non/lớn/chín/thu hoạch bằng input thật và đồng hồ thật.",
+      "evidence": "FARM_FINAL_RUNTIME.json"
+    },
+    {
+      "id": "A03",
+      "status": "PASS",
+      "judgment": "12crop/62frames, hai quest unlock; lock/sow enforcement, save và reward/stock unit/runtime coverage.",
+      "evidence": "ECONOMY_TABLE.json"
+    },
+    {
+      "id": "A04",
+      "status": "PASS",
+      "judgment": "Pixel skin/nine-slice HUD, bag/journal/wallet/hotbar và3viewport/DPR; mua/trồng cần physical context.",
+      "evidence": "NATIVE_CAPTURE_INDEX.json"
+    },
+    {
+      "id": "A05",
+      "status": "PASS",
+      "judgment": "Ba phòng thật, cửa canonical, NPC/transactions/service/exit/save; một player, actor borrowed không duplicate.",
+      "evidence": "INTERIOR_REGISTRY.json"
+    },
+    {
+      "id": "A06",
+      "status": "PASS",
+      "judgment": "Farm→shop/unlock/quest, sai/đúng Hangul, atomic reward và reload; không instant complete từ xa.",
+      "evidence": "QUEST_RUNTIME.json"
+    },
+    {
+      "id": "A07",
+      "status": "PASS",
+      "judgment": "Full E2E gồm western hanok/đường nối/farm/station/bridge; exactJeju bổ sung real bidirectional.",
+      "evidence": "final-clean-e2e/e2e-results.json"
+    },
+    {
+      "id": "A08",
+      "status": "PASS",
+      "judgment": "627asset closure chỉ current world/approved components; không deletion mới hoặc restore rejected map.",
+      "evidence": "PROTECTED_AUDIT.json"
+    },
+    {
+      "id": "A09",
+      "status": "PARTIAL",
+      "judgment": "10763protected files byte-identical and completeCanvas12player/26NPC functional coverage; defaultAUTO/SwiftShader fullsuite has open120s Taeyang budget failure.",
+      "evidence": "PROTECTED_AUDIT.json"
+    },
+    {
+      "id": "A10",
+      "status": "PASS",
+      "judgment": "Draft Korean giữ PENDING_HUMAN_REVIEW; quyền/nguồn không giả VERIFIED; chưa public candidate.",
+      "evidence": "RIGHTS_AND_CONTENT.md"
+    },
+    {
+      "id": "A11",
+      "status": "PASS",
+      "judgment": "Local contracts và disabled flags; không live backend/ads/multiplayer/studentdata.",
+      "evidence": "ROADMAP_RECONCILIATION.md"
+    },
+    {
+      "id": "A12",
+      "status": "PARTIAL",
+      "judgment": "Candidate compiled đã kiểm; ZIP/manifest/HTTP checks có trong PACKAGE_PROOF cuối ngoài artifact (tránh checksum tự tham chiếu). Public exact approval còn chờ.",
+      "evidence": "PACKAGE_PROOF.json"
+    },
+    {
+      "id": "A13",
+      "status": "PASS",
+      "judgment": "78legs mỗi plain/debug; cầuB→junction→đônghanok→doorway và return/walk/run, water/wall/roof vẫn chặn.",
+      "evidence": "JEJU_RUNTIME.json"
+    },
+    {
+      "id": "A14",
+      "status": "PASS",
+      "judgment": "36actualUIcases, grade/topic/choice/typed NFC/NFD/IME; KO→VI taxonomy riêng, không coins/mastery write.",
+      "evidence": "HANGUL_RUNTIME.json"
+    },
+    {
+      "id": "A15",
+      "status": "PASS",
+      "judgment": "12quest/5storylines/2branch/3join,37milestones/3actualtraces và once-only reward từ earned save.",
+      "evidence": "QUEST_RUNTIME.json"
+    },
+    {
+      "id": "A16",
+      "status": "PARTIAL",
+      "judgment": "Market L-counter/crates, bookshop shelves/readrug, workshop benches/tools/packing; floors/solids riêng. Human art review pending.",
+      "evidence": "INTERIOR_REGISTRY.json"
+    },
+    {
+      "id": "A17",
+      "status": "PASS",
+      "judgment": "V03/V04/V05 normalworld→realdoor→NPC/service→exit;3door/save/exit E2E không teleport.",
+      "evidence": "COMPILED_CAPTURE_PROVENANCE.json"
+    },
+    {
+      "id": "A18",
+      "status": "PASS",
+      "judgment": "36cells state độc lập; sáu native opening masks+535fringe pixels; oldcropgreeninside0/outsidechanges0; finalstages/native inspected.",
+      "evidence": "NATIVE_OWNERSHIP_AUDIT.json"
+    },
+    {
+      "id": "A19",
+      "status": "PASS",
+      "judgment": "HUD nối wallet receipts/inventory/journal/hotbar state thật; focus/touch/mobile emulation.",
+      "evidence": "PERFORMANCE.json"
+    },
+    {
+      "id": "A20",
+      "status": "PASS",
+      "judgment": "5whole-take videos +separatedebug từ finalcompiled; nativePNG/crops/compare, testedtreeequivalence và clean/failed logs giữ; finalZIPproof ngoàiartifact.",
+      "evidence": "COMPILED_CAPTURE_PROVENANCE.json"
+    }
+  ]
+}

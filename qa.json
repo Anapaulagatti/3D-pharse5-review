@@ -1,0 +1,222 @@
+{
+  "summary": "V4 private review:236unit,82/82Canvas and82/82current default E2E PASS;6uncut compiled videos/native readback. Historical timeout root still unproven; physical hardware/art/Korean acceptance pending. Public exactmanifest approval required.",
+  "status": "PARTIAL_CANVAS_REVIEW_READY_AUTO_WEBGL_OPEN",
+  "ownerStatus": "READY_FOR_OWNER_REVIEW",
+  "reviewMode": "CANVAS_FALLBACK_FUNCTIONAL",
+  "overallQA": "CANVAS_FULL_PASS / CURRENT_DEFAULT_FULL_PASS / HISTORICAL_TIMEOUT_INVESTIGATION_AND_HUMAN_HARDWARE_ACCEPTANCE_OPEN",
+  "allRendererAcceptance": "NOT_GRANTED",
+  "sourceCommit": "21cc539259853952c91e548fb782cbd6df2e8785",
+  "fullSuiteCommit": "35e0b40593835cf69a556f171210e623fa47f3aa",
+  "sourceEquivalence": "Artifact game source21cc5392 and full validation35e0b405 have identical src/public/assets-src/dependencies/configs. Validation differs by3test lines awaiting observed landmark publication. Capture-only1e/bc8 scripts respect existing cooldown and harvested soil; game and tested cases unchanged. See exact object/delta report.",
+  "recordedAt": "2026-11-11T13:55:47.505718+00:00",
+  "checks": {
+    "cleanInstall": "PASS 138packages, own node_modules and workspace cache; historical Git objects read-only alternate documented",
+    "typecheck": "PASS",
+    "assetsCheck": "PASS 627runtime closure",
+    "lint": "PASS",
+    "format": "PASS",
+    "unit": {
+      "status": "PASS",
+      "total": 236,
+      "passed": 236,
+      "failed": 0
+    },
+    "defaultProfileE2E": {
+      "status": "PASS",
+      "sourceCommit": "35e0b40593835cf69a556f171210e623fa47f3aa",
+      "runtimeEquivalentToArtifact": "21cc539259853952c91e548fb782cbd6df2e8785",
+      "stats": {
+        "startTime": "2026-11-11T14:01:36.055Z",
+        "duration": 1070131.429,
+        "expected": 82,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "launchArgs": [
+        "--no-sandbox",
+        "--disable-gpu-compositing",
+        "--use-gl=angle",
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader"
+      ],
+      "retries": 0,
+      "report": "CURRENT_DEFAULT_PROFILE_E2E.json",
+      "scope": "Full original suite with default browser capabilities, including its existing explicitCanvas cases. Not82pureWebGL cases or physical-device certification.",
+      "argumentsEvidence": "Actual default config invocation; report.configFile plus SHA256 of its unchanged source. JSON reporter omits launchArgs.",
+      "configSHA256": "c70f6e2adc7983fccd98f5900c876e484852ae32e7dc9534c66210bbcbb54c05"
+    },
+    "fullE2E": {
+      "status": "PASS_CANVAS_FALLBACK_FUNCTIONAL",
+      "rendererProfile": "CANVAS_FALLBACK_FUNCTIONAL",
+      "stats": {
+        "startTime": "2026-11-11T10:33:22.195Z",
+        "duration": 809199.384,
+        "expected": 82,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "testRetries": 0,
+      "report": "final-clean-e2e/e2e-results.json"
+    },
+    "build": "PASS with retained bundle-size WARN",
+    "protectedAssets": {
+      "status": "PASS",
+      "baseCommit": "18babd92b45c67d9c766ce262ca7b689da910d4b",
+      "filesChecked": 10763,
+      "changed": [],
+      "missing": [],
+      "players": 12,
+      "NPCs": 26,
+      "activeCosmetics": 24,
+      "originalArtworkMasksAtlases": "BYTE_IDENTICAL",
+      "derivedRuntimeCollisionAmendment": "Explicit new Jeju682cell masks across2chunks; oldmasks unchanged. See JEJU_COLLISION_AMENDMENT.json.",
+      "humanArtGameplayApproval": "PENDING",
+      "physicalDevices": "NOT TESTED"
+    },
+    "nativeRoomReadback": "PASS36164opaqueprop+192floorpixels/0differences",
+    "nativeCropReadback": {
+      "status": "PASS EXACT NATIVE CROP BODY READBACK",
+      "captures": [
+        {
+          "stage": "04-sprout",
+          "frame": "carrot-sprout",
+          "worldRoot": [
+            909,
+            604
+          ],
+          "scale": [
+            1,
+            1
+          ],
+          "sampling": 1,
+          "opaqueBodyPixelsCompared": 95,
+          "mismatches": 0
+        },
+        {
+          "stage": "05-young",
+          "frame": "carrot-young",
+          "worldRoot": [
+            909,
+            604
+          ],
+          "scale": [
+            1,
+            1
+          ],
+          "sampling": 1,
+          "opaqueBodyPixelsCompared": 133,
+          "mismatches": 0
+        },
+        {
+          "stage": "06-growing",
+          "frame": "carrot-growing",
+          "worldRoot": [
+            909,
+            604
+          ],
+          "scale": [
+            1,
+            1
+          ],
+          "sampling": 1,
+          "opaqueBodyPixelsCompared": 186,
+          "mismatches": 0
+        },
+        {
+          "stage": "07-mature",
+          "frame": "carrot-ready",
+          "worldRoot": [
+            909,
+            604
+          ],
+          "scale": [
+            1,
+            1
+          ],
+          "sampling": 1,
+          "opaqueBodyPixelsCompared": 225,
+          "mismatches": 0
+        }
+      ],
+      "scope": "Exact original atlas body rows0..39, all opaque pixels; contact shadow/selected ground marker below anchor are not part of body test. Original PNGs unchanged. This does not prove human artistic success."
+    },
+    "runtimeHangulCases": 36,
+    "runtimeQuestTotal": 12,
+    "wholeTakeCompiledVideos": 6,
+    "browserPerformance": "PASS bounded observations, see PERFORMANCE.json, not device certification",
+    "currentDefaultProfileE2E": {
+      "status": "PASS",
+      "sourceCommit": "35e0b40593835cf69a556f171210e623fa47f3aa",
+      "runtimeEquivalentToArtifact": "21cc539259853952c91e548fb782cbd6df2e8785",
+      "stats": {
+        "startTime": "2026-11-11T14:01:36.055Z",
+        "duration": 1070131.429,
+        "expected": 82,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "launchArgs": [
+        "--no-sandbox",
+        "--disable-gpu-compositing",
+        "--use-gl=angle",
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader"
+      ],
+      "retries": 0,
+      "report": "CURRENT_DEFAULT_PROFILE_E2E.json",
+      "scope": "Full original suite with default browser capabilities, including its existing explicitCanvas cases. Not82pureWebGL cases or physical-device certification.",
+      "argumentsEvidence": "Actual default config invocation; report.configFile plus SHA256 of its unchanged source. JSON reporter omits launchArgs.",
+      "configSHA256": "c70f6e2adc7983fccd98f5900c876e484852ae32e7dc9534c66210bbcbb54c05"
+    },
+    "historicalDefaultProfileE2E": {
+      "status": "FAIL",
+      "stats": {
+        "startTime": "2026-11-11T09:25:40.611Z",
+        "duration": 1299158.118,
+        "expected": 81,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "report": "DEFAULT_PROFILE_E2E.json",
+      "scope": "DefaultAUTO +explicitCanvas scenarios,4CPU/SwiftShader. Fullresult retained, not erased byfallback. Unique stallcause not proven; physicalGPU not tested.",
+      "historical": true,
+      "sourceCommit": "9b93721625042d31d1b9b5f20e69df497afde1ed"
+    }
+  },
+  "warnings": [
+    "Default AUTO/SwiftShader fullsuite81PASS/1FAIL(Taeyang120s total). FullCanvas82PASS is separate fallback functional coverage, NOT proof WebGLfixed. Keep A09/Gate6PARTIAL; physicalGPU/device acceptance pending.",
+    "Human art/gameplay acceptance pending; A01/A16 remainPARTIAL humanquality",
+    "All new Korean content PENDING_HUMAN_REVIEW",
+    "Historical71/77 full E2E failures retained:3oldgenericroomfixtures corrected by actualfloor/exit routing;3initialization/residency timing failures observed under prior concurrentload, contention is plausible not proven unique cause. Finalfull82passes, not a universal flakiness guarantee.",
+    "Earlier full82 at8d30ee8f:80PASS2FAIL. Bookshop fixture replaced assumedY326 by exact pre/postrestoreXY; NPC fixture now waits MOVE_TO_WAYPOINT before unchanged15s displacement assertion. Read-only six-actor diagnostic observed8sWORK before movement, did not reproduce originaltimeout; unique cause not claimed proven. OldFAIL logs/screens remain.",
+    "Second full82 at a009:80PASS2FAIL (coldStudio5s beforebootstrap, legacyjoystick8s subpixel helper). All7focused cases pass after correct readiness +ordinary realWASD over same41points; no runtime/collision/art edit. Diagnostic sampling perturbed release timing, not claimed an exact originaltimeout reproduction. Both fullFAIL reports retained.",
+    "adfd preflight235/236 unit timedout5s; E2E didNOTexecute. Historicalsetup alone insufficient; exactsame fullfile SHA comparisons now aggregate all mismatches instead of thousands of assertion allocations. Original5s cap/expectedhashes/filefilter unchanged; focused6/6PASS3.91s. Finalfresh full236/82 results above are independent.",
+    "PriorNov9liveV2 Wrong actual room purchase remainsFAIL; no retroactivePASS from newlocaltests.",
+    "Mixed-prop/floor pixelQA same_sizeWARN intentional; no weakenedheuristics. Bundle warning retained.",
+    "PhysicalAndroid/iPhone/hardwareGPU NOT TESTED; cloud softwarebrowser is not real-device acceptance.",
+    "Manifest/ZIP finalCRC/extraction/HTTP/playback proof external PACKAGE_PROOF.json is generated after artifact freeze; no self-referential ZIP hash inside ZIP.",
+    "Full9bCanvas80PASS2FAIL and full21Canvas81PASS1FAIL preserved. Real room save lag fixed in21; marker publication race independently observed3/8, test wait35 corrects snapshot timing. Final complete236unit/82CanvasPASS is a separate new run.",
+    "Two uncut V01 recorder failures preserved privately:400ms input shorter than450ms game cooldown; then incorrect expected-till on already-harvested earned soil. Capture toolbc8 observes actual stages and preserves save, game unchanged. Successful replacement is a full new take.",
+    "All-six-bed stage images are explicit pre-start ART FIXTURES, not earned gameplay or timer/reward evidence; V01 and FARM_REWARD_READBACK.json prove actual actions/gains.",
+    "Current default full82 PASS is independent whole-suite evidence. The historical Taeyang120s timeout remains unexplained; a new passing run is not proof of a unique root-cause fix. No realGPU/device acceptance granted."
+  ],
+  "humanKorean": "PENDING_HUMAN_REVIEW",
+  "humanArtGameplay": "PENDING_OWNER_REVIEW",
+  "physicalAndroidChrome": "NOT TESTED",
+  "physicalIPhoneSafari": "NOT TESTED",
+  "hardwareGPU": "NOT TESTED",
+  "liveHTTPSV4": "NOT DEPLOYED: PENDING_EXACT_OWNER_APPROVAL",
+  "liveBackendMultiplayerAds": "NOT IMPLEMENTED/BLOCKED_UNTIL_SEPARATE_APPROVAL",
+  "productionLearningSite": "UNTOUCHED",
+  "publicExposure": "PENDING_EXACT_OWNER_APPROVAL",
+  "commercialRelease": "NOT_CERTIFIED",
+  "rollbackArtifact": "671d267e5c3c49eceb2578dbdc847d1bb92eb136",
+  "rollbackManifestSHA256": "cdf3f6d5b117a4912fda9d88c2dc12d1cdfeded4ba39ca343bab217918b578db",
+  "defaultProfileSourceCommit": "35e0b40593835cf69a556f171210e623fa47f3aa",
+  "currentDefaultFullProfileRetest": "PASS entire82cases,0failed/flaky/skipped/retries; not evidence of a unique oldtimeout root fix",
+  "historicalDefaultProfileSourceCommit": "9b93721625042d31d1b9b5f20e69df497afde1ed"
+}

@@ -1,0 +1,293 @@
+{
+  "status": "PASS NUMERIC_NATIVE_OWNERSHIP_NOT_ART_APPROVAL",
+  "farm": [
+    {
+      "id": "NW-FARM-01",
+      "innerPolygon": [
+        [
+          19,
+          22
+        ],
+        [
+          150,
+          22
+        ],
+        [
+          151,
+          24
+        ],
+        [
+          151,
+          99
+        ],
+        [
+          149,
+          101
+        ],
+        [
+          19,
+          101
+        ],
+        [
+          18,
+          99
+        ],
+        [
+          18,
+          24
+        ]
+      ],
+      "sourceCropGreenPixels": 5825,
+      "restoredCropGreenPixels": 0,
+      "outsideRepairMaskChangedPixels": 0,
+      "originalRimPixelsExact": true,
+      "nativeSize": [
+        180,
+        128
+      ],
+      "sourceScale": 1
+    },
+    {
+      "id": "NW-FARM-02",
+      "innerPolygon": [
+        [
+          24,
+          22
+        ],
+        [
+          165,
+          22
+        ],
+        [
+          166,
+          24
+        ],
+        [
+          166,
+          99
+        ],
+        [
+          164,
+          101
+        ],
+        [
+          24,
+          101
+        ],
+        [
+          23,
+          99
+        ],
+        [
+          23,
+          24
+        ]
+      ],
+      "sourceCropGreenPixels": 4416,
+      "restoredCropGreenPixels": 0,
+      "outsideRepairMaskChangedPixels": 0,
+      "originalRimPixelsExact": true,
+      "nativeSize": [
+        180,
+        128
+      ],
+      "sourceScale": 1
+    },
+    {
+      "id": "NW-FARM-03",
+      "innerPolygon": [
+        [
+          17,
+          22
+        ],
+        [
+          167,
+          22
+        ],
+        [
+          168,
+          24
+        ],
+        [
+          168,
+          100
+        ],
+        [
+          166,
+          102
+        ],
+        [
+          17,
+          102
+        ],
+        [
+          16,
+          100
+        ],
+        [
+          16,
+          24
+        ]
+      ],
+      "sourceCropGreenPixels": 4267,
+      "restoredCropGreenPixels": 0,
+      "outsideRepairMaskChangedPixels": 0,
+      "originalRimPixelsExact": true,
+      "nativeSize": [
+        180,
+        128
+      ],
+      "sourceScale": 1
+    },
+    {
+      "id": "NW-FARM-04",
+      "innerPolygon": [
+        [
+          18,
+          13
+        ],
+        [
+          150,
+          13
+        ],
+        [
+          151,
+          15
+        ],
+        [
+          151,
+          90
+        ],
+        [
+          149,
+          92
+        ],
+        [
+          18,
+          92
+        ],
+        [
+          17,
+          90
+        ],
+        [
+          17,
+          15
+        ]
+      ],
+      "sourceCropGreenPixels": 3068,
+      "restoredCropGreenPixels": 0,
+      "outsideRepairMaskChangedPixels": 0,
+      "originalRimPixelsExact": true,
+      "nativeSize": [
+        180,
+        128
+      ],
+      "sourceScale": 1
+    },
+    {
+      "id": "NW-FARM-05",
+      "innerPolygon": [
+        [
+          21,
+          11
+        ],
+        [
+          165,
+          11
+        ],
+        [
+          166,
+          13
+        ],
+        [
+          166,
+          88
+        ],
+        [
+          164,
+          90
+        ],
+        [
+          21,
+          90
+        ],
+        [
+          20,
+          88
+        ],
+        [
+          20,
+          13
+        ]
+      ],
+      "sourceCropGreenPixels": 5245,
+      "restoredCropGreenPixels": 0,
+      "outsideRepairMaskChangedPixels": 0,
+      "originalRimPixelsExact": true,
+      "nativeSize": [
+        180,
+        128
+      ],
+      "sourceScale": 1
+    },
+    {
+      "id": "NW-FARM-06",
+      "innerPolygon": [
+        [
+          17,
+          13
+        ],
+        [
+          167,
+          13
+        ],
+        [
+          168,
+          15
+        ],
+        [
+          168,
+          89
+        ],
+        [
+          166,
+          91
+        ],
+        [
+          17,
+          91
+        ],
+        [
+          16,
+          89
+        ],
+        [
+          16,
+          15
+        ]
+      ],
+      "sourceCropGreenPixels": 3318,
+      "restoredCropGreenPixels": 0,
+      "outsideRepairMaskChangedPixels": 0,
+      "originalRimPixelsExact": true,
+      "nativeSize": [
+        180,
+        128
+      ],
+      "sourceScale": 1
+    }
+  ],
+  "Jeju": {
+    "changedChunks": 2,
+    "openedCells": 682,
+    "closedCells": 0,
+    "outsideROIPixels": 0,
+    "sourceMasksUnchanged": true
+  },
+  "notProven": [
+    "Human artistic acceptance",
+    "Native runtime readback/screenshots and traversal are separate evidence",
+    "Physical hardware performance"
+  ]
+}

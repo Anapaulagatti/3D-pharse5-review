@@ -1,0 +1,22 @@
+{
+  "phase": "Roadmap V4 local playable candidate",
+  "slug": "roadmap-v4-local",
+  "base": "/3D-pharse5-review/",
+  "gameRef": "21cc539259853952c91e548fb782cbd6df2e8785",
+  "gameCommit": "21cc539259853952c91e548fb782cbd6df2e8785",
+  "portalCommit": "21cc539259853952c91e548fb782cbd6df2e8785",
+  "dirty": false,
+  "builtAt": "2026-11-11T10:16:47.451Z",
+  "exposure": "PENDING_EXACT_OWNER_PUBLIC_APPROVAL",
+  "artisticReview": "PENDING_HUMAN_REVIEW",
+  "commercialRelease": "BLOCKED_PENDING_REVIEW",
+  "publicExposure": "PENDING_EXACT_OWNER_APPROVAL",
+  "physicalDevices": "NOT TESTED",
+  "archived": false,
+  "currentPath": "./",
+  "activeCosmetics": 24,
+  "learningMode": "LOCAL_DEMO_HUMAN_CONTENT_REVIEW_PENDING",
+  "evidenceSourceCommit": "3081575e1adcf4116477d6f9ef47190c85f243eb",
+  "farmBeds": 6,
+  "farmCells": 36
+}

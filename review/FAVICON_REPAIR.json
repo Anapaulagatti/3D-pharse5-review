@@ -1,0 +1,14 @@
+{
+  "status": "IMPLEMENTED_DERIVED_REVIEW_HTML_ONLY",
+  "cause": "Browser implicit /favicon.ico request404, confirmed exact console location. First extracted smoke otherwise passed Phaser/26NPC/real door+shop/six videos/mobile controls, but overall remainedFAIL.",
+  "oldArtifactCommit": "603e828b720076483ac63ac5cac9ecd7226cb429",
+  "newCandidate": ".cache/roadmap-v4-review-final-21cc5392-final",
+  "changes": [
+    "One byte-identical existing approved coin PNG copied to rootfavicon.png",
+    "Explicit relative icon links in portal/play/review HTML"
+  ],
+  "faviconSource": "public/assets/roadmap-v2/coin.png",
+  "faviconSHA256": "84f5b334fe42a845611d1f69e8edbca71daaea753e22b40c3d8224531766105d",
+  "compiledJSAndAssets": "ALL BYTE IDENTICAL",
+  "historicalArtifact": "First603 artifact and its manifest retained unchanged; new candidate needs new final hash/owner decision."
+}

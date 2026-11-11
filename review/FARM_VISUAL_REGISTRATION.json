@@ -1,0 +1,843 @@
+{
+  "authority": "V4 native cultivated-opening repair; visual-only amendment, no logical plot/world/player movement changes",
+  "nativeAtlasAnchor": [
+    20,
+    40
+  ],
+  "nativeCell": [
+    40,
+    44
+  ],
+  "scale": 1,
+  "plots": [
+    {
+      "id": "NW-FARM-01",
+      "bedId": "NW-FARM-01",
+      "oldVisualRoot": [
+        464,
+        431
+      ],
+      "nativeVisualRoot": [
+        464,
+        426
+      ],
+      "deltaY": -5,
+      "unchangedInteractionAnchor": [
+        470,
+        481
+      ],
+      "unchangedSourceRect": [
+        442,
+        391,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-02",
+      "bedId": "NW-FARM-02",
+      "oldVisualRoot": [
+        684,
+        431
+      ],
+      "nativeVisualRoot": [
+        684,
+        426
+      ],
+      "deltaY": -5,
+      "unchangedInteractionAnchor": [
+        690,
+        481
+      ],
+      "unchangedSourceRect": [
+        662,
+        391,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-03",
+      "bedId": "NW-FARM-03",
+      "oldVisualRoot": [
+        909,
+        431
+      ],
+      "nativeVisualRoot": [
+        909,
+        427
+      ],
+      "deltaY": -4,
+      "unchangedInteractionAnchor": [
+        915,
+        481
+      ],
+      "unchangedSourceRect": [
+        887,
+        391,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-04",
+      "bedId": "NW-FARM-04",
+      "oldVisualRoot": [
+        464,
+        619
+      ],
+      "nativeVisualRoot": [
+        464,
+        605
+      ],
+      "deltaY": -14,
+      "unchangedInteractionAnchor": [
+        470,
+        669
+      ],
+      "unchangedSourceRect": [
+        442,
+        579,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-05",
+      "bedId": "NW-FARM-05",
+      "oldVisualRoot": [
+        684,
+        619
+      ],
+      "nativeVisualRoot": [
+        684,
+        603
+      ],
+      "deltaY": -16,
+      "unchangedInteractionAnchor": [
+        690,
+        669
+      ],
+      "unchangedSourceRect": [
+        662,
+        579,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-06",
+      "bedId": "NW-FARM-06",
+      "oldVisualRoot": [
+        909,
+        619
+      ],
+      "nativeVisualRoot": [
+        909,
+        604
+      ],
+      "deltaY": -15,
+      "unchangedInteractionAnchor": [
+        915,
+        669
+      ],
+      "unchangedSourceRect": [
+        887,
+        579,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-01-C1",
+      "bedId": "NW-FARM-01",
+      "oldVisualRoot": [
+        416,
+        387
+      ],
+      "nativeVisualRoot": [
+        416,
+        388
+      ],
+      "deltaY": 1,
+      "unchangedInteractionAnchor": [
+        422,
+        323
+      ],
+      "unchangedSourceRect": [
+        394,
+        347,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-01-C2",
+      "bedId": "NW-FARM-01",
+      "oldVisualRoot": [
+        464,
+        387
+      ],
+      "nativeVisualRoot": [
+        464,
+        388
+      ],
+      "deltaY": 1,
+      "unchangedInteractionAnchor": [
+        470,
+        323
+      ],
+      "unchangedSourceRect": [
+        442,
+        347,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-01-C3",
+      "bedId": "NW-FARM-01",
+      "oldVisualRoot": [
+        512,
+        387
+      ],
+      "nativeVisualRoot": [
+        512,
+        388
+      ],
+      "deltaY": 1,
+      "unchangedInteractionAnchor": [
+        518,
+        323
+      ],
+      "unchangedSourceRect": [
+        490,
+        347,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-01-C4",
+      "bedId": "NW-FARM-01",
+      "oldVisualRoot": [
+        416,
+        431
+      ],
+      "nativeVisualRoot": [
+        416,
+        426
+      ],
+      "deltaY": -5,
+      "unchangedInteractionAnchor": [
+        422,
+        481
+      ],
+      "unchangedSourceRect": [
+        394,
+        391,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-01-C6",
+      "bedId": "NW-FARM-01",
+      "oldVisualRoot": [
+        512,
+        431
+      ],
+      "nativeVisualRoot": [
+        512,
+        426
+      ],
+      "deltaY": -5,
+      "unchangedInteractionAnchor": [
+        518,
+        481
+      ],
+      "unchangedSourceRect": [
+        490,
+        391,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-02-C1",
+      "bedId": "NW-FARM-02",
+      "oldVisualRoot": [
+        636,
+        387
+      ],
+      "nativeVisualRoot": [
+        636,
+        388
+      ],
+      "deltaY": 1,
+      "unchangedInteractionAnchor": [
+        642,
+        323
+      ],
+      "unchangedSourceRect": [
+        614,
+        347,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-02-C2",
+      "bedId": "NW-FARM-02",
+      "oldVisualRoot": [
+        684,
+        387
+      ],
+      "nativeVisualRoot": [
+        684,
+        388
+      ],
+      "deltaY": 1,
+      "unchangedInteractionAnchor": [
+        690,
+        323
+      ],
+      "unchangedSourceRect": [
+        662,
+        347,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-02-C3",
+      "bedId": "NW-FARM-02",
+      "oldVisualRoot": [
+        732,
+        387
+      ],
+      "nativeVisualRoot": [
+        732,
+        388
+      ],
+      "deltaY": 1,
+      "unchangedInteractionAnchor": [
+        738,
+        323
+      ],
+      "unchangedSourceRect": [
+        710,
+        347,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-02-C4",
+      "bedId": "NW-FARM-02",
+      "oldVisualRoot": [
+        636,
+        431
+      ],
+      "nativeVisualRoot": [
+        636,
+        426
+      ],
+      "deltaY": -5,
+      "unchangedInteractionAnchor": [
+        642,
+        481
+      ],
+      "unchangedSourceRect": [
+        614,
+        391,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-02-C6",
+      "bedId": "NW-FARM-02",
+      "oldVisualRoot": [
+        732,
+        431
+      ],
+      "nativeVisualRoot": [
+        732,
+        426
+      ],
+      "deltaY": -5,
+      "unchangedInteractionAnchor": [
+        738,
+        481
+      ],
+      "unchangedSourceRect": [
+        710,
+        391,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-03-C1",
+      "bedId": "NW-FARM-03",
+      "oldVisualRoot": [
+        861,
+        387
+      ],
+      "nativeVisualRoot": [
+        861,
+        388
+      ],
+      "deltaY": 1,
+      "unchangedInteractionAnchor": [
+        867,
+        323
+      ],
+      "unchangedSourceRect": [
+        839,
+        347,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-03-C2",
+      "bedId": "NW-FARM-03",
+      "oldVisualRoot": [
+        909,
+        387
+      ],
+      "nativeVisualRoot": [
+        909,
+        388
+      ],
+      "deltaY": 1,
+      "unchangedInteractionAnchor": [
+        915,
+        323
+      ],
+      "unchangedSourceRect": [
+        887,
+        347,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-03-C3",
+      "bedId": "NW-FARM-03",
+      "oldVisualRoot": [
+        957,
+        387
+      ],
+      "nativeVisualRoot": [
+        957,
+        388
+      ],
+      "deltaY": 1,
+      "unchangedInteractionAnchor": [
+        963,
+        323
+      ],
+      "unchangedSourceRect": [
+        935,
+        347,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-03-C4",
+      "bedId": "NW-FARM-03",
+      "oldVisualRoot": [
+        861,
+        431
+      ],
+      "nativeVisualRoot": [
+        861,
+        427
+      ],
+      "deltaY": -4,
+      "unchangedInteractionAnchor": [
+        867,
+        481
+      ],
+      "unchangedSourceRect": [
+        839,
+        391,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-03-C6",
+      "bedId": "NW-FARM-03",
+      "oldVisualRoot": [
+        957,
+        431
+      ],
+      "nativeVisualRoot": [
+        957,
+        427
+      ],
+      "deltaY": -4,
+      "unchangedInteractionAnchor": [
+        963,
+        481
+      ],
+      "unchangedSourceRect": [
+        935,
+        391,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-04-C1",
+      "bedId": "NW-FARM-04",
+      "oldVisualRoot": [
+        416,
+        575
+      ],
+      "nativeVisualRoot": [
+        416,
+        567
+      ],
+      "deltaY": -8,
+      "unchangedInteractionAnchor": [
+        422,
+        511
+      ],
+      "unchangedSourceRect": [
+        394,
+        535,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-04-C2",
+      "bedId": "NW-FARM-04",
+      "oldVisualRoot": [
+        464,
+        575
+      ],
+      "nativeVisualRoot": [
+        464,
+        567
+      ],
+      "deltaY": -8,
+      "unchangedInteractionAnchor": [
+        470,
+        511
+      ],
+      "unchangedSourceRect": [
+        442,
+        535,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-04-C3",
+      "bedId": "NW-FARM-04",
+      "oldVisualRoot": [
+        512,
+        575
+      ],
+      "nativeVisualRoot": [
+        512,
+        567
+      ],
+      "deltaY": -8,
+      "unchangedInteractionAnchor": [
+        518,
+        511
+      ],
+      "unchangedSourceRect": [
+        490,
+        535,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-04-C4",
+      "bedId": "NW-FARM-04",
+      "oldVisualRoot": [
+        416,
+        619
+      ],
+      "nativeVisualRoot": [
+        416,
+        605
+      ],
+      "deltaY": -14,
+      "unchangedInteractionAnchor": [
+        422,
+        669
+      ],
+      "unchangedSourceRect": [
+        394,
+        579,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-04-C6",
+      "bedId": "NW-FARM-04",
+      "oldVisualRoot": [
+        512,
+        619
+      ],
+      "nativeVisualRoot": [
+        512,
+        605
+      ],
+      "deltaY": -14,
+      "unchangedInteractionAnchor": [
+        518,
+        669
+      ],
+      "unchangedSourceRect": [
+        490,
+        579,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-05-C1",
+      "bedId": "NW-FARM-05",
+      "oldVisualRoot": [
+        636,
+        575
+      ],
+      "nativeVisualRoot": [
+        636,
+        565
+      ],
+      "deltaY": -10,
+      "unchangedInteractionAnchor": [
+        642,
+        511
+      ],
+      "unchangedSourceRect": [
+        614,
+        535,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-05-C2",
+      "bedId": "NW-FARM-05",
+      "oldVisualRoot": [
+        684,
+        575
+      ],
+      "nativeVisualRoot": [
+        684,
+        565
+      ],
+      "deltaY": -10,
+      "unchangedInteractionAnchor": [
+        690,
+        511
+      ],
+      "unchangedSourceRect": [
+        662,
+        535,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-05-C3",
+      "bedId": "NW-FARM-05",
+      "oldVisualRoot": [
+        732,
+        575
+      ],
+      "nativeVisualRoot": [
+        732,
+        565
+      ],
+      "deltaY": -10,
+      "unchangedInteractionAnchor": [
+        738,
+        511
+      ],
+      "unchangedSourceRect": [
+        710,
+        535,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-05-C4",
+      "bedId": "NW-FARM-05",
+      "oldVisualRoot": [
+        636,
+        619
+      ],
+      "nativeVisualRoot": [
+        636,
+        603
+      ],
+      "deltaY": -16,
+      "unchangedInteractionAnchor": [
+        642,
+        669
+      ],
+      "unchangedSourceRect": [
+        614,
+        579,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-05-C6",
+      "bedId": "NW-FARM-05",
+      "oldVisualRoot": [
+        732,
+        619
+      ],
+      "nativeVisualRoot": [
+        732,
+        603
+      ],
+      "deltaY": -16,
+      "unchangedInteractionAnchor": [
+        738,
+        669
+      ],
+      "unchangedSourceRect": [
+        710,
+        579,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-06-C1",
+      "bedId": "NW-FARM-06",
+      "oldVisualRoot": [
+        861,
+        575
+      ],
+      "nativeVisualRoot": [
+        861,
+        567
+      ],
+      "deltaY": -8,
+      "unchangedInteractionAnchor": [
+        867,
+        511
+      ],
+      "unchangedSourceRect": [
+        839,
+        535,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-06-C2",
+      "bedId": "NW-FARM-06",
+      "oldVisualRoot": [
+        909,
+        575
+      ],
+      "nativeVisualRoot": [
+        909,
+        567
+      ],
+      "deltaY": -8,
+      "unchangedInteractionAnchor": [
+        915,
+        511
+      ],
+      "unchangedSourceRect": [
+        887,
+        535,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-06-C3",
+      "bedId": "NW-FARM-06",
+      "oldVisualRoot": [
+        957,
+        575
+      ],
+      "nativeVisualRoot": [
+        957,
+        567
+      ],
+      "deltaY": -8,
+      "unchangedInteractionAnchor": [
+        963,
+        511
+      ],
+      "unchangedSourceRect": [
+        935,
+        535,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-06-C4",
+      "bedId": "NW-FARM-06",
+      "oldVisualRoot": [
+        861,
+        619
+      ],
+      "nativeVisualRoot": [
+        861,
+        604
+      ],
+      "deltaY": -15,
+      "unchangedInteractionAnchor": [
+        867,
+        669
+      ],
+      "unchangedSourceRect": [
+        839,
+        579,
+        44,
+        44
+      ]
+    },
+    {
+      "id": "NW-FARM-06-C6",
+      "bedId": "NW-FARM-06",
+      "oldVisualRoot": [
+        957,
+        619
+      ],
+      "nativeVisualRoot": [
+        957,
+        604
+      ],
+      "deltaY": -15,
+      "unchangedInteractionAnchor": [
+        963,
+        669
+      ],
+      "unchangedSourceRect": [
+        935,
+        579,
+        44,
+        44
+      ]
+    }
+  ],
+  "reason": "Original second-row visual roots fell below the real timber opening, hiding sprouts after correct rim restoration. Each stage now uses one stable integer root inside its actual soil opening; all sprite pixels/timers/IDs/collision unchanged."
+}

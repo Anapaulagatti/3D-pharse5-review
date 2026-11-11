@@ -1,0 +1,23 @@
+{
+  "status": "PASS GENUINE PHASER CANVAS FALLBACK",
+  "scope": "Actual AUTO startup with same disabled-WebGL capability flags as complete CanvasE2E profile; canonical renderer code unchanged.",
+  "flags": [
+    "--no-sandbox",
+    "--disable-gpu-compositing",
+    "--use-gl=angle",
+    "--use-angle=swiftshader",
+    "--enable-unsafe-swiftshader",
+    "--disable-webgl",
+    "--disable-webgl2"
+  ],
+  "browser": "154.0.8037.57",
+  "url": "http://127.0.0.1:4503/play/",
+  "errors": [],
+  "actual": {
+    "renderer": "Canvas",
+    "sampling": 1,
+    "playerSprites": 1,
+    "webGLAvailable": false,
+    "character": "juni"
+  }
+}

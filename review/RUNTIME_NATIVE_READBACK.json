@@ -1,0 +1,52 @@
+{
+  "status": "PASS NATIVE1:1 OPAQUE_PROP_AND_FLOOR_READBACK",
+  "rooms": [
+    {
+      "room": "seed-shop",
+      "representativeProp": "market-window",
+      "opaqueSourcePixelsCompared": 10886,
+      "changedPixels": 0,
+      "floorProbePixels": 64,
+      "floorChangedPixels": 0,
+      "cameraScroll": [
+        -288,
+        -194
+      ],
+      "sourceScale": 1,
+      "nativePNGUnmodified": true
+    },
+    {
+      "room": "bookshop",
+      "representativeProp": "bookshelf",
+      "opaqueSourcePixelsCompared": 16494,
+      "changedPixels": 0,
+      "floorProbePixels": 64,
+      "floorChangedPixels": 0,
+      "cameraScroll": [
+        -320,
+        -178
+      ],
+      "sourceScale": 1,
+      "nativePNGUnmodified": true
+    },
+    {
+      "room": "workshop",
+      "representativeProp": "workshop-vent",
+      "opaqueSourcePixelsCompared": 8784,
+      "changedPixels": 0,
+      "floorProbePixels": 64,
+      "floorChangedPixels": 0,
+      "cameraScroll": [
+        -288,
+        -210
+      ],
+      "sourceScale": 1,
+      "nativePNGUnmodified": true
+    }
+  ],
+  "notProven": [
+    "This numeric check does not grant human art approval",
+    "Physical-device GPU behavior not tested"
+  ],
+  "evidence": "Actual Phaser canvas captures indexed in NATIVE_CAPTURE_INDEX.json, source PNGs/atlas independently read here."
+}

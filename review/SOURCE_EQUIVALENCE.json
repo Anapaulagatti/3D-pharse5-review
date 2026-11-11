@@ -1,0 +1,71 @@
+{
+  "status": "PASS RUNTIME_SOURCE_EQUIVALENT_FULL236UNIT82CANVAS",
+  "fullSuiteCommit": "35e0b40593835cf69a556f171210e623fa47f3aa",
+  "artifactSourceCommit": "21cc539259853952c91e548fb782cbd6df2e8785",
+  "difference": "Validation-only commit35e0b405 adds awaiting the actual visited snapshot before taking the character preservation snapshot. All game source/assets/dependencies/build configs/tools are identical to artifact source21cc5392. No assertions or deadlines removed.",
+  "gitObjects": [
+    {
+      "path": "src",
+      "fullSuiteGitObject": "69b4e4f110a5e15d225676d13d9460b47e412ed4",
+      "artifactSourceGitObject": "69b4e4f110a5e15d225676d13d9460b47e412ed4",
+      "equivalent": true
+    },
+    {
+      "path": "tests",
+      "fullSuiteGitObject": "199401cfdb6d63c80c632efab2d8cdc1c859a484",
+      "artifactSourceGitObject": "c68a0bd585c76a572444ed5b836a7e30b88c03a0",
+      "equivalent": false,
+      "validationOnlyDifference": "3 lines await observed landmark publication; original assertions/timeouts retained"
+    },
+    {
+      "path": "public",
+      "fullSuiteGitObject": "460bb6a2b6058d4a0cd8b9a72acd5a9c00e3e3e7",
+      "artifactSourceGitObject": "460bb6a2b6058d4a0cd8b9a72acd5a9c00e3e3e7",
+      "equivalent": true
+    },
+    {
+      "path": "assets-src",
+      "fullSuiteGitObject": "bb80e8028f897c68642145aec8fb32a029e0be18",
+      "artifactSourceGitObject": "bb80e8028f897c68642145aec8fb32a029e0be18",
+      "equivalent": true
+    },
+    {
+      "path": "package.json",
+      "fullSuiteGitObject": "bb9578e44e31534e447a05b220fe816bcb0f7367",
+      "artifactSourceGitObject": "bb9578e44e31534e447a05b220fe816bcb0f7367",
+      "equivalent": true
+    },
+    {
+      "path": "package-lock.json",
+      "fullSuiteGitObject": "2dd2a4f360689aa987ca25625617573bd8e054ce",
+      "artifactSourceGitObject": "2dd2a4f360689aa987ca25625617573bd8e054ce",
+      "equivalent": true
+    },
+    {
+      "path": "vite.config.ts",
+      "fullSuiteGitObject": "26b8305081be852d3b046a38ef1c6c575eebc305",
+      "artifactSourceGitObject": "26b8305081be852d3b046a38ef1c6c575eebc305",
+      "equivalent": true
+    },
+    {
+      "path": "playwright.config.ts",
+      "fullSuiteGitObject": "5a15cf568b53f36f9ab4cb6b73f39b93206a53bc",
+      "artifactSourceGitObject": "5a15cf568b53f36f9ab4cb6b73f39b93206a53bc",
+      "equivalent": true
+    },
+    {
+      "path": "tools/roadmap-v4/driver.mjs",
+      "fullSuiteGitObject": "b7635ad3915596e78a92cc4c1ea4d78cdb90e7b2",
+      "artifactSourceGitObject": "b7635ad3915596e78a92cc4c1ea4d78cdb90e7b2",
+      "equivalent": true
+    }
+  ],
+  "runtimeChanges": "Interior native-position flush on stop/pagehide/visibilitychange; read-only collision overlay rasterization; approved art/movement/collision unchanged",
+  "runtimeSourceEquivalent": true,
+  "validatedAt": "2026-11-11T10:47:25.128411+00:00",
+  "captureToolCommit": "bc8f8963",
+  "captureOnlyChange": "Farm capture honors450ms cooldown with500ms spacing, waits actual stage, and skips unnecessary till only when the earned save already records harvested soil. No game/test/runtime asset change after full35 suite.",
+  "reviewAdapterScope": "Clean full suites use standardVite /3D-pharse5-/ build. Review artifact uses base./ plus the existing private portal bridge and public identity metadata presentation. Exact game source/assets/dependencies match. Six actual compiled recordings, native readback and extracted package smoke validate review-adapter integration separately; emitted bundles are not falsely called byte-identical across base variants.",
+  "packagingToolCommit": "4b671c5b",
+  "faviconOnlyDerivedHTML": "Relative icon links3documents plus byte-identical prior coin PNG; all compiledJS/CSS/assets copied exactly from603 first artifact."
+}

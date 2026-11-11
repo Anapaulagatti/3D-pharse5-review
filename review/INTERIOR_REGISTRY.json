@@ -1,0 +1,728 @@
+{
+  "doors": [
+    {
+      "id": "seed-shop",
+      "buildingId": "registration/cafe",
+      "name": "Góc hạt giống · 씨앗 가게",
+      "door": [
+        717,
+        2605
+      ],
+      "npc": "npc-minseo",
+      "kind": "market"
+    },
+    {
+      "id": "bookshop",
+      "buildingId": "registration/bookshop",
+      "name": "Hiệu sách · 서점",
+      "door": [
+        1128,
+        2605
+      ],
+      "npc": "npc-jiho",
+      "kind": "books"
+    },
+    {
+      "id": "workshop",
+      "buildingId": "registration/learning",
+      "name": "Xưởng cộng đồng · 공방",
+      "door": [
+        1418,
+        2605
+      ],
+      "npc": "npc-eunji",
+      "kind": "workshop"
+    }
+  ],
+  "layouts": {
+    "seed-shop": {
+      "width": 704,
+      "height": 512,
+      "spawn": [
+        112,
+        454
+      ],
+      "exit": [
+        112,
+        480
+      ],
+      "actor": [
+        510,
+        216
+      ],
+      "fragment": [
+        174,
+        330
+      ],
+      "sign": [
+        330,
+        400
+      ],
+      "courier": [
+        410,
+        416
+      ],
+      "service": [
+        580,
+        370
+      ],
+      "props": [
+        [
+          "market-window",
+          136,
+          128
+        ],
+        [
+          "market-window",
+          570,
+          128
+        ],
+        [
+          "seed-rack",
+          262,
+          238
+        ],
+        [
+          "counter",
+          510,
+          284
+        ],
+        [
+          "counter-side",
+          620,
+          352
+        ],
+        [
+          "seed-crates",
+          200,
+          428
+        ],
+        [
+          "packing-table",
+          480,
+          352
+        ],
+        [
+          "lamp",
+          364,
+          248
+        ],
+        [
+          "notice-board",
+          330,
+          372
+        ]
+      ],
+      "solids": [
+        [
+          208,
+          190,
+          104,
+          44
+        ],
+        [
+          416,
+          254,
+          188,
+          30
+        ],
+        [
+          586,
+          286,
+          66,
+          62
+        ],
+        [
+          152,
+          390,
+          100,
+          34
+        ],
+        [
+          424,
+          324,
+          112,
+          24
+        ],
+        [
+          280,
+          352,
+          100,
+          18
+        ]
+      ],
+      "counters": [
+        [
+          416,
+          254,
+          188,
+          30
+        ]
+      ]
+    },
+    "bookshop": {
+      "width": 640,
+      "height": 544,
+      "spawn": [
+        320,
+        482
+      ],
+      "exit": [
+        320,
+        510
+      ],
+      "actor": [
+        500,
+        224
+      ],
+      "fragment": [
+        144,
+        304
+      ],
+      "sign": [
+        490,
+        444
+      ],
+      "courier": [
+        420,
+        450
+      ],
+      "service": [
+        174,
+        456
+      ],
+      "props": [
+        [
+          "library-window",
+          320,
+          136
+        ],
+        [
+          "bookshelf",
+          104,
+          242
+        ],
+        [
+          "bookshelf",
+          238,
+          242
+        ],
+        [
+          "book-desk",
+          500,
+          288
+        ],
+        [
+          "reading-table",
+          294,
+          388
+        ],
+        [
+          "stool",
+          294,
+          438
+        ],
+        [
+          "book-stack",
+          398,
+          236
+        ],
+        [
+          "lamp",
+          410,
+          290
+        ],
+        [
+          "rune-board",
+          490,
+          416
+        ],
+        [
+          "notice-board",
+          174,
+          432
+        ]
+      ],
+      "solids": [
+        [
+          48,
+          196,
+          112,
+          42
+        ],
+        [
+          182,
+          196,
+          112,
+          42
+        ],
+        [
+          442,
+          262,
+          116,
+          24
+        ],
+        [
+          236,
+          358,
+          116,
+          26
+        ],
+        [
+          276,
+          426,
+          36,
+          10
+        ],
+        [
+          440,
+          398,
+          100,
+          14
+        ],
+        [
+          120,
+          414,
+          108,
+          14
+        ]
+      ],
+      "counters": [
+        [
+          442,
+          262,
+          116,
+          24
+        ]
+      ]
+    },
+    "workshop": {
+      "width": 704,
+      "height": 480,
+      "spawn": [
+        580,
+        410
+      ],
+      "exit": [
+        580,
+        448
+      ],
+      "actor": [
+        180,
+        190
+      ],
+      "fragment": [
+        112,
+        330
+      ],
+      "sign": [
+        548,
+        324
+      ],
+      "courier": [
+        460,
+        354
+      ],
+      "service": [
+        200,
+        352
+      ],
+      "props": [
+        [
+          "workshop-vent",
+          560,
+          122
+        ],
+        [
+          "tool-rack",
+          292,
+          166
+        ],
+        [
+          "workbench",
+          212,
+          260
+        ],
+        [
+          "packing-table",
+          460,
+          320
+        ],
+        [
+          "tool-stand",
+          200,
+          352
+        ],
+        [
+          "stool",
+          348,
+          274
+        ],
+        [
+          "lamp",
+          376,
+          184
+        ],
+        [
+          "notice-board",
+          548,
+          294
+        ]
+      ],
+      "solids": [
+        [
+          104,
+          232,
+          212,
+          24
+        ],
+        [
+          218,
+          140,
+          148,
+          22
+        ],
+        [
+          404,
+          292,
+          112,
+          24
+        ],
+        [
+          164,
+          326,
+          72,
+          18
+        ],
+        [
+          490,
+          276,
+          110,
+          14
+        ]
+      ],
+      "counters": [
+        [
+          104,
+          232,
+          212,
+          24
+        ]
+      ]
+    }
+  },
+  "registration": "Native1:1 independent props, exact same player/NPC objects, existing controller; low counters allow LOS but block feet",
+  "roomSave": "v1 compatible + layoutVersion2; legacy invalid room points migrate to safe spawn; world save unchanged",
+  "canonicalDestinationInventory": {
+    "source": "public/assets/gate3/palace-cleanup-world/manifest.json",
+    "sourceSHA256": "f876519f7711449e8a29c49fbe881568e807474e6a49325d0cba33d099d47212",
+    "policy": "Only the three explicitly registered doors are enterable in V4. All other canonical destinations/architectural scenery remain SCENIC_ONLY in this review; no interior or valid doorway is implied by a destination marker. Future expansion needs a validated door and its own scene. Bakery remains deferred and unplaced.",
+    "destinations": [
+      {
+        "id": "cafe",
+        "x": 717,
+        "y": 2605,
+        "label": "cafe / CONDITIONALLY_APPROVED_RETAIL",
+        "classification": "ENTERABLE_NOW",
+        "interiorTrigger": "seed-shop",
+        "anchorKind": "EXISTING_VALIDATED_WORLD_DOOR"
+      },
+      {
+        "id": "bookshop",
+        "x": 1128,
+        "y": 2605,
+        "label": "bookshop / CONDITIONALLY_APPROVED_RETAIL",
+        "classification": "ENTERABLE_NOW",
+        "interiorTrigger": "bookshop",
+        "anchorKind": "EXISTING_VALIDATED_WORLD_DOOR"
+      },
+      {
+        "id": "learning",
+        "x": 1418,
+        "y": 2605,
+        "label": "learning / CONDITIONALLY_APPROVED_RETAIL",
+        "classification": "ENTERABLE_NOW",
+        "interiorTrigger": "workshop",
+        "anchorKind": "EXISTING_VALIDATED_WORLD_DOOR"
+      },
+      {
+        "id": "convenience",
+        "x": 326,
+        "y": 3343,
+        "label": "convenience / HUMAN_APPROVED_MARU",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "station",
+        "x": 2598.5,
+        "y": 2610,
+        "label": "station / PROTECTED_STATION_REGISTRATION",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "production/palace",
+        "x": 2048,
+        "y": 990,
+        "label": "Palace hall",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "production/gate",
+        "x": 2048,
+        "y": 1090,
+        "label": "Palace gate west pavilion",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "production/archive",
+        "x": 2320,
+        "y": 1110,
+        "label": "Royal archive",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "production/academy",
+        "x": 800,
+        "y": 1500,
+        "label": "Hanok academy",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "production/teahouse",
+        "x": 1390,
+        "y": 1500,
+        "label": "Tea courtyard",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "production/culture",
+        "x": 2610,
+        "y": 1550,
+        "label": "Cultural studio",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "production/carousel",
+        "x": 2440,
+        "y": 3260,
+        "label": "Carousel court",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "production/wheel",
+        "x": 2820,
+        "y": 3260,
+        "label": "Wheel garden",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "production/tower",
+        "x": 1460,
+        "y": 3260,
+        "label": "Namsan tower lookout",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "production/market",
+        "x": 1440,
+        "y": 3740,
+        "label": "Harbor market",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "production/ferry",
+        "x": 2900,
+        "y": 3480,
+        "label": "Ferry terminal",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "production/jeju-culture",
+        "x": 3590,
+        "y": 4390,
+        "label": "Jeju stone culture pavilion",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "mainland-boarding",
+        "x": 2560,
+        "y": 4100,
+        "label": "Mainland ferry boarding",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "jeju-landing",
+        "x": 3180,
+        "y": 4020,
+        "label": "Jeju ferry landing",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "oreum-rim",
+        "x": 3730,
+        "y": 3335,
+        "label": "Oreum crater-rim lookout",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "basalt-story",
+        "x": 3640,
+        "y": 3770,
+        "label": "Basalt coast exploration",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "tangerine-orchard",
+        "x": 3960,
+        "y": 4080,
+        "label": "Tangerine orchard walk",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "jeju-arrival",
+        "x": 3500,
+        "y": 3610,
+        "label": "Jeju arrival / route choice",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "station-platform-1",
+        "x": 2970,
+        "y": 2530,
+        "label": "Station platform 1",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "station-platform-2",
+        "x": 3300,
+        "y": 2530,
+        "label": "Station platform 2",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "namsan-threshold",
+        "x": 940,
+        "y": 2910,
+        "label": "Namsan garden entrance",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      },
+      {
+        "id": "waterfront-meeting",
+        "x": 2048,
+        "y": 3480,
+        "label": "Waterfront meeting point",
+        "classification": "SCENIC_ONLY",
+        "interiorTrigger": null,
+        "anchorKind": "EXISTING_DESTINATION_MARKER_NOT_A_DOOR"
+      }
+    ],
+    "enterableBuildings": [
+      {
+        "id": "seed-shop",
+        "buildingId": "registration/cafe",
+        "name": "Góc hạt giống · 씨앗 가게",
+        "door": [
+          717,
+          2605
+        ],
+        "npc": "npc-minseo",
+        "kind": "market",
+        "classification": "ENTERABLE_NOW",
+        "sceneKey": "town-interior",
+        "layoutKey": "seed-shop",
+        "exitRoomPosition": [
+          112,
+          480
+        ],
+        "outdoorReturn": "Exact measured player position before entry, not marker coordinates",
+        "validation": "Actual normal-door runtime and full E2E evidence; see QA report"
+      },
+      {
+        "id": "bookshop",
+        "buildingId": "registration/bookshop",
+        "name": "Hiệu sách · 서점",
+        "door": [
+          1128,
+          2605
+        ],
+        "npc": "npc-jiho",
+        "kind": "books",
+        "classification": "ENTERABLE_NOW",
+        "sceneKey": "town-interior",
+        "layoutKey": "bookshop",
+        "exitRoomPosition": [
+          320,
+          510
+        ],
+        "outdoorReturn": "Exact measured player position before entry, not marker coordinates",
+        "validation": "Actual normal-door runtime and full E2E evidence; see QA report"
+      },
+      {
+        "id": "workshop",
+        "buildingId": "registration/learning",
+        "name": "Xưởng cộng đồng · 공방",
+        "door": [
+          1418,
+          2605
+        ],
+        "npc": "npc-eunji",
+        "kind": "workshop",
+        "classification": "ENTERABLE_NOW",
+        "sceneKey": "town-interior",
+        "layoutKey": "workshop",
+        "exitRoomPosition": [
+          580,
+          448
+        ],
+        "outdoorReturn": "Exact measured player position before entry, not marker coordinates",
+        "validation": "Actual normal-door runtime and full E2E evidence; see QA report"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2427 @@
+{
+  "scope": "V4 original code-authored native props/UI and exact approved native material derivations. No new image generation, third-party reference or paid API. Approved originals remain immutable.",
+  "status": "PROVENANCE_DOCUMENTED_HUMAN_ART_REVIEW_PENDING",
+  "records": [
+    {
+      "recordPath": "assets-src/roadmap-v4/farm/PROVENANCE.json",
+      "recordSHA256": "5be9f34520f5e57b64ba15ccb12ebfc01d9c4729942a1ecc02a9d472c2bb5f98",
+      "record": {
+        "art_source": "derived native material composition + byte-exact original timber ownership",
+        "inputs": [
+          "public/assets/farming/phase3bd-final-quality/soil-components.png",
+          "public/assets/farming/phase3bd-final-quality/soil-components.json",
+          "assets-src/gate3/final-surgical-v1/farm-authored.png"
+        ],
+        "providerCalls": 0,
+        "sourcePixelScale": 1,
+        "resampling": false,
+        "filters": false,
+        "purpose": "Remove all baked original crop pixels within each independently registered cultivated opening; keep36independent cells and exact original timber/path/landscape pixels outside repair masks. The earlier uniform rim reintroduced top/right crop fragments; per-bed ownership corrects that error.",
+        "humanArtApproval": "PENDING",
+        "beds": [
+          {
+            "id": "NW-FARM-01",
+            "x": 380,
+            "y": 330,
+            "width": 180,
+            "height": 128,
+            "image": "assets/roadmap-v4/farm/NW-FARM-01.png",
+            "mask": "assets-src/roadmap-v4/farm/NW-FARM-01-repair-mask.png",
+            "nativeInnerOpening": [
+              [
+                19,
+                22
+              ],
+              [
+                150,
+                22
+              ],
+              [
+                151,
+                24
+              ],
+              [
+                151,
+                99
+              ],
+              [
+                149,
+                101
+              ],
+              [
+                19,
+                101
+              ],
+              [
+                18,
+                99
+              ],
+              [
+                18,
+                24
+              ]
+            ],
+            "opaquePixels": 10789,
+            "outsideOwnershipPixels": 0,
+            "connectedCropRemnantPixels": 78,
+            "remnantExpansionLimitPx": 4,
+            "sha256": "35baaede5b2fdb585cb5439a30c89a55ec1797571bf15dfc97360c1cc289e7e0",
+            "rim-back": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-01-rim-back.png",
+              "sha256": "0540246237233fefae93130c6a58401b14dbd495cbd67a42e66f8977565e2ccd",
+              "position": [
+                380,
+                330
+              ],
+              "depth": 354,
+              "sourceRect": [
+                220,
+                250,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "rim-front": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-01-rim-front.png",
+              "sha256": "c4bb482f60d8a65b70fd50a2534b43eb1450485dacfdbc0cdd0d87b1d2417d90",
+              "position": [
+                380,
+                330
+              ],
+              "depth": 458,
+              "sourceRect": [
+                220,
+                250,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "visibleSoilOwnership": {
+              "perBedInnerPolygon": [
+                [
+                  19,
+                  22
+                ],
+                [
+                  150,
+                  22
+                ],
+                [
+                  151,
+                  24
+                ],
+                [
+                  151,
+                  99
+                ],
+                [
+                  149,
+                  101
+                ],
+                [
+                  19,
+                  101
+                ],
+                [
+                  18,
+                  99
+                ],
+                [
+                  18,
+                  24
+                ]
+              ],
+              "outsideNativeBorderReplacementPixels": 0
+            }
+          },
+          {
+            "id": "NW-FARM-02",
+            "x": 600,
+            "y": 330,
+            "width": 180,
+            "height": 128,
+            "image": "assets/roadmap-v4/farm/NW-FARM-02.png",
+            "mask": "assets-src/roadmap-v4/farm/NW-FARM-02-repair-mask.png",
+            "nativeInnerOpening": [
+              [
+                24,
+                22
+              ],
+              [
+                165,
+                22
+              ],
+              [
+                166,
+                24
+              ],
+              [
+                166,
+                99
+              ],
+              [
+                164,
+                101
+              ],
+              [
+                24,
+                101
+              ],
+              [
+                23,
+                99
+              ],
+              [
+                23,
+                24
+              ]
+            ],
+            "opaquePixels": 11739,
+            "outsideOwnershipPixels": 0,
+            "connectedCropRemnantPixels": 228,
+            "remnantExpansionLimitPx": 4,
+            "sha256": "63ad206ed732c20ddde994721654651e514cce2adcb1d9b5b7a82f6763c0cdd1",
+            "rim-back": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-02-rim-back.png",
+              "sha256": "8fde592e6c28b62c526a90c27e9e1d1a71b88cb986b4615940fa6fba71dc89d3",
+              "position": [
+                600,
+                330
+              ],
+              "depth": 354,
+              "sourceRect": [
+                440,
+                250,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "rim-front": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-02-rim-front.png",
+              "sha256": "2c5baf5dec96f30cf66402f6b13968778149e6bcac45427253434fc52f0bcb97",
+              "position": [
+                600,
+                330
+              ],
+              "depth": 458,
+              "sourceRect": [
+                440,
+                250,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "visibleSoilOwnership": {
+              "perBedInnerPolygon": [
+                [
+                  24,
+                  22
+                ],
+                [
+                  165,
+                  22
+                ],
+                [
+                  166,
+                  24
+                ],
+                [
+                  166,
+                  99
+                ],
+                [
+                  164,
+                  101
+                ],
+                [
+                  24,
+                  101
+                ],
+                [
+                  23,
+                  99
+                ],
+                [
+                  23,
+                  24
+                ]
+              ],
+              "outsideNativeBorderReplacementPixels": 0
+            }
+          },
+          {
+            "id": "NW-FARM-03",
+            "x": 825,
+            "y": 330,
+            "width": 180,
+            "height": 128,
+            "image": "assets/roadmap-v4/farm/NW-FARM-03.png",
+            "mask": "assets-src/roadmap-v4/farm/NW-FARM-03-repair-mask.png",
+            "nativeInnerOpening": [
+              [
+                17,
+                22
+              ],
+              [
+                167,
+                22
+              ],
+              [
+                168,
+                24
+              ],
+              [
+                168,
+                100
+              ],
+              [
+                166,
+                102
+              ],
+              [
+                17,
+                102
+              ],
+              [
+                16,
+                100
+              ],
+              [
+                16,
+                24
+              ]
+            ],
+            "opaquePixels": 12427,
+            "outsideOwnershipPixels": 0,
+            "connectedCropRemnantPixels": 43,
+            "remnantExpansionLimitPx": 4,
+            "sha256": "34cd0c54261d2fd73a2d449ea5a3fb8e6c84d99b8f14f3df548d46b31ddb725d",
+            "rim-back": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-03-rim-back.png",
+              "sha256": "c74a4105713ac8f30594b6bf58e69b377bc6dea791623fa091a85050397dffaa",
+              "position": [
+                825,
+                330
+              ],
+              "depth": 354,
+              "sourceRect": [
+                665,
+                250,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "rim-front": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-03-rim-front.png",
+              "sha256": "04fbcff540d329f10a0c0ba0dc754967333d20b7a8e5c434dbbb6af1f3fa2b4e",
+              "position": [
+                825,
+                330
+              ],
+              "depth": 458,
+              "sourceRect": [
+                665,
+                250,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "visibleSoilOwnership": {
+              "perBedInnerPolygon": [
+                [
+                  17,
+                  22
+                ],
+                [
+                  167,
+                  22
+                ],
+                [
+                  168,
+                  24
+                ],
+                [
+                  168,
+                  100
+                ],
+                [
+                  166,
+                  102
+                ],
+                [
+                  17,
+                  102
+                ],
+                [
+                  16,
+                  100
+                ],
+                [
+                  16,
+                  24
+                ]
+              ],
+              "outsideNativeBorderReplacementPixels": 0
+            }
+          },
+          {
+            "id": "NW-FARM-04",
+            "x": 380,
+            "y": 518,
+            "width": 180,
+            "height": 128,
+            "image": "assets/roadmap-v4/farm/NW-FARM-04.png",
+            "mask": "assets-src/roadmap-v4/farm/NW-FARM-04-repair-mask.png",
+            "nativeInnerOpening": [
+              [
+                18,
+                13
+              ],
+              [
+                150,
+                13
+              ],
+              [
+                151,
+                15
+              ],
+              [
+                151,
+                90
+              ],
+              [
+                149,
+                92
+              ],
+              [
+                18,
+                92
+              ],
+              [
+                17,
+                90
+              ],
+              [
+                17,
+                15
+              ]
+            ],
+            "opaquePixels": 10845,
+            "outsideOwnershipPixels": 0,
+            "connectedCropRemnantPixels": 54,
+            "remnantExpansionLimitPx": 4,
+            "sha256": "6c2126168e2af0df436409c4dcccca8521c2f634056742a780e714740f064441",
+            "rim-back": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-04-rim-back.png",
+              "sha256": "87d0ea3ab099fdb61139060329073cc4f23892c3d94d7783ad5ed7c4f0956282",
+              "position": [
+                380,
+                518
+              ],
+              "depth": 533,
+              "sourceRect": [
+                220,
+                438,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "rim-front": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-04-rim-front.png",
+              "sha256": "df10c838e22ddcb530dee2dd5930597b7b4798d485a17fc55b8055ab17a01c86",
+              "position": [
+                380,
+                518
+              ],
+              "depth": 646,
+              "sourceRect": [
+                220,
+                438,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "visibleSoilOwnership": {
+              "perBedInnerPolygon": [
+                [
+                  18,
+                  13
+                ],
+                [
+                  150,
+                  13
+                ],
+                [
+                  151,
+                  15
+                ],
+                [
+                  151,
+                  90
+                ],
+                [
+                  149,
+                  92
+                ],
+                [
+                  18,
+                  92
+                ],
+                [
+                  17,
+                  90
+                ],
+                [
+                  17,
+                  15
+                ]
+              ],
+              "outsideNativeBorderReplacementPixels": 0
+            }
+          },
+          {
+            "id": "NW-FARM-05",
+            "x": 600,
+            "y": 518,
+            "width": 180,
+            "height": 128,
+            "image": "assets/roadmap-v4/farm/NW-FARM-05.png",
+            "mask": "assets-src/roadmap-v4/farm/NW-FARM-05-repair-mask.png",
+            "nativeInnerOpening": [
+              [
+                21,
+                11
+              ],
+              [
+                165,
+                11
+              ],
+              [
+                166,
+                13
+              ],
+              [
+                166,
+                88
+              ],
+              [
+                164,
+                90
+              ],
+              [
+                21,
+                90
+              ],
+              [
+                20,
+                88
+              ],
+              [
+                20,
+                13
+              ]
+            ],
+            "opaquePixels": 11876,
+            "outsideOwnershipPixels": 0,
+            "connectedCropRemnantPixels": 125,
+            "remnantExpansionLimitPx": 4,
+            "sha256": "d2a2d9310cda98667cb2bbab26174dc29449ad12ad907ab71775ea9eb8dd0f67",
+            "rim-back": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-05-rim-back.png",
+              "sha256": "f68d456a6861f97a7aba462bb4e877fbd61ccb4528c94c1d172554a379a7efa9",
+              "position": [
+                600,
+                518
+              ],
+              "depth": 531,
+              "sourceRect": [
+                440,
+                438,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "rim-front": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-05-rim-front.png",
+              "sha256": "95012c38c15f80ee05427561ff9a28679d04e2553373207fbd03d123d7c30bbe",
+              "position": [
+                600,
+                518
+              ],
+              "depth": 646,
+              "sourceRect": [
+                440,
+                438,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "visibleSoilOwnership": {
+              "perBedInnerPolygon": [
+                [
+                  21,
+                  11
+                ],
+                [
+                  165,
+                  11
+                ],
+                [
+                  166,
+                  13
+                ],
+                [
+                  166,
+                  88
+                ],
+                [
+                  164,
+                  90
+                ],
+                [
+                  21,
+                  90
+                ],
+                [
+                  20,
+                  88
+                ],
+                [
+                  20,
+                  13
+                ]
+              ],
+              "outsideNativeBorderReplacementPixels": 0
+            }
+          },
+          {
+            "id": "NW-FARM-06",
+            "x": 825,
+            "y": 518,
+            "width": 180,
+            "height": 128,
+            "image": "assets/roadmap-v4/farm/NW-FARM-06.png",
+            "mask": "assets-src/roadmap-v4/farm/NW-FARM-06-repair-mask.png",
+            "nativeInnerOpening": [
+              [
+                17,
+                13
+              ],
+              [
+                167,
+                13
+              ],
+              [
+                168,
+                15
+              ],
+              [
+                168,
+                89
+              ],
+              [
+                166,
+                91
+              ],
+              [
+                17,
+                91
+              ],
+              [
+                16,
+                89
+              ],
+              [
+                16,
+                15
+              ]
+            ],
+            "opaquePixels": 12085,
+            "outsideOwnershipPixels": 0,
+            "connectedCropRemnantPixels": 7,
+            "remnantExpansionLimitPx": 4,
+            "sha256": "83305e65442ad28bd284504648504ea40896691e197b24ddceb499e4726b4879",
+            "rim-back": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-06-rim-back.png",
+              "sha256": "b81f4c5f1f72fa00244b95185b0c03b22e466adcde0b1fa92bd5c38dff4b20c4",
+              "position": [
+                825,
+                518
+              ],
+              "depth": 533,
+              "sourceRect": [
+                665,
+                438,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "rim-front": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-06-rim-front.png",
+              "sha256": "6dea09137db9c07b7e0c76af35c4346b9dc036e86fdc1d0f6c164876ad519249",
+              "position": [
+                825,
+                518
+              ],
+              "depth": 646,
+              "sourceRect": [
+                665,
+                438,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "visibleSoilOwnership": {
+              "perBedInnerPolygon": [
+                [
+                  17,
+                  13
+                ],
+                [
+                  167,
+                  13
+                ],
+                [
+                  168,
+                  15
+                ],
+                [
+                  168,
+                  89
+                ],
+                [
+                  166,
+                  91
+                ],
+                [
+                  17,
+                  91
+                ],
+                [
+                  16,
+                  89
+                ],
+                [
+                  16,
+                  15
+                ]
+              ],
+              "outsideNativeBorderReplacementPixels": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "recordPath": "assets-src/roadmap-v4/rooms/PROVENANCE.json",
+      "recordSHA256": "23fb0c592b5cdbac3fea73608c310d993cc238bfcacfa043e545c12bc0494d31",
+      "record": {
+        "art_source": "code",
+        "disclosure": "Original code-drawn native components, no image model",
+        "source": "tools/roadmap-v4/room_art.py",
+        "providerCalls": 0,
+        "thirdPartyReferences": [],
+        "sourcePixelScale": 1,
+        "worldOrCharactersChanged": false,
+        "independentProps": 22,
+        "floorReceivers": 3,
+        "nativeSampling": "nearest",
+        "review": "PENDING_HUMAN_ART_REVIEW",
+        "runtimeHashes": {
+          "public/assets/roadmap-v4/rooms/kit.json": "4e3a95b126020a953e484de1b3049b3904ae8bd057dac74a6f6acdec4e6b65cb",
+          "public/assets/roadmap-v4/rooms/kit.png": "0521b48364abea854980af5425f842b03aa1a241fc7d8c2a94d0bea48ef8dc97",
+          "public/assets/roadmap-v4/rooms/seed-shop-ground.png": "11233d183664303cc9a60cb37ecbf35095eeb2414cb3860d8fbb4cf96e77ef6d",
+          "public/assets/roadmap-v4/rooms/bookshop-ground.png": "9f5ee53e63f6b9f6418bd243805144afa86ee5cbd0298e57fb9e1b25156f9158",
+          "public/assets/roadmap-v4/rooms/workshop-ground.png": "9d5b450085faab928627a7a5479bce2c7a4fa15e131d575fa7b0cafe16921d83"
+        }
+      }
+    },
+    {
+      "recordPath": "assets-src/roadmap-v4/ui/PROVENANCE.json",
+      "recordSHA256": "49d82701c4a3bde78fa8f726f6056ba5e351b4c7d1cdf28044ec0bea528b8a4f",
+      "record": {
+        "art_source": "original native code-art nine-slice UI",
+        "tool": "tools/roadmap-v4/hud_art.py",
+        "providerCalls": 0,
+        "thirdPartyReferences": [],
+        "nativeScale": 1,
+        "review": "PENDING_HUMAN_REVIEW",
+        "sha256": {
+          "frame-dark.png": "70674ffc398cbef7d4f98b6a241c368ac9fda16c48206c65f82c93d403153bdc",
+          "frame-paper.png": "2540df2d09f510958c74ba95a1f039820b8eb7a1292ec883e4ed2b3d2c2b3849",
+          "slot.png": "39a153fc62ed5241f9112a77fca55755e8311da6c671d5223f8187fb6b855d74"
+        }
+      }
+    },
+    {
+      "recordPath": "docs/roadmap-v4/JEJU_COLLISION_AMENDMENT.json",
+      "recordSHA256": "caf0bb0e43342bfda60adada7d292d9ea4be8b5049a65ee844e4dfd1b1e4fcfd",
+      "record": {
+        "schemaVersion": 1,
+        "authority": "Owner V4 2026-11-10 P0-5 exact redpath; original art/bridge/house and mask sources immutable",
+        "rootCause": "Original island-side anchor field rejects part of already painted horizontal paving between approved bridgeB end and house-direct-approach. Baseline actual WASD stops x3606.9668,y4059.9424; first candidate outward traversal exposed the remaining3580..3583 edge gap at(3580.47,4064.75). Corridor now overlaps old deck floor at3568,4063. Earlier coarsecurve target crossed insidehouse; correctedsourcecanonicalcurve itself traverses, junctionstillblocks.",
+        "ROI": [
+          3568,
+          4045,
+          166,
+          34
+        ],
+        "anchorCorridorWidth": 24,
+        "points": [
+          [
+            3568,
+            4063
+          ],
+          [
+            3615,
+            4060
+          ],
+          [
+            3650,
+            4065
+          ],
+          [
+            3690,
+            4070
+          ],
+          [
+            3720,
+            4065
+          ]
+        ],
+        "sourceRoute": "public/assets/gate2/c/scene.json house-direct-approach; sourceoffset[3180,3200]",
+        "chunks": [
+          {
+            "id": "6-7",
+            "originalMask": "assets/gate3/phase3bc-collision/6-7.bin",
+            "originalSHA256": "428def8e44e51e317029da7375a8de9a3b1e6b03e66a2161a2e1fc97bb70c454",
+            "mask": "assets/roadmap-v4/collision/6-7.bin",
+            "sha256": "b7557d2d79098ab95cefe66fd53bdcef7bb3662c5e068e21a47a835a864d4ba8",
+            "openedCells": 151,
+            "closedCells": 0,
+            "outsideROICells": 0
+          },
+          {
+            "id": "7-7",
+            "originalMask": "assets/gate3/jeju-bridges-world/7-7.bin",
+            "originalSHA256": "ede5a44fae427a610822af99fb26c5f386b5b67565741f936c4ce6dfe2226f4b",
+            "mask": "assets/roadmap-v4/collision/7-7.bin",
+            "sha256": "42f928e759581045bf676d3e1f84727d6fc9b3246caa42f76655a77e5a6bbc5f",
+            "openedCells": 531,
+            "closedCells": 0,
+            "outsideROICells": 0
+          }
+        ],
+        "artFilesChanged": 0,
+        "originalMaskFilesChanged": 0,
+        "physicalNativeContactChanged": false,
+        "protectedLogicalSolidsChanged": false
+      }
+    },
+    {
+      "recordPath": "docs/roadmap-v4/FARM_VISUAL_REGISTRATION.json",
+      "recordSHA256": "30d34ae7a22f7ccfff87f8eee416d84e12b0614c64c2494cc279d947e2babdf2",
+      "record": {
+        "authority": "V4 native cultivated-opening repair; visual-only amendment, no logical plot/world/player movement changes",
+        "nativeAtlasAnchor": [
+          20,
+          40
+        ],
+        "nativeCell": [
+          40,
+          44
+        ],
+        "scale": 1,
+        "plots": [
+          {
+            "id": "NW-FARM-01",
+            "bedId": "NW-FARM-01",
+            "oldVisualRoot": [
+              464,
+              431
+            ],
+            "nativeVisualRoot": [
+              464,
+              426
+            ],
+            "deltaY": -5,
+            "unchangedInteractionAnchor": [
+              470,
+              481
+            ],
+            "unchangedSourceRect": [
+              442,
+              391,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-02",
+            "bedId": "NW-FARM-02",
+            "oldVisualRoot": [
+              684,
+              431
+            ],
+            "nativeVisualRoot": [
+              684,
+              426
+            ],
+            "deltaY": -5,
+            "unchangedInteractionAnchor": [
+              690,
+              481
+            ],
+            "unchangedSourceRect": [
+              662,
+              391,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-03",
+            "bedId": "NW-FARM-03",
+            "oldVisualRoot": [
+              909,
+              431
+            ],
+            "nativeVisualRoot": [
+              909,
+              427
+            ],
+            "deltaY": -4,
+            "unchangedInteractionAnchor": [
+              915,
+              481
+            ],
+            "unchangedSourceRect": [
+              887,
+              391,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-04",
+            "bedId": "NW-FARM-04",
+            "oldVisualRoot": [
+              464,
+              619
+            ],
+            "nativeVisualRoot": [
+              464,
+              605
+            ],
+            "deltaY": -14,
+            "unchangedInteractionAnchor": [
+              470,
+              669
+            ],
+            "unchangedSourceRect": [
+              442,
+              579,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-05",
+            "bedId": "NW-FARM-05",
+            "oldVisualRoot": [
+              684,
+              619
+            ],
+            "nativeVisualRoot": [
+              684,
+              603
+            ],
+            "deltaY": -16,
+            "unchangedInteractionAnchor": [
+              690,
+              669
+            ],
+            "unchangedSourceRect": [
+              662,
+              579,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-06",
+            "bedId": "NW-FARM-06",
+            "oldVisualRoot": [
+              909,
+              619
+            ],
+            "nativeVisualRoot": [
+              909,
+              604
+            ],
+            "deltaY": -15,
+            "unchangedInteractionAnchor": [
+              915,
+              669
+            ],
+            "unchangedSourceRect": [
+              887,
+              579,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-01-C1",
+            "bedId": "NW-FARM-01",
+            "oldVisualRoot": [
+              416,
+              387
+            ],
+            "nativeVisualRoot": [
+              416,
+              388
+            ],
+            "deltaY": 1,
+            "unchangedInteractionAnchor": [
+              422,
+              323
+            ],
+            "unchangedSourceRect": [
+              394,
+              347,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-01-C2",
+            "bedId": "NW-FARM-01",
+            "oldVisualRoot": [
+              464,
+              387
+            ],
+            "nativeVisualRoot": [
+              464,
+              388
+            ],
+            "deltaY": 1,
+            "unchangedInteractionAnchor": [
+              470,
+              323
+            ],
+            "unchangedSourceRect": [
+              442,
+              347,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-01-C3",
+            "bedId": "NW-FARM-01",
+            "oldVisualRoot": [
+              512,
+              387
+            ],
+            "nativeVisualRoot": [
+              512,
+              388
+            ],
+            "deltaY": 1,
+            "unchangedInteractionAnchor": [
+              518,
+              323
+            ],
+            "unchangedSourceRect": [
+              490,
+              347,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-01-C4",
+            "bedId": "NW-FARM-01",
+            "oldVisualRoot": [
+              416,
+              431
+            ],
+            "nativeVisualRoot": [
+              416,
+              426
+            ],
+            "deltaY": -5,
+            "unchangedInteractionAnchor": [
+              422,
+              481
+            ],
+            "unchangedSourceRect": [
+              394,
+              391,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-01-C6",
+            "bedId": "NW-FARM-01",
+            "oldVisualRoot": [
+              512,
+              431
+            ],
+            "nativeVisualRoot": [
+              512,
+              426
+            ],
+            "deltaY": -5,
+            "unchangedInteractionAnchor": [
+              518,
+              481
+            ],
+            "unchangedSourceRect": [
+              490,
+              391,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-02-C1",
+            "bedId": "NW-FARM-02",
+            "oldVisualRoot": [
+              636,
+              387
+            ],
+            "nativeVisualRoot": [
+              636,
+              388
+            ],
+            "deltaY": 1,
+            "unchangedInteractionAnchor": [
+              642,
+              323
+            ],
+            "unchangedSourceRect": [
+              614,
+              347,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-02-C2",
+            "bedId": "NW-FARM-02",
+            "oldVisualRoot": [
+              684,
+              387
+            ],
+            "nativeVisualRoot": [
+              684,
+              388
+            ],
+            "deltaY": 1,
+            "unchangedInteractionAnchor": [
+              690,
+              323
+            ],
+            "unchangedSourceRect": [
+              662,
+              347,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-02-C3",
+            "bedId": "NW-FARM-02",
+            "oldVisualRoot": [
+              732,
+              387
+            ],
+            "nativeVisualRoot": [
+              732,
+              388
+            ],
+            "deltaY": 1,
+            "unchangedInteractionAnchor": [
+              738,
+              323
+            ],
+            "unchangedSourceRect": [
+              710,
+              347,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-02-C4",
+            "bedId": "NW-FARM-02",
+            "oldVisualRoot": [
+              636,
+              431
+            ],
+            "nativeVisualRoot": [
+              636,
+              426
+            ],
+            "deltaY": -5,
+            "unchangedInteractionAnchor": [
+              642,
+              481
+            ],
+            "unchangedSourceRect": [
+              614,
+              391,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-02-C6",
+            "bedId": "NW-FARM-02",
+            "oldVisualRoot": [
+              732,
+              431
+            ],
+            "nativeVisualRoot": [
+              732,
+              426
+            ],
+            "deltaY": -5,
+            "unchangedInteractionAnchor": [
+              738,
+              481
+            ],
+            "unchangedSourceRect": [
+              710,
+              391,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-03-C1",
+            "bedId": "NW-FARM-03",
+            "oldVisualRoot": [
+              861,
+              387
+            ],
+            "nativeVisualRoot": [
+              861,
+              388
+            ],
+            "deltaY": 1,
+            "unchangedInteractionAnchor": [
+              867,
+              323
+            ],
+            "unchangedSourceRect": [
+              839,
+              347,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-03-C2",
+            "bedId": "NW-FARM-03",
+            "oldVisualRoot": [
+              909,
+              387
+            ],
+            "nativeVisualRoot": [
+              909,
+              388
+            ],
+            "deltaY": 1,
+            "unchangedInteractionAnchor": [
+              915,
+              323
+            ],
+            "unchangedSourceRect": [
+              887,
+              347,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-03-C3",
+            "bedId": "NW-FARM-03",
+            "oldVisualRoot": [
+              957,
+              387
+            ],
+            "nativeVisualRoot": [
+              957,
+              388
+            ],
+            "deltaY": 1,
+            "unchangedInteractionAnchor": [
+              963,
+              323
+            ],
+            "unchangedSourceRect": [
+              935,
+              347,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-03-C4",
+            "bedId": "NW-FARM-03",
+            "oldVisualRoot": [
+              861,
+              431
+            ],
+            "nativeVisualRoot": [
+              861,
+              427
+            ],
+            "deltaY": -4,
+            "unchangedInteractionAnchor": [
+              867,
+              481
+            ],
+            "unchangedSourceRect": [
+              839,
+              391,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-03-C6",
+            "bedId": "NW-FARM-03",
+            "oldVisualRoot": [
+              957,
+              431
+            ],
+            "nativeVisualRoot": [
+              957,
+              427
+            ],
+            "deltaY": -4,
+            "unchangedInteractionAnchor": [
+              963,
+              481
+            ],
+            "unchangedSourceRect": [
+              935,
+              391,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-04-C1",
+            "bedId": "NW-FARM-04",
+            "oldVisualRoot": [
+              416,
+              575
+            ],
+            "nativeVisualRoot": [
+              416,
+              567
+            ],
+            "deltaY": -8,
+            "unchangedInteractionAnchor": [
+              422,
+              511
+            ],
+            "unchangedSourceRect": [
+              394,
+              535,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-04-C2",
+            "bedId": "NW-FARM-04",
+            "oldVisualRoot": [
+              464,
+              575
+            ],
+            "nativeVisualRoot": [
+              464,
+              567
+            ],
+            "deltaY": -8,
+            "unchangedInteractionAnchor": [
+              470,
+              511
+            ],
+            "unchangedSourceRect": [
+              442,
+              535,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-04-C3",
+            "bedId": "NW-FARM-04",
+            "oldVisualRoot": [
+              512,
+              575
+            ],
+            "nativeVisualRoot": [
+              512,
+              567
+            ],
+            "deltaY": -8,
+            "unchangedInteractionAnchor": [
+              518,
+              511
+            ],
+            "unchangedSourceRect": [
+              490,
+              535,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-04-C4",
+            "bedId": "NW-FARM-04",
+            "oldVisualRoot": [
+              416,
+              619
+            ],
+            "nativeVisualRoot": [
+              416,
+              605
+            ],
+            "deltaY": -14,
+            "unchangedInteractionAnchor": [
+              422,
+              669
+            ],
+            "unchangedSourceRect": [
+              394,
+              579,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-04-C6",
+            "bedId": "NW-FARM-04",
+            "oldVisualRoot": [
+              512,
+              619
+            ],
+            "nativeVisualRoot": [
+              512,
+              605
+            ],
+            "deltaY": -14,
+            "unchangedInteractionAnchor": [
+              518,
+              669
+            ],
+            "unchangedSourceRect": [
+              490,
+              579,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-05-C1",
+            "bedId": "NW-FARM-05",
+            "oldVisualRoot": [
+              636,
+              575
+            ],
+            "nativeVisualRoot": [
+              636,
+              565
+            ],
+            "deltaY": -10,
+            "unchangedInteractionAnchor": [
+              642,
+              511
+            ],
+            "unchangedSourceRect": [
+              614,
+              535,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-05-C2",
+            "bedId": "NW-FARM-05",
+            "oldVisualRoot": [
+              684,
+              575
+            ],
+            "nativeVisualRoot": [
+              684,
+              565
+            ],
+            "deltaY": -10,
+            "unchangedInteractionAnchor": [
+              690,
+              511
+            ],
+            "unchangedSourceRect": [
+              662,
+              535,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-05-C3",
+            "bedId": "NW-FARM-05",
+            "oldVisualRoot": [
+              732,
+              575
+            ],
+            "nativeVisualRoot": [
+              732,
+              565
+            ],
+            "deltaY": -10,
+            "unchangedInteractionAnchor": [
+              738,
+              511
+            ],
+            "unchangedSourceRect": [
+              710,
+              535,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-05-C4",
+            "bedId": "NW-FARM-05",
+            "oldVisualRoot": [
+              636,
+              619
+            ],
+            "nativeVisualRoot": [
+              636,
+              603
+            ],
+            "deltaY": -16,
+            "unchangedInteractionAnchor": [
+              642,
+              669
+            ],
+            "unchangedSourceRect": [
+              614,
+              579,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-05-C6",
+            "bedId": "NW-FARM-05",
+            "oldVisualRoot": [
+              732,
+              619
+            ],
+            "nativeVisualRoot": [
+              732,
+              603
+            ],
+            "deltaY": -16,
+            "unchangedInteractionAnchor": [
+              738,
+              669
+            ],
+            "unchangedSourceRect": [
+              710,
+              579,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-06-C1",
+            "bedId": "NW-FARM-06",
+            "oldVisualRoot": [
+              861,
+              575
+            ],
+            "nativeVisualRoot": [
+              861,
+              567
+            ],
+            "deltaY": -8,
+            "unchangedInteractionAnchor": [
+              867,
+              511
+            ],
+            "unchangedSourceRect": [
+              839,
+              535,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-06-C2",
+            "bedId": "NW-FARM-06",
+            "oldVisualRoot": [
+              909,
+              575
+            ],
+            "nativeVisualRoot": [
+              909,
+              567
+            ],
+            "deltaY": -8,
+            "unchangedInteractionAnchor": [
+              915,
+              511
+            ],
+            "unchangedSourceRect": [
+              887,
+              535,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-06-C3",
+            "bedId": "NW-FARM-06",
+            "oldVisualRoot": [
+              957,
+              575
+            ],
+            "nativeVisualRoot": [
+              957,
+              567
+            ],
+            "deltaY": -8,
+            "unchangedInteractionAnchor": [
+              963,
+              511
+            ],
+            "unchangedSourceRect": [
+              935,
+              535,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-06-C4",
+            "bedId": "NW-FARM-06",
+            "oldVisualRoot": [
+              861,
+              619
+            ],
+            "nativeVisualRoot": [
+              861,
+              604
+            ],
+            "deltaY": -15,
+            "unchangedInteractionAnchor": [
+              867,
+              669
+            ],
+            "unchangedSourceRect": [
+              839,
+              579,
+              44,
+              44
+            ]
+          },
+          {
+            "id": "NW-FARM-06-C6",
+            "bedId": "NW-FARM-06",
+            "oldVisualRoot": [
+              957,
+              619
+            ],
+            "nativeVisualRoot": [
+              957,
+              604
+            ],
+            "deltaY": -15,
+            "unchangedInteractionAnchor": [
+              963,
+              669
+            ],
+            "unchangedSourceRect": [
+              935,
+              579,
+              44,
+              44
+            ]
+          }
+        ],
+        "reason": "Original second-row visual roots fell below the real timber opening, hiding sprouts after correct rim restoration. Each stage now uses one stable integer root inside its actual soil opening; all sprite pixels/timers/IDs/collision unchanged."
+      }
+    },
+    {
+      "recordPath": "docs/roadmap-v4/FARM_FINAL_REMNANT_OWNERSHIP.json",
+      "recordSHA256": "5be9f34520f5e57b64ba15ccb12ebfc01d9c4729942a1ecc02a9d472c2bb5f98",
+      "record": {
+        "art_source": "derived native material composition + byte-exact original timber ownership",
+        "inputs": [
+          "public/assets/farming/phase3bd-final-quality/soil-components.png",
+          "public/assets/farming/phase3bd-final-quality/soil-components.json",
+          "assets-src/gate3/final-surgical-v1/farm-authored.png"
+        ],
+        "providerCalls": 0,
+        "sourcePixelScale": 1,
+        "resampling": false,
+        "filters": false,
+        "purpose": "Remove all baked original crop pixels within each independently registered cultivated opening; keep36independent cells and exact original timber/path/landscape pixels outside repair masks. The earlier uniform rim reintroduced top/right crop fragments; per-bed ownership corrects that error.",
+        "humanArtApproval": "PENDING",
+        "beds": [
+          {
+            "id": "NW-FARM-01",
+            "x": 380,
+            "y": 330,
+            "width": 180,
+            "height": 128,
+            "image": "assets/roadmap-v4/farm/NW-FARM-01.png",
+            "mask": "assets-src/roadmap-v4/farm/NW-FARM-01-repair-mask.png",
+            "nativeInnerOpening": [
+              [
+                19,
+                22
+              ],
+              [
+                150,
+                22
+              ],
+              [
+                151,
+                24
+              ],
+              [
+                151,
+                99
+              ],
+              [
+                149,
+                101
+              ],
+              [
+                19,
+                101
+              ],
+              [
+                18,
+                99
+              ],
+              [
+                18,
+                24
+              ]
+            ],
+            "opaquePixels": 10789,
+            "outsideOwnershipPixels": 0,
+            "connectedCropRemnantPixels": 78,
+            "remnantExpansionLimitPx": 4,
+            "sha256": "35baaede5b2fdb585cb5439a30c89a55ec1797571bf15dfc97360c1cc289e7e0",
+            "rim-back": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-01-rim-back.png",
+              "sha256": "0540246237233fefae93130c6a58401b14dbd495cbd67a42e66f8977565e2ccd",
+              "position": [
+                380,
+                330
+              ],
+              "depth": 354,
+              "sourceRect": [
+                220,
+                250,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "rim-front": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-01-rim-front.png",
+              "sha256": "c4bb482f60d8a65b70fd50a2534b43eb1450485dacfdbc0cdd0d87b1d2417d90",
+              "position": [
+                380,
+                330
+              ],
+              "depth": 458,
+              "sourceRect": [
+                220,
+                250,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "visibleSoilOwnership": {
+              "perBedInnerPolygon": [
+                [
+                  19,
+                  22
+                ],
+                [
+                  150,
+                  22
+                ],
+                [
+                  151,
+                  24
+                ],
+                [
+                  151,
+                  99
+                ],
+                [
+                  149,
+                  101
+                ],
+                [
+                  19,
+                  101
+                ],
+                [
+                  18,
+                  99
+                ],
+                [
+                  18,
+                  24
+                ]
+              ],
+              "outsideNativeBorderReplacementPixels": 0
+            }
+          },
+          {
+            "id": "NW-FARM-02",
+            "x": 600,
+            "y": 330,
+            "width": 180,
+            "height": 128,
+            "image": "assets/roadmap-v4/farm/NW-FARM-02.png",
+            "mask": "assets-src/roadmap-v4/farm/NW-FARM-02-repair-mask.png",
+            "nativeInnerOpening": [
+              [
+                24,
+                22
+              ],
+              [
+                165,
+                22
+              ],
+              [
+                166,
+                24
+              ],
+              [
+                166,
+                99
+              ],
+              [
+                164,
+                101
+              ],
+              [
+                24,
+                101
+              ],
+              [
+                23,
+                99
+              ],
+              [
+                23,
+                24
+              ]
+            ],
+            "opaquePixels": 11739,
+            "outsideOwnershipPixels": 0,
+            "connectedCropRemnantPixels": 228,
+            "remnantExpansionLimitPx": 4,
+            "sha256": "63ad206ed732c20ddde994721654651e514cce2adcb1d9b5b7a82f6763c0cdd1",
+            "rim-back": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-02-rim-back.png",
+              "sha256": "8fde592e6c28b62c526a90c27e9e1d1a71b88cb986b4615940fa6fba71dc89d3",
+              "position": [
+                600,
+                330
+              ],
+              "depth": 354,
+              "sourceRect": [
+                440,
+                250,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "rim-front": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-02-rim-front.png",
+              "sha256": "2c5baf5dec96f30cf66402f6b13968778149e6bcac45427253434fc52f0bcb97",
+              "position": [
+                600,
+                330
+              ],
+              "depth": 458,
+              "sourceRect": [
+                440,
+                250,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "visibleSoilOwnership": {
+              "perBedInnerPolygon": [
+                [
+                  24,
+                  22
+                ],
+                [
+                  165,
+                  22
+                ],
+                [
+                  166,
+                  24
+                ],
+                [
+                  166,
+                  99
+                ],
+                [
+                  164,
+                  101
+                ],
+                [
+                  24,
+                  101
+                ],
+                [
+                  23,
+                  99
+                ],
+                [
+                  23,
+                  24
+                ]
+              ],
+              "outsideNativeBorderReplacementPixels": 0
+            }
+          },
+          {
+            "id": "NW-FARM-03",
+            "x": 825,
+            "y": 330,
+            "width": 180,
+            "height": 128,
+            "image": "assets/roadmap-v4/farm/NW-FARM-03.png",
+            "mask": "assets-src/roadmap-v4/farm/NW-FARM-03-repair-mask.png",
+            "nativeInnerOpening": [
+              [
+                17,
+                22
+              ],
+              [
+                167,
+                22
+              ],
+              [
+                168,
+                24
+              ],
+              [
+                168,
+                100
+              ],
+              [
+                166,
+                102
+              ],
+              [
+                17,
+                102
+              ],
+              [
+                16,
+                100
+              ],
+              [
+                16,
+                24
+              ]
+            ],
+            "opaquePixels": 12427,
+            "outsideOwnershipPixels": 0,
+            "connectedCropRemnantPixels": 43,
+            "remnantExpansionLimitPx": 4,
+            "sha256": "34cd0c54261d2fd73a2d449ea5a3fb8e6c84d99b8f14f3df548d46b31ddb725d",
+            "rim-back": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-03-rim-back.png",
+              "sha256": "c74a4105713ac8f30594b6bf58e69b377bc6dea791623fa091a85050397dffaa",
+              "position": [
+                825,
+                330
+              ],
+              "depth": 354,
+              "sourceRect": [
+                665,
+                250,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "rim-front": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-03-rim-front.png",
+              "sha256": "04fbcff540d329f10a0c0ba0dc754967333d20b7a8e5c434dbbb6af1f3fa2b4e",
+              "position": [
+                825,
+                330
+              ],
+              "depth": 458,
+              "sourceRect": [
+                665,
+                250,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "visibleSoilOwnership": {
+              "perBedInnerPolygon": [
+                [
+                  17,
+                  22
+                ],
+                [
+                  167,
+                  22
+                ],
+                [
+                  168,
+                  24
+                ],
+                [
+                  168,
+                  100
+                ],
+                [
+                  166,
+                  102
+                ],
+                [
+                  17,
+                  102
+                ],
+                [
+                  16,
+                  100
+                ],
+                [
+                  16,
+                  24
+                ]
+              ],
+              "outsideNativeBorderReplacementPixels": 0
+            }
+          },
+          {
+            "id": "NW-FARM-04",
+            "x": 380,
+            "y": 518,
+            "width": 180,
+            "height": 128,
+            "image": "assets/roadmap-v4/farm/NW-FARM-04.png",
+            "mask": "assets-src/roadmap-v4/farm/NW-FARM-04-repair-mask.png",
+            "nativeInnerOpening": [
+              [
+                18,
+                13
+              ],
+              [
+                150,
+                13
+              ],
+              [
+                151,
+                15
+              ],
+              [
+                151,
+                90
+              ],
+              [
+                149,
+                92
+              ],
+              [
+                18,
+                92
+              ],
+              [
+                17,
+                90
+              ],
+              [
+                17,
+                15
+              ]
+            ],
+            "opaquePixels": 10845,
+            "outsideOwnershipPixels": 0,
+            "connectedCropRemnantPixels": 54,
+            "remnantExpansionLimitPx": 4,
+            "sha256": "6c2126168e2af0df436409c4dcccca8521c2f634056742a780e714740f064441",
+            "rim-back": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-04-rim-back.png",
+              "sha256": "87d0ea3ab099fdb61139060329073cc4f23892c3d94d7783ad5ed7c4f0956282",
+              "position": [
+                380,
+                518
+              ],
+              "depth": 533,
+              "sourceRect": [
+                220,
+                438,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "rim-front": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-04-rim-front.png",
+              "sha256": "df10c838e22ddcb530dee2dd5930597b7b4798d485a17fc55b8055ab17a01c86",
+              "position": [
+                380,
+                518
+              ],
+              "depth": 646,
+              "sourceRect": [
+                220,
+                438,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "visibleSoilOwnership": {
+              "perBedInnerPolygon": [
+                [
+                  18,
+                  13
+                ],
+                [
+                  150,
+                  13
+                ],
+                [
+                  151,
+                  15
+                ],
+                [
+                  151,
+                  90
+                ],
+                [
+                  149,
+                  92
+                ],
+                [
+                  18,
+                  92
+                ],
+                [
+                  17,
+                  90
+                ],
+                [
+                  17,
+                  15
+                ]
+              ],
+              "outsideNativeBorderReplacementPixels": 0
+            }
+          },
+          {
+            "id": "NW-FARM-05",
+            "x": 600,
+            "y": 518,
+            "width": 180,
+            "height": 128,
+            "image": "assets/roadmap-v4/farm/NW-FARM-05.png",
+            "mask": "assets-src/roadmap-v4/farm/NW-FARM-05-repair-mask.png",
+            "nativeInnerOpening": [
+              [
+                21,
+                11
+              ],
+              [
+                165,
+                11
+              ],
+              [
+                166,
+                13
+              ],
+              [
+                166,
+                88
+              ],
+              [
+                164,
+                90
+              ],
+              [
+                21,
+                90
+              ],
+              [
+                20,
+                88
+              ],
+              [
+                20,
+                13
+              ]
+            ],
+            "opaquePixels": 11876,
+            "outsideOwnershipPixels": 0,
+            "connectedCropRemnantPixels": 125,
+            "remnantExpansionLimitPx": 4,
+            "sha256": "d2a2d9310cda98667cb2bbab26174dc29449ad12ad907ab71775ea9eb8dd0f67",
+            "rim-back": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-05-rim-back.png",
+              "sha256": "f68d456a6861f97a7aba462bb4e877fbd61ccb4528c94c1d172554a379a7efa9",
+              "position": [
+                600,
+                518
+              ],
+              "depth": 531,
+              "sourceRect": [
+                440,
+                438,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "rim-front": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-05-rim-front.png",
+              "sha256": "95012c38c15f80ee05427561ff9a28679d04e2553373207fbd03d123d7c30bbe",
+              "position": [
+                600,
+                518
+              ],
+              "depth": 646,
+              "sourceRect": [
+                440,
+                438,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "visibleSoilOwnership": {
+              "perBedInnerPolygon": [
+                [
+                  21,
+                  11
+                ],
+                [
+                  165,
+                  11
+                ],
+                [
+                  166,
+                  13
+                ],
+                [
+                  166,
+                  88
+                ],
+                [
+                  164,
+                  90
+                ],
+                [
+                  21,
+                  90
+                ],
+                [
+                  20,
+                  88
+                ],
+                [
+                  20,
+                  13
+                ]
+              ],
+              "outsideNativeBorderReplacementPixels": 0
+            }
+          },
+          {
+            "id": "NW-FARM-06",
+            "x": 825,
+            "y": 518,
+            "width": 180,
+            "height": 128,
+            "image": "assets/roadmap-v4/farm/NW-FARM-06.png",
+            "mask": "assets-src/roadmap-v4/farm/NW-FARM-06-repair-mask.png",
+            "nativeInnerOpening": [
+              [
+                17,
+                13
+              ],
+              [
+                167,
+                13
+              ],
+              [
+                168,
+                15
+              ],
+              [
+                168,
+                89
+              ],
+              [
+                166,
+                91
+              ],
+              [
+                17,
+                91
+              ],
+              [
+                16,
+                89
+              ],
+              [
+                16,
+                15
+              ]
+            ],
+            "opaquePixels": 12085,
+            "outsideOwnershipPixels": 0,
+            "connectedCropRemnantPixels": 7,
+            "remnantExpansionLimitPx": 4,
+            "sha256": "83305e65442ad28bd284504648504ea40896691e197b24ddceb499e4726b4879",
+            "rim-back": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-06-rim-back.png",
+              "sha256": "b81f4c5f1f72fa00244b95185b0c03b22e466adcde0b1fa92bd5c38dff4b20c4",
+              "position": [
+                825,
+                518
+              ],
+              "depth": 533,
+              "sourceRect": [
+                665,
+                438,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "rim-front": {
+              "image": "assets/roadmap-v4/farm/NW-FARM-06-rim-front.png",
+              "sha256": "6dea09137db9c07b7e0c76af35c4346b9dc036e86fdc1d0f6c164876ad519249",
+              "position": [
+                825,
+                518
+              ],
+              "depth": 646,
+              "sourceRect": [
+                665,
+                438,
+                180,
+                128
+              ],
+              "resampling": false,
+              "originalNativePixels": true
+            },
+            "visibleSoilOwnership": {
+              "perBedInnerPolygon": [
+                [
+                  17,
+                  13
+                ],
+                [
+                  167,
+                  13
+                ],
+                [
+                  168,
+                  15
+                ],
+                [
+                  168,
+                  89
+                ],
+                [
+                  166,
+                  91
+                ],
+                [
+                  17,
+                  91
+                ],
+                [
+                  16,
+                  89
+                ],
+                [
+                  16,
+                  15
+                ]
+              ],
+              "outsideNativeBorderReplacementPixels": 0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
