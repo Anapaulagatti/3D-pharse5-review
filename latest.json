@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-11-05T02:24:52.027542+00:00",
-  "inspectionRunId": "41955026478",
-  "expectedControlCommit": "d398a0b769526b11b268a2c37b1ab788c50e13d0",
+  "checkedAt": "2026-11-11T15:11:31.276765+00:00",
+  "inspectionRunId": "43045845306",
+  "expectedControlCommit": "5445f3ef105148b699c4e9303b6e997d7cca2848",
   "publicationByThisJob": false,
   "checks": {
     "pages": {
@@ -24,107 +24,76 @@
     }
   },
   "release": {
-    "id": 41953272432,
-    "run_number": 8,
-    "head_sha": "d398a0b769526b11b268a2c37b1ab788c50e13d0",
-    "status": "waiting",
+    "id": 43045845239,
+    "run_number": 9,
+    "head_sha": "5445f3ef105148b699c4e9303b6e997d7cca2848",
+    "status": "in_progress",
     "conclusion": null,
-    "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41953272432",
+    "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/43045845239",
     "event": "push",
-    "created_at": "2026-11-05T02:09:00Z",
-    "updated_at": "2026-11-05T02:09:19Z",
+    "created_at": "2026-11-11T15:11:25Z",
+    "updated_at": "2026-11-11T15:11:29Z",
     "run_attempt": 1
   },
   "jobs": {
     "status": 200,
     "items": [
       {
-        "id": 127002003257,
+        "id": 130609431298,
         "name": "approval",
-        "status": "completed",
-        "conclusion": "success",
-        "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41953272432/job/127002003257",
-        "started_at": "2026-11-05T02:09:12Z",
-        "completed_at": "2026-11-05T02:09:18Z",
+        "status": "in_progress",
+        "conclusion": null,
+        "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/43045845239/job/130609431298",
+        "started_at": "2026-11-11T15:11:28Z",
+        "completed_at": null,
         "steps": [
           {
             "name": "Set up job",
             "status": "completed",
             "conclusion": "success",
             "number": 1,
-            "started_at": "2026-11-05T02:09:13Z",
-            "completed_at": "2026-11-05T02:09:14Z"
+            "started_at": "2026-11-11T15:11:29Z",
+            "completed_at": "2026-11-11T15:11:29Z"
           },
           {
             "name": "Run actions/checkout@v4",
             "status": "completed",
             "conclusion": "success",
             "number": 2,
-            "started_at": "2026-11-05T02:09:14Z",
-            "completed_at": "2026-11-05T02:09:14Z"
+            "started_at": "2026-11-11T15:11:29Z",
+            "completed_at": "2026-11-11T15:11:30Z"
           },
           {
             "name": "Run python - <<'PYCODE'",
             "status": "completed",
             "conclusion": "success",
             "number": 3,
-            "started_at": "2026-11-05T02:09:14Z",
-            "completed_at": "2026-11-05T02:09:15Z"
+            "started_at": "2026-11-11T15:11:30Z",
+            "completed_at": "2026-11-11T15:11:30Z"
           },
           {
             "name": "Require documented owner exposure approval before fetching any art",
             "status": "completed",
             "conclusion": "success",
             "number": 4,
-            "started_at": "2026-11-05T02:09:15Z",
-            "completed_at": "2026-11-05T02:09:15Z"
+            "started_at": "2026-11-11T15:11:30Z",
+            "completed_at": "2026-11-11T15:11:30Z"
           },
           {
             "name": "Post Run actions/checkout@v4",
-            "status": "completed",
-            "conclusion": "success",
+            "status": "in_progress",
+            "conclusion": null,
             "number": 8,
-            "started_at": "2026-11-05T02:09:15Z",
-            "completed_at": "2026-11-05T02:09:15Z"
-          },
-          {
-            "name": "Complete job",
-            "status": "completed",
-            "conclusion": "success",
-            "number": 9,
-            "started_at": "2026-11-05T02:09:15Z",
-            "completed_at": "2026-11-05T02:09:15Z"
+            "started_at": "2026-11-11T15:11:30Z",
+            "completed_at": null
           }
         ]
-      },
-      {
-        "id": 127002106846,
-        "name": "deploy",
-        "status": "waiting",
-        "conclusion": null,
-        "html_url": "https://github.com/Anapaulagatti/3D-pharse5-review/actions/runs/41953272432/job/127002106846",
-        "started_at": "2026-11-05T02:09:18Z",
-        "completed_at": null,
-        "steps": []
       }
     ]
   },
   "pendingDeployments": {
     "status": 200,
-    "items": [
-      {
-        "environment": "github-pages",
-        "environmentId": 25668785832,
-        "currentUserCanApprove": false,
-        "reviewers": [
-          {
-            "type": "User",
-            "login": "Anapaulagatti",
-            "name": null
-          }
-        ]
-      }
-    ],
+    "items": [],
     "message": null,
     "acceptedPermissions": null
   },
@@ -162,8 +131,8 @@
   },
   "actualHTTPSProbe": {
     "status": 200,
-    "manifestSHA256": "331cd300478f879bab11e9541803dd7c47ba1caaab339263f37150ae6c0d0ce4",
-    "files": 4975
+    "manifestSHA256": "cdf3f6d5b117a4912fda9d88c2dc12d1cdfeded4ba39ca343bab217918b578db",
+    "files": 744
   },
   "remainingGameplayRun": {
     "id": 41616970802,
