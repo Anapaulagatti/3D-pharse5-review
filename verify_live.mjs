@@ -2,7 +2,7 @@ import{verifyV2Navigation}from'./verify_v2_navigation.mjs';
 import{verifyV2Progression}from'./verify_v2_progression.mjs';
 import{verifyV2Story}from'./verify_v2_story.mjs';
 import{verifyTwelveCrops}from'./verify_v2_crops.mjs';
-import{verifyV2}from'./verify_v2.mjs';
+import{verifyV2,verifyV4}from'./verify_v2.mjs';
 // Hosted QA only: opens the actual deployed game. Never builds or edits game files.
 import { chromium } from '@playwright/test';
 import fs from 'node:fs/promises';
@@ -76,7 +76,7 @@ try {
     await page.locator('#stage canvas').click({ position: { x: 320, y: 180 } });
     await page.keyboard.down(key);
     try { await page.waitForFunction(id => window.__NPC_WORLD__?.target === id, n.id, { timeout: 15000 }); } finally { await page.keyboard.up(key); }
-    await page.keyboard.press('e'); await page.locator('#npc-dialogue').waitFor({ state: 'visible' });
+    if(manifest.profile==='roadmap-v4-local26')await page.locator('[data-npc-id="'+n.id+'"]').click();else await page.keyboard.press('e'); await page.locator('#npc-dialogue').waitFor({ state: 'visible' });
     await page.locator('#npc-dialogue-return').click();
     await page.waitForFunction(() => window.__GATE3__?.paused === false);
     const state = await page.evaluate(id => ({ clock: window.__NPC_WORLD__.clock, actor: window.__NPC_WORLD__.actors.find(a => a.id === id), paused: window.__GATE3__.paused }), n.id);
@@ -119,6 +119,7 @@ try {
   if(manifest.profile==='phase3bd-farm-path26')result.farmPathHotfix=await verifyFarmPathHotfix(browser,base);
   if(manifest.profile==='phase3bd-final-quality26')result.finalQuality=await verifyFinalQuality(browser,base);
   if(manifest.profile==='roadmap-v2-local26'){result.roadmapV2=await verifyV2(browser,base);[result.v2Progression,result.v2Story,result.v2TwelveCrops,result.v2Navigation]=await Promise.all([verifyV2Progression(browser,base),verifyV2Story(browser,base),verifyTwelveCrops(browser,base),verifyV2Navigation(browser,base)]);}
+  if(manifest.profile==='roadmap-v4-local26')result.roadmapV4=await verifyV4(browser,base);
   result.status = 'PASS ACTUAL DEPLOYED HTTPS GAME';
 } catch (e) { result.status = 'FAIL'; result.failure = e.stack; throw e; }
 finally { await fs.writeFile('evidence/LIVE_QA.json', JSON.stringify(result, null, 2)); await browser?.close(); }

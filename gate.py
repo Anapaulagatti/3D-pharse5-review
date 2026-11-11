@@ -15,8 +15,8 @@ for row in m['files']:
 ids={r.get('npcId')for r in m['files']if r.get('npcId')};reviews=approval.get('npcReviews',{});q=approval
 config=json.loads(Path('review-source.json').read_text())
 profile=q.get('profile');spec=config.get('releaseProfiles',{}).get(profile)
-if profile in ['phase3bd-in-world26','phase3bd-farm-path26','phase3bd-final-quality26','roadmap-v2-local26'] and spec:
- if profile in ['phase3bd-farm-path26','phase3bd-final-quality26','roadmap-v2-local26'] and not (m.get('gameCommit')==spec.get('gameBuildSourceCommit')==q.get('gameBuildSourceCommit')):errors.append('Exact hotfix source lineage mismatch')
+if profile in ['phase3bd-in-world26','phase3bd-farm-path26','phase3bd-final-quality26','roadmap-v2-local26','roadmap-v4-local26'] and spec:
+ if profile in ['phase3bd-farm-path26','phase3bd-final-quality26','roadmap-v2-local26','roadmap-v4-local26'] and not (m.get('gameCommit')==spec.get('gameBuildSourceCommit')==q.get('gameBuildSourceCommit')):errors.append('Exact hotfix source lineage mismatch')
  if ids and ids!=set(spec['npcIds']):errors.append('Unexpected declared NPC IDs in new manifest')
  pinned=spec.get('npcAssets',{});byname={r['filename']:r for r in m['files']};catalog=json.loads((root/'catalog.json').read_text())
  if len(catalog.get('npcs',[]))!=26 or {n['id']for n in catalog.get('npcs',[])}!=set(spec['npcIds']):errors.append('Exact26catalog mismatch')
@@ -53,7 +53,7 @@ if profile=='phase3bd-final-quality26' and spec:
  for filename,size,count in [('crops.json',(40,44),12),('soil-components.json',(16,16),39)]:
   atlas=json.loads((root/'play/assets/farming/phase3bd-final-quality'/filename).read_text())
   if len(atlas['frames'])!=count or any((r['frame']['w'],r['frame']['h'])!=size for r in atlas['frames'].values()):errors.append('Native component contract mismatch')
-if profile=='roadmap-v2-local26' and spec:
+if profile in ['roadmap-v2-local26','roadmap-v4-local26'] and spec:
  for asset in spec.get('newArtAssets',[]):
   row=next((r for r in m['files']if r['filename']==asset['filename']),None)
   if not row or row['sha256']!=asset['sha256']:errors.append('V2 native new-art pin mismatch')

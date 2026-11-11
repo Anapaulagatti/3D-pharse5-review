@@ -9,7 +9,7 @@ for receipt in paths:
   if name in expected and expected[name]!=digest:raise SystemExit('Conflicting historical manifest pin')
   expected[name]=digest
 am=q.get('historyRetentionAmendment');archive=site
-if q.get('profile')=='roadmap-v2-local26':
+if q.get('profile') in ['roadmap-v2-local26','roadmap-v4-local26']:
  if q.get('decision')!='APPROVED_PUBLIC_PREVIEW' or not q.get('approvedBy')or not q.get('approvedAt')or not am or am.get('decision')!='APPROVED_BY_OWNER' or am.get('policy')!='IMMUTABLE_GIT_ARCHIVE_INSTEAD_OF_DUPLICATED_SITE' or am.get('artifactCommit')!='1a6e5a58a8fb515730e553a30980d2ffb7274da6' or am.get('manifestSHA256')!='331cd300478f879bab11e9541803dd7c47ba1caaab339263f37150ae6c0d0ce4' or am.get('snapshotManifests')!=expected:raise SystemExit('BLOCKED: exact owner history amendment absent or incomplete')
  if len(sys.argv)!=4:raise SystemExit('Pinned immutable Git checkout required')
  archive=Path(sys.argv[3]).resolve()
@@ -23,3 +23,18 @@ for name,digest in expected.items():
  f=archive/name
  if f.is_symlink()or not f.resolve().is_relative_to(archive)or not name.startswith('phases/')or not f.is_file()or hashlib.sha256(f.read_bytes()).hexdigest()!=digest:raise SystemExit('Prior immutable snapshot missing or altered: '+name)
 print('PASS retained snapshot manifests; exact immutable archive verified'if archive!=site else'PASS retained snapshot manifests in site')
+
+if q.get('profile')=='roadmap-v4-local26':
+ import io,tarfile
+ cfg=json.loads(Path('review-source.json').read_text())['releaseProfiles']['roadmap-v4-local26']
+ prior=cfg['rollbackArtifact'];digest=cfg['rollbackManifestSHA256']
+ if q.get('rollbackArtifact')!=prior or q.get('rollbackManifestSHA256')!=digest:raise SystemExit('Missing immediate V2 rollback approval pin')
+ subprocess.run(['git','fetch','--depth','1','origin',prior],check=True)
+ data=subprocess.check_output(['git','archive',prior])
+ with tarfile.open(fileobj=io.BytesIO(data))as tar:
+  raw=tar.extractfile('export-manifest.json').read()
+  if hashlib.sha256(raw).hexdigest()!=digest:raise SystemExit('Immediate previous manifest mismatch')
+  for row in json.loads(raw)['files']:
+   name=row['filename'];member=tar.getmember(name)
+   if not member.isfile()or Path(name).is_absolute()or '..'in Path(name).parts or hashlib.sha256(tar.extractfile(member).read()).hexdigest()!=row['sha256']:raise SystemExit('Previous V2 asset mismatch:'+name)
+ print('PASS immediate previous V2 Git archive, manifest and every declared byte; immutable old archive preserved too')
